@@ -61,10 +61,10 @@ function showCells(){
 	for(var y=0; y<cheight/csize; y++){
 		for(var x=0; x<cwidth/csize; x++){
 			if(cells[y][x]){
-				ctx.fillStyle="#61a0e4";
+				ctx.fillStyle="#413F28";
 			}
-			else{
-				ctx.fillStyle="#2e7bcf";
+			else{	
+				ctx.fillStyle="#D6945A";
 			}
 			ctx.fillRect(x*csize,y*csize,csize,csize);
 		}
