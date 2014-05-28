@@ -158,6 +158,8 @@ postlist a:hover {
   -webkit-box-shadow: 1px 2px 3px #ddd;
   box-shadow: 1px 2px 3px #ddd;
   background: white; 
+  opacity:0.3;
+   filter: alpha(opacity=30);
 }
 
 #main-content img {
