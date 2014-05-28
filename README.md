@@ -1,3 +1,6 @@
+##blog网址:
+ <http://urmyfaith.github.io>
+
 ##安装教程
 * Download all source codes (either via git or just download as zip)
 * Create a new repo named username.github.io which username is your name on Github
