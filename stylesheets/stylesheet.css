@@ -51,7 +51,7 @@ table {
 body {
   font-size: 15px;
   line-height: 1.5;
-  background: #f8f7e5 url(/images/patternicity.jpg) no-repeat center top; 
+  background: #f8f7e5 url(/images/patternicity.jpg) repeat-y center top; 
   font-family: Arial, serif;
   font-weight: 400;
   color: #666;
