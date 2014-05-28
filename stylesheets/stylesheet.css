@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background: #f8f7e5 url(/images/patternicity.jpg) no-repeat center top; 
 }
 ol, ul {
 	list-style: none;
