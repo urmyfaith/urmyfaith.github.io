@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background: #f8f7e5 url(/images/patternicity.jpg) no-repeat center top; 
+	
 }
 ol, ul {
 	list-style: none;
@@ -51,7 +51,8 @@ table {
 body {
   font-size: 15px;
   line-height: 1.5; 
-  background: #eee;
+
+  background: #f8f7e5 url(/images/patternicity.jpg) no-repeat center top; 
   font-family: Arial, serif;
   font-weight: 400;
   color: #666;
