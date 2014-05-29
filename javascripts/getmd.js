@@ -107,7 +107,7 @@ function loadXMLDoc(url){
 					};
 					blog_text = filterJekyllHeader(blog_text);
 					var converter = new Showdown.converter();
-					content.innerHTML = '<div id="content_inner"><div id="post_title">' + decodeUtf8(getPostName(path)) + (encoded?Base64.decode('PHN1cCBzdHlsZT0iZm9udC1zaXplOjAuNWVtO3ZlcnRpY2FsLWFsaWduOiBzdXBlcjsiIHRpdGxlPSLmraTmlofnq6Dlt7Looqvph43mlrDnvJbnoIHku6XourLpgb/lrqHmn6UiPuKYmuiiq+e8lueggeeahOWGheWuuTwvc3VwPg=='):'') + '</div>' + converter.makeHtml(blog_text) + '<div class="date">&xi;&nbsp;' + pdate + '</div></div>';
+					content.innerHTML = '<div id="content_inner"><div id="post_title">' + decodeUtf8(getPostName(path)) + (encoded?Base64.decode('PHN1cCBzdHlsZT0iZm9udC1zaXplOjAuNWVtO3ZlcnRpY2FsLWFsaWduOiBzdXBlcjsiIHRpdGxlPSLmraTmlofnq6Dlt7Looqvph43mlrDnvJbnoIHku6XourLpgb/lrqHmn6UiPuKYmuiiq+e8lueggeeahOWGheWuuTwvc3VwPg=='):'') + '</div>' + converter.makeHtml(blog_text) + '<div class="date">&xi;&nbsp;' + pdate + '<br>Link,images,any other problem, send me email or wirte down blew.Thanks.</div></div>';
 					if(dis){
 						dis.style.display = 'block';
 					}
