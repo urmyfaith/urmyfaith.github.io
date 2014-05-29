@@ -4,22 +4,22 @@
 
 * run html2chm.exe
 
-	![html2chm.exe](/docs/images4blog/html2chm.exe.png)
+	![html2chm.exe](/docs/image4blog/html2chm.exe.png)
 
 * preare source html files
 	* eg:git help files
 	* git help files  [dir](_blank "C:/Users/XXXX/AppData/Local/GitHub/XXX/doc/git/html/")	
 * create dir info
 
-   ![generate dir info](/docs/images4blog/generate.png)
+   ![generate dir info](/docs/image4blog/generate.png)
 
 *  create chm file
 
-  ![compile](/docs/images4blog/compile.png)
+  ![compile](/docs/image4blog/compile.png)
 
         
 * show it now:
 
-  ![show-git.chm](/docs/images4blog/show-git.chm.png)
+  ![show-git.chm](/docs/imagesblog/show-git.chm.png)
 
   
