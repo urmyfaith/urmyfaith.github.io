@@ -8,7 +8,7 @@
 
 * preare source html files
 	* eg:git help files
-	* git help files  [_blank](_blank "C:/Users/XXXX/AppData/Local/GitHub/XXX/doc/git/html/")	
+	* git help files  [dir](_blank "C:/Users/XXXX/AppData/Local/GitHub/XXX/doc/git/html/")	
 * create dir info
 
    ![generate dir info](/docs/images4blog/generate.png)
