@@ -13,13 +13,13 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : 停摆
-tagline: Stop the clocks
+title : urmyfaith
+tagline: One is One
 author :
-  name : zzzely
-  email : zzzely@gmail.com
-  github : zzzely
-  twitter : zzzely
+  name : 
+  email : 
+  github : 
+  twitter :
   #feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
