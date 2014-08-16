@@ -54,7 +54,7 @@ Y = np.sin(X)
 
 ### 设置坐标轴位置
 
-> #axes.yaxis.set_ticks_position('left')
+> axes.yaxis.set_ticks_position('left')
 
 x轴的位置:上,下
 y轴的位置:左,右.
