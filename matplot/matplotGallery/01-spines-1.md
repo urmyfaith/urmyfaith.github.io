@@ -48,7 +48,7 @@ plt.show()
 
 设置输出图形的窗口大小,像素,前景色
 
-![matplotlib_pylot_figure](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/matplotlib_pylot_figure.png)
+![matplotlib_pylot_figure](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/matplotlib-pylot-figure.png)
 
 > axes.plot(X,Y, color = 'blue', linewidth=2, linestyle="-")
 
