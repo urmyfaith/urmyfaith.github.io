@@ -52,6 +52,8 @@ x轴位置:底部
 
 左: (Y轴)数据值为X最小的地方
 
+![spines-set-position](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/spines-set-position.png)
+
 ---
 
 ## Result
