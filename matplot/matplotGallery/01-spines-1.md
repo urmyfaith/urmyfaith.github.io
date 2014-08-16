@@ -36,7 +36,7 @@ plt.show()
 
 ----
 
-# Detail
+## Detail
 
 > X = np.linspace(-np.pi,+np.pi,256)
 
@@ -50,13 +50,10 @@ plt.show()
 
 ![matplotlib_pylot_figure](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/matplotlib-pylot-figure.png)
 
-> axes.plot(X,Y, color = 'blue', linewidth=2, linestyle="-")
+>  axes.plot(X,Y, color = 'blue', linewidth=2, linestyle="-")
 
 指定线宽,线型,绘制曲线
 
-# Result
+## Result
 
 ![plot_sin](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/plot_sin.png)
-
-
-
