@@ -38,7 +38,7 @@ plt.show()
 **axes.spines['bottom'].set_position(('data',0))**  
 X轴居中
 
-** axes.spines['left'].set_position(('data',0))**
+**axes.spines['left'].set_position(('data',0))**
 Y轴居中
 
 ---
