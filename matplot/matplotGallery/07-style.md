@@ -6,6 +6,12 @@
 3. 线型(实线,虚线,点划线)
   * linestyle
   * set_dashes
+4. 自动设置线颜色
+
+```python
+ for i in range(lineNumbers):
+    axes.plot( (1+i)*X, Y, linewidth=4)
+```
 
 ---
 
@@ -174,9 +180,43 @@ line.set_dashes((40,5,5,5,5,5,40,5))
 
 ![style-04.png](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/style-04.png)
 
+---
 
+## 自动设置线颜色
 
+### code
+```python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
 
+# Data to be represented
+Y = np.linspace(0,1,12)
+X = np.ones(Y.size)
+
+# Actual plotting
+fig = plt.figure(figsize=(8,6), dpi=72, facecolor="white")
+axes = plt.subplot(111)
+
+lineNumbers=9
+for i in range(lineNumbers):
+    axes.plot( (1+i)*X, Y, linewidth=4)
+
+axes.set_xlim(0,lineNumbers+1)
+axes.set_yticks([])
+axes.set_xticks(np.arange(1,lineNumbers+1))
+
+plt.show()   
+```
+### Keypoints
+
+这里用循环绘制了9条直线,但是这里是自动填充颜色的?
+
+### Result
+
+![style-05.png](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/style-05.png)
 
 
 
