@@ -12,6 +12,9 @@
   * markersize
   * markeredgecolor
   * markerfacecolor
+6. 柱状图及其填充
+  * axes.bar
+  * axes.bar( .5+i, 1, hatch='/', color='white', edgecolor='blue',)
 
 ---
 
@@ -268,6 +271,55 @@ plt.show()
 ![style-markers.png](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/style-markers.png)
 
 ----
+## 6. 柱状图及其填充
+
+### code
+
+```pytohn
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+
+# Data to be represented
+X = np.linspace(0,1,10)
+Y = np.ones(X.size)
+patterns = ('/','//','-', '+', 'x', '\\', '\\\\', '*', 'o', 'O', '.')
+
+# Actual plotting
+fig = plt.figure(figsize=(8,6), dpi=72, facecolor="white")
+axes = plt.subplot(111)
+for i,pattern in enumerate(patterns):
+    axes.bar( .5+i, 1, hatch=pattern, color='white', edgecolor='blue',)
+    
+axes.set_xlim(0,len(patterns)+.5)
+axes.set_ylim(0,1)
+
+axes.set_yticks([])
+axes.set_xticks(np.arange(1,len(patterns)+1))
+axes.set_xticklabels(patterns)
+
+plt.show()
+
+```
+### Keypoints
+
+```python
+axes.bar( .5+i, 1, hatch=pattern, color='white', edgecolor='blue',)
+```
+![help-bar-01.png](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/help-bar-01.png)
+![help-bar-02.png](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/help-bar-02.png)
+
+hatch,柱状图的填充:
+![help-set-hatch.png](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/help-set-hatch.png)
+
+### Result
+
+![style-bar.png](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/style-bar.png)
+
+![style-bar-hatch.png](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/style-bar-hatch.png)
+
 
 
 
