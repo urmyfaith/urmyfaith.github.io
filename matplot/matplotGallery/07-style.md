@@ -7,11 +7,11 @@
   * linestyle
   * set_dashes
 4. 自动设置线颜色
-
-```python
- for i in range(lineNumbers):
-    axes.plot( (1+i)*X, Y, linewidth=4)
-```
+5. 点的显示形式
+  * marker
+  * markersize
+  * markeredgecolor
+  * markerfacecolor
 
 ---
 
@@ -218,6 +218,56 @@ plt.show()
 
 ![style-05.png](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/style-05.png)
 
+---
+
+## 5. 点的显示形式
+
+### code
+```python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+
+# Data to be represented
+Y = np.linspace(0,1,12)
+X = np.ones(Y.size)
+markers = ['.',',','o','v','^','<','>','1','2','3','4',
+           's','p','*','h','H','+','x','D','d','|','_', r'$\clubsuit$']
+
+# Actual plotting
+fig = plt.figure(figsize=(8,6), dpi=72, facecolor="white")
+axes = plt.subplot(111)
+for i,marker in enumerate(markers):
+    axes.plot( (1+i)*X, Y, color = '0.9', linewidth=1,
+               markersize = 13, marker=marker,
+               markeredgecolor = '0.10', markerfacecolor = '0.75')
+
+axes.set_xlim(0,len(markers)+1)
+axes.set_ylim(Y.min(),Y.max())
+axes.set_yticks([])
+axes.set_xticks(np.arange(1,len(markers)+1))
+axes.set_xticklabels(markers)
+
+plt.show()
+
+```
+
+### Keypoints
+```
+   axes.plot( (1+i)*X, Y, color = '0.9', linewidth=1,
+               markersize = 13, marker='x',
+               markeredgecolor = '0.10', markerfacecolor = '0.75')
+```
+![help-markers.png](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/help-markers.png)
+
+标记的大小,类型,边缘颜色,前景色
+
+### Resutl
+![style-markers.png](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/matplot/matplotGallery/images/style-markers.png)
+
+----
 
 
 
