@@ -39,4 +39,4 @@ print  django.__path__
 
 ```
 
-![官网安装教程](/docs/image4blog/Django-install.png)
+![官网安装教程](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master//images/Django-install.png)
