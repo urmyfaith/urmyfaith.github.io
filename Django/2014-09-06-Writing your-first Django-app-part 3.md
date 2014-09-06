@@ -12,7 +12,8 @@ D:\desktop\todoList\Django\mDjango\demoSite>python manage.py createsuperuser
 ## 进入admin网址
 
 ```python
-    D:\desktop\todoList\Django\mDjango\demoSite>python manage.py runserver 8080
+
+
 ```
 
 ## 改变字段顺序
