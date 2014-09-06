@@ -160,3 +160,137 @@ url(r'^(?P<question_id>\d+)/$', views.detail, name='detail'),
 ![include()](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/Django/images/request-url.png)
 
 ------
+
+## 写actually有用的view
+
+> 每一个view做2件事情:
+
+1. 返回HttpResponse(它包含了真实的html内容.)
+2. 抛出一个异常,例如Http404
+
+其他的事情就是自己安排了,例如,利用Django的数据库API,显示最新的5条问题:
+
+
+```python
+#in DemoAppPoll/views.py/[fun]index
+
+from DemoAppPoll.models import Question
+
+def index(request):
+    # IMPORTANT: read db , order , limit
+    latest_question_list = Question.objects.order_by('-pub_date')[:5]
+    # format question for output.
+    output=','.join([p.question_text for p in latest_question_list])
+   
+    return HttpResponse(output)
+```
+![hard-coded-view](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/Django/images/hard-coded-view.png)
+
+有个问题是,这个**页面看起来是如此的简陋**,这时候,可以使**用template**来设计.
+
+另外一个问题是,**template的位置放在哪里?**
+
+> Django的TEMPLATE_LOADER设置包含了从哪里获得模版.
+它的默认值有两个.
+```python
+TEMPLATE_LOADERS
+Default:
+('django.template.loaders.filesystem.Loader',
+ 'django.template.loaders.app_directories.Loader')
+```
+> 其中一个是app的,它在INSTALLED_APP的目录下查找templates目录.
+
+### 使用模版来设计view
+
+1. 在App(DemoAppPoll)目录下,创建templates目录.
+
+2. 在templates目录下创建App名称(DemoAppPoll)的目录.
+
+3. 在DemoAppPoll目录下,创建index.html.
+
+```python
+D:\desktop\todoList\Django\mDjango\demoSite\DemoAppPoll>tree /f /a
+|   admin.py
+|   admin.pyc
+|   models.py
+|   models.pyc
+|   tests.py
+|   urls.py
+|   urls.pyc
+|   views.py
+|   views.pyc
+|   __init__.py
+|   __init__.pyc
+|
++---migrations
+|       0001_initial.py
+|       0001_initial.pyc
+|       __init__.py
+|       __init__.pyc
+|
+\---templates
+    \---DemoAppPoll
+            index.html
+
+```
+
+这样,我们就可以是使用DemoAppPoll/index.html来设计view了.
+
+4. 修改index.html
+
+使用for循环创建无序列表.
+
+> {% if latest_question_list %} 这是代表使用python语句.
+
+> {{ question.id }}代表使用python变量.
+
+```python
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a href="/DemoAppPoll/{{ question.id }}/">{{ question.question_text}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
+```
+
+5. 使用模版文件来渲染之后输出.
+
+```python
+from django.http import HttpResponse
+from django.template import RequestContext, loader
+
+from DemoAppPoll.models import Question
+
+def index(request):
+    # IMPORTANT: read db , order , limit
+    latest_question_list = Question.objects.order_by('-pub_date')[:5]
+    template = loader.get_template('DemoAppPoll/index.html')
+    context = RequestContext(
+        request,
+        {
+            'latest_question_list':latest_question_list,
+        },
+        )
+    
+    return HttpResponse(template.render(context))
+```
+
+这里,涉及到如何使用哪个模版,向模版传入变量,最后渲染后输出.
+>
+ ```python
+    template = loader.get_template('DemoAppPoll/index.html')
+    context = RequestContext(
+        request,
+        {
+            'latest_question_list':latest_question_list,
+        },
+        ) 
+    return HttpResponse(template.render(context))
+```
+
+![templates-view](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/Django/images/templates-view.png)
+
