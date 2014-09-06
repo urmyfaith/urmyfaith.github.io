@@ -134,4 +134,29 @@ def vote(request, question_id):
 ```
 ![路径匹配](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/Django/images/DemoAppPoll-url-view.png)
 
-> 
+---
+
+当请求http://localhost:8080/DemoAppPoll/33/的时候,
+
+第一步:Django加载项目下的urls.py模块,即(**demoSite.urls**),从demoSite/urls.py中找到代表匹配列表的变量:urlpatterns,从列表中匹配.
+```python
+ url(r'^DemoAppPoll/', include('DemoAppPoll.urls')),
+```
+
+此时,匹配到DemoAppPoll/,
+
+当Django遇到include()的时候,截掉已经匹配到的(DemoAppPoll/),将剩余的(33/)传递到URLconf继续处理.
+
+
+第二步:Django截掉前面的之后,剩下的(33/),使用**DemoAppPoll.urls**模块(DemoAppPoll/urls.py)来处理.
+
+```python
+url(r'^(?P<question_id>\d+)/$', views.detail, name='detail'),
+```
+此时,匹配到view.detail,
+
+第三步:由view.detail(DemoAppPoll/views.py中detail函数)响应请求.
+
+![include()](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/Django/images/request-url.png)
+
+------
