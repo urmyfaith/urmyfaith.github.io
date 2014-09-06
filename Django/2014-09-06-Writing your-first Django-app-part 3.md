@@ -202,11 +202,11 @@ Default:
 
 ### 使用模版来设计view
 
-1. 在App(DemoAppPoll)目录下,创建templates目录.
+1th. 在App(DemoAppPoll)目录下,创建templates目录.
 
-2. 在templates目录下创建App名称(DemoAppPoll)的目录.
+2th. 在templates目录下创建App名称(DemoAppPoll)的目录.
 
-3. 在DemoAppPoll目录下,创建index.html.
+3th. 在DemoAppPoll目录下,创建index.html.
 
 ```python
 D:\desktop\todoList\Django\mDjango\demoSite\DemoAppPoll>tree /f /a
@@ -236,7 +236,7 @@ D:\desktop\todoList\Django\mDjango\demoSite\DemoAppPoll>tree /f /a
 
 这样,我们就可以是使用DemoAppPoll/index.html来设计view了.
 
-4. 修改index.html
+4th. 修改index.html
 
 使用for循环创建无序列表.
 
@@ -257,7 +257,7 @@ D:\desktop\todoList\Django\mDjango\demoSite\DemoAppPoll>tree /f /a
 
 ```
 
-5. 使用模版文件来渲染之后输出.
+5th. 使用模版文件来渲染之后输出.
 
 ```python
 from django.http import HttpResponse
