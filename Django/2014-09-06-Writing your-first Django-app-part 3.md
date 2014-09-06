@@ -61,6 +61,8 @@ urlpatterns = patterns('',
 
 >    表示,我们使用DemoAppPoll.urls来处理http://localhost:8080/DemoAppPoll/的请求.
 
->    在DemoAppPoll.urls里,我们使用了绑定了views.index来处理请求.
+>    在DemoAppPoll.urls里,我们绑定了views.index来处理请求.
+
+![成功处理请求](https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/Django/images/DemoAppPoll-first-app.png)
 
 
