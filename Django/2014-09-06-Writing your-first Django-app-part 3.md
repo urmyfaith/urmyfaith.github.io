@@ -1,55 +1,66 @@
-# Writing your first Django app, part 2
+# Writing your first Django app--part 3
 
-## 创建admin用户
 
+> view : Django应用(作为一个特殊的功能或者有一个特定的模版)里的一种网页.
+
+在DemoAppPoll里,我们下面的view:
+
+* Question index  page  -->展示最新的问题
+
+* Question detail page -->展示一个问题和一个投票表格
+
+* Question result page --> 展示特定问题的投票结果
+
+* Vote action --> 处理特b定问题的投票.
+
+    在Django里,每一个view都代表一个python 函数/方法.
+
+    请求一个url的时候,Django就会使用一个view来处理这个page.
+
+    从URL传递到view,Django使用URLconfs
+
+## 第一个view
+
+1.修改DemoAppPoll/views.py:
 ```python
-D:\desktop\todoList\Django\mDjango\demoSite>python manage.py createsuperuser
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("Hello,urmyfatih.")
 
 ```
 
-然后输入密码
-
-## 进入admin网址
+2.创建DemoAppPoll/urls.py
 
 ```python
+from django.conf.urls import patterns,url
+from DemoAppPoll imoprt views
 
+urlpatterns =patterns(
+    '',
+    url(r'^$',views.index,name='index')
+    )
 
 ```
-
-## 改变字段顺序
-
-* fileds 改变字段的顺序
-
-* fieldset 给字段分组
-
-* classes  折叠字段
-
-* serch_fields 添加搜索框
-
-* list_display 需要显示的字段
-
-
+3.在工程demoSite/urls.py中添加应用DemoAppPoll的urls.py
 ```python
+from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from DemoAppPoll.models import Choice,Question
 
-class ChoiceInline(admin.TabularInline):
-    model = Choice
-    extra = 3
-
-class QuestionAdmin(admin.ModelAdmin):
-    #fields=['pub_date','question_text']
-    fieldsets=[
-        (None,              {'fields':['question_text']}),
-        ('Date infomation', {'fields':['pub_date'],'classes':['collapse']}),
-        ]
-    inlines = [ChoiceInline]
-    list_display = ('question_text', 'pub_date', 'was_published_recently')
-    list_filter = ['pub_date']
-    search_fields = ['question_text']
+urlpatterns = patterns('',
+    # Examples:
+    # url(r'^$', 'demoSite.views.home', name='home'),
+    # url(r'^blog/', include('blog.urls')),
+    url(r'^DemoAppPoll/', include('DemoAppPoll.urls')),
+    url(r'^admin/', include(admin.site.urls)),
     
-#admin.site.register(Question)
-admin.site.register(Question,QuestionAdmin)
-#admin.site.register(Choice)
-
+)
 ```
+>   url(r'^DemoAppPoll/', include('DemoAppPoll.urls')),就是我们新增的.
+
+>    表示,我们使用DemoAppPoll.urls来处理http://localhost:8080/DemoAppPoll/的请求.
+
+>    在DemoAppPoll.urls里,我们使用了绑定了views.index来处理请求.
+
+
