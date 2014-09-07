@@ -231,3 +231,29 @@ def results(request, question_id):
 ```
 
 
+这里我们使用了2个view:
+
+* ListView
+* DetailView
+
+> 1>每一个"geneic view"需要知道所作用的model.
+
+> 2>DetailView需要一个 primary key,(pk,关键字).
+
+> 3>ListView的默认模版是:"app name>/<model name>_list.html"
+
+> 4>DetailView的默认模版是"app name>/<model name>_detail.html."
+
+为了指定模版而不是默认的模版,给变量template_name赋值.
+
+> 5>传递变量: quesiton对象,由于使用了modle:Question,需要另外再次传递.
+
+>  但是,默认提供的的 question_list,我们需要使用的是latest_question_list变量,所以通过
+```python
+    context_object_name='latest_question_list'
+```
+这段代码,达到我们的目的.
+
+
+
+
