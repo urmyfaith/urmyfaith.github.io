@@ -4,7 +4,7 @@
 *   简单的表单
 *   处理表单提交-跳转/错误信息
 *   处理表单提交--结果显示
-*   通用viw设计:越少代码越好?
+*   通用view (generic view) 设计:越少代码越好?
 *  * 1.修改DemoAppPoll/urls.py
 *  * 2.修改DemoAppPoll/views.py
 
