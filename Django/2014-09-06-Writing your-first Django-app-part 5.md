@@ -1,5 +1,16 @@
 # Writing your-first Django-app-part 5 -test
 
+*   确认bug
+*   写test测试暴露bug
+*   修复bug
+*   更多测试例子
+*   测试一个view
+*  * The Django test client测试客户端.
+*  * 提升DemoAppPoll/views.py
+*  * 测试我们的view.index
+*  * 测试DemoAppPoll/views.py/DetailView
+*  测试的技巧:
+*  完整的测试文件
 
 ## 确认bug
 如果传入一个未来的时间,那么was_published_recently()会返回什么?
@@ -176,7 +187,6 @@ from django.core.urlresolvers import reverse
 
 
 ### 测试DemoAppPoll/views.py/DetailView
-
 首先,稍微修改DemoAppPoll/views.py:
 ```python
 class DetailView(generic.DetailView):
@@ -206,7 +216,7 @@ class QuestionIndexDetailTests(TestCase):#编写类,传入参数TestCase
         response = self.client.get(reverse('DemoAppPoll:detail',args=(past_question.id,)))
         self.assertContains(response,'past question')
 ```
-###测试的技巧:
+## 测试的技巧:
     
 1. 为每个model/view编写一个单独的测试类方法
 
@@ -215,7 +225,8 @@ class QuestionIndexDetailTests(TestCase):#编写类,传入参数TestCase
 3. 测试的函数名称,能够描述这个函数的功能.
 
 -----
-最后,附上完整的测试文件:
+
+## 最后,附上完整的测试文件:
 
 demoSite/DemoAppPoll/tests.py
 
