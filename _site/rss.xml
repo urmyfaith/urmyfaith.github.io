@@ -5,10 +5,201 @@
         <description>Jekyll Bootstrap - Name Lastname</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2015-01-01T19:01:28+08:00</lastBuildDate>
-        <pubDate>2015-01-01T19:01:28+08:00</pubDate>
+        <lastBuildDate>2015-01-01T19:03:57+08:00</lastBuildDate>
+        <pubDate>2015-01-01T19:03:57+08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>demo_post</title>
+                <description>
+&lt;p&gt;2014-12-31&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;知识复习&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;简单介绍&lt;/li&gt;
+  &lt;li&gt;捕获对象&lt;/li&gt;
+  &lt;li&gt;简单应用	
+    &lt;ul&gt;
+      &lt;li&gt;排序&lt;/li&gt;
+      &lt;li&gt;自定义的button(点击方法在类内部)&lt;/li&gt;
+      &lt;li&gt;实现动画(动画的过程在block内部)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;反向传值&lt;/li&gt;
+  &lt;li&gt;GCD(多任务,多线程,并发任务)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;代码块的声明和调用在两个不同类==&amp;gt;block作为另外一个类的参数===&amp;gt;在另一个类中调用====&amp;gt;实现了传值.&lt;/p&gt;
+
+&lt;p&gt;通过触发一个界面的控件===&amp;gt;修改另外一个界面的内容.&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;音频&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;导入系统库
+    &lt;ul&gt;
+      &lt;li&gt;“#import &amp;lt;AVFoundation/AVFoundation.h&amp;gt;”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;导入头文件&lt;/li&gt;
+  &lt;li&gt;创建音频播放器对象&lt;/li&gt;
+  &lt;li&gt;导入音频文件&lt;/li&gt;
+  &lt;li&gt;播放&lt;/li&gt;
+  &lt;li&gt;另外,音频也有代理方法(例如在播放完成的时候执行的方法/中断,高优先级的方法)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;```Objective-c
+-(void)testAudio{
+    NSString *path = [[NSBundle mainBundle]pathForResource:@”lalala” ofType:@”mp3”];&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//取文件的时候需要使用fileURLWithPath,而不是之前的urlwithString之类的.
+NSURL *url = [NSURL fileURLWithPath:path];
+
+self.player = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
+[self.player prepareToPlay];
+[self.player play]; } ```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;声音调节,进度调节,&lt;/p&gt;
+
+&lt;p&gt;滑块===&amp;gt;进度&lt;/p&gt;
+
+&lt;p&gt;progress表示进度&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;属性&lt;/th&gt;
+      &lt;th&gt;说明&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;playing&lt;/td&gt;
+      &lt;td&gt;是否正在播放&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;duration&lt;/td&gt;
+      &lt;td&gt;音频的长度&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;currentTime&lt;/td&gt;
+      &lt;td&gt;当前播放的时间&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;~&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;方法&lt;/th&gt;
+      &lt;th&gt;说明&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;prepareToPlay&lt;/td&gt;
+      &lt;td&gt;即将播放&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;pause&lt;/td&gt;
+      &lt;td&gt;暂停波烦恼歌&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;play&lt;/td&gt;
+      &lt;td&gt;恢复播放/播放&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;视频的播放&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;导入系统库
+    &lt;ul&gt;
+      &lt;li&gt;“#import &amp;lt;MediaPlayer/MediaPlayer.h&amp;gt;”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;导入头文件&lt;/li&gt;
+  &lt;li&gt;找到视频文件&lt;/li&gt;
+  &lt;li&gt;创建视频播放器对象&lt;/li&gt;
+  &lt;li&gt;播放&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;```Objective-c
+-(void)testVideo{&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NSString *path = [[NSBundle mainBundle]pathForResource:@&quot;dzs&quot; ofType:@&quot;mp4&quot;];
+NSURL *url = [NSURL fileURLWithPath:path];
+
+self.moviePlayer = [[MPMoviePlayerViewController alloc]initWithContentURL:url];
+self.moviePlayer.view.frame  = self.view.bounds;
+[self.view addSubview:self.moviePlayer.view]; } ```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;简版微博示例&lt;/h2&gt;
+
+&lt;p&gt;分析:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;获取数据
+    &lt;ul&gt;
+      &lt;li&gt;从数据库获取&lt;/li&gt;
+      &lt;li&gt;从本地文件获取&lt;/li&gt;
+      &lt;li&gt;从网络获取数据&lt;/li&gt;
+      &lt;li&gt;假数据&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;解析数据
+    &lt;ul&gt;
+      &lt;li&gt;json&lt;/li&gt;
+      &lt;li&gt;xml&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;表示数据
+    &lt;ul&gt;
+      &lt;li&gt;将数据放入数据模型,再放入数组&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;展示数据
+    &lt;ul&gt;
+      &lt;li&gt;通过tableView显示数据&lt;/li&gt;
+      &lt;li&gt;自定义cell&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;cell&quot;&gt;自定义的cell&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;a)子控件的加载根据具体需要(是否进行加载子控件)(如果数据源中没有===&amp;gt;隐藏子控件)&lt;/li&gt;
+  &lt;li&gt;b)子控件的内容根据数据量进行自适应(文本较多===&amp;gt;换行处理)&lt;/li&gt;
+  &lt;li&gt;c)cell的高度根据需要进行调整&lt;/li&gt;
+  &lt;li&gt;d)表格加载的顺序&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;```Objective-c
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    ZXTweetCell *cell = [ZXTweetCell cellWithTableView:tableView];&lt;/p&gt;
+
+&lt;p&gt;-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+```&lt;/p&gt;
+
+&lt;p&gt;是先执行的高度,然后加载的cell的创建.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;e)QQ的聊天界面&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+                <link>http://username.github.io/demo/post/2015/01/01/demo_post</link>
+                <guid>http://username.github.io/demo/post/2015/01/01/demo_post</guid>
+                <pubDate>2015-01-01T00:00:00+08:00</pubDate>
+        </item>
 
         <item>
                 <title>Github Addpic Address</title>

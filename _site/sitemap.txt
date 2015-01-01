@@ -8,6 +8,7 @@ http://username.github.io/rss.xml
 http://username.github.io/sitemap.txt
 http://username.github.io/tags.html
 
+http://username.github.io/demo/post/2015/01/01/demo_post
 http://username.github.io/2014/09/06/github-addpic-address
 http://username.github.io/2014/09/04/Django-install
 http://username.github.io/2014/08/12/what-should-I-do
