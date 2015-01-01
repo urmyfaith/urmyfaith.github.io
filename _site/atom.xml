@@ -2,21 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Jekyll Bootstrap</title>
- <link href="http://username.github.io/" rel="self"/>
- <link href="http://username.github.io"/>
- <updated>2015-01-01T19:14:04+08:00</updated>
- <id>http://username.github.io</id>
+ <link href="http://urmyfaith.github.io/" rel="self"/>
+ <link href="http://urmyfaith.github.io"/>
+ <updated>2015-01-01T19:17:44+08:00</updated>
+ <id>http://urmyfaith.github.io</id>
  <author>
-   <name>Name Lastname</name>
-   <email>blah@email.test</email>
+   <name>z2ex</name>
+   <email>zuoxue[at]qq[dot]com</email>
  </author>
 
  
  <entry>
    <title>demo_post</title>
-   <link href="http://username.github.io/demo/post/2015/01/01/demo_post"/>
+   <link href="http://urmyfaith.github.io/demo/post/2015/01/01/demo_post"/>
    <updated>2015-01-01T00:00:00+08:00</updated>
-   <id>http://username.github.io/demo/post/2015/01/01/demo_post</id>
+   <id>http://urmyfaith.github.io/demo/post/2015/01/01/demo_post</id>
    <content type="html">
 &lt;p&gt;2014-12-31&lt;/p&gt;
 
@@ -205,9 +205,9 @@ self.moviePlayer.view.frame  = self.view.bounds;
  
  <entry>
    <title>Github Addpic Address</title>
-   <link href="http://username.github.io/2014/09/06/github-addpic-address"/>
+   <link href="http://urmyfaith.github.io/2014/09/06/github-addpic-address"/>
    <updated>2014-09-06T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/09/06/github-addpic-address</id>
+   <id>http://urmyfaith.github.io/2014/09/06/github-addpic-address</id>
    <content type="html">
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/Django/images/DemoAppPoll-url-view.png&quot; alt=&quot;pic-描述&quot; /&gt;&lt;/p&gt;
 
@@ -220,9 +220,9 @@ self.moviePlayer.view.frame  = self.view.bounds;
  
  <entry>
    <title>Django Install</title>
-   <link href="http://username.github.io/2014/09/04/Django-install"/>
+   <link href="http://urmyfaith.github.io/2014/09/04/Django-install"/>
    <updated>2014-09-04T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/09/04/Django-install</id>
+   <id>http://urmyfaith.github.io/2014/09/04/Django-install</id>
    <content type="html">&lt;h2 id=&quot;django-&quot;&gt;Django 的安装:&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -282,9 +282,9 @@ print  django.&lt;strong&gt;path&lt;/strong&gt;&lt;/p&gt;
  
  <entry>
    <title>What Should I Do</title>
-   <link href="http://username.github.io/2014/08/12/what-should-I-do"/>
+   <link href="http://urmyfaith.github.io/2014/08/12/what-should-I-do"/>
    <updated>2014-08-12T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/08/12/what-should-I-do</id>
+   <id>http://urmyfaith.github.io/2014/08/12/what-should-I-do</id>
    <content type="html">&lt;pre&gt;&lt;code&gt;吃完饭,去运动运动,发现身上没有带零钱,真是很搞笑.想了会,买什么可以把5元钱找开呢?到小卖部里去买了一包纸,这样就有了零钱坐车.
 
 坐在公交车上,看着旁边的建筑:商场,小吃店,服装店,娱乐休闲场所,图书馆,学校,小区.让人感觉原来我生活在一个城市里.
@@ -318,9 +318,9 @@ print  django.&lt;strong&gt;path&lt;/strong&gt;&lt;/p&gt;
  
  <entry>
    <title>Qq影音加载双字幕</title>
-   <link href="http://username.github.io/2014/08/12/QQ%E5%BD%B1%E9%9F%B3%E5%8A%A0%E8%BD%BD%E5%8F%8C%E5%AD%97%E5%B9%95"/>
+   <link href="http://urmyfaith.github.io/2014/08/12/QQ%E5%BD%B1%E9%9F%B3%E5%8A%A0%E8%BD%BD%E5%8F%8C%E5%AD%97%E5%B9%95"/>
    <updated>2014-08-12T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/08/12/QQ影音加载双字幕</id>
+   <id>http://urmyfaith.github.io/2014/08/12/QQ影音加载双字幕</id>
    <content type="html">&lt;p&gt;QQ影音加载双字幕的方法&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -353,9 +353,9 @@ print  django.&lt;strong&gt;path&lt;/strong&gt;&lt;/p&gt;
  
  <entry>
    <title>Go To See The Rainbow</title>
-   <link href="http://username.github.io/2014/08/04/go-to-see-the-rainbow"/>
+   <link href="http://urmyfaith.github.io/2014/08/04/go-to-see-the-rainbow"/>
    <updated>2014-08-04T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/08/04/go-to-see-the-rainbow</id>
+   <id>http://urmyfaith.github.io/2014/08/04/go-to-see-the-rainbow</id>
    <content type="html">&lt;h1 id=&quot;section&quot;&gt;《激荡三十年》之2003,重型化运动.&lt;/h1&gt;
 
 &lt;blockquote&gt;
@@ -604,9 +604,9 @@ print  django.&lt;strong&gt;path&lt;/strong&gt;&lt;/p&gt;
  
  <entry>
    <title>2002</title>
-   <link href="http://username.github.io/2014/07/23/2002"/>
+   <link href="http://urmyfaith.github.io/2014/07/23/2002"/>
    <updated>2014-07-23T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/07/23/2002</id>
+   <id>http://urmyfaith.github.io/2014/07/23/2002</id>
    <content type="html">&lt;h1 id=&quot;section&quot;&gt;《激荡三十年》之 2002年&lt;/h1&gt;
 
 &lt;p&gt;keyword:    &lt;strong&gt;中国制造&lt;/strong&gt; ,&lt;strong&gt;产权清晰化&lt;/strong&gt;&lt;/p&gt;
@@ -780,9 +780,9 @@ print  django.&lt;strong&gt;path&lt;/strong&gt;&lt;/p&gt;
  
  <entry>
    <title>Weixin</title>
-   <link href="http://username.github.io/2014/07/21/weixin"/>
+   <link href="http://urmyfaith.github.io/2014/07/21/weixin"/>
    <updated>2014-07-21T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/07/21/weixin</id>
+   <id>http://urmyfaith.github.io/2014/07/21/weixin</id>
    <content type="html">&lt;h1 id=&quot;section&quot;&gt;实现微信公众号/订阅号的一些功能&lt;/h1&gt;
 
 &lt;hr /&gt;
@@ -1088,9 +1088,9 @@ urmyfaith.sinaapp.com POST HTTP/1.0 &quot;-&quot; &quot;Mozilla/4.0&quot; yq34
  
  <entry>
    <title>蓝屏修复过程</title>
-   <link href="http://username.github.io/2014/06/25/%E8%93%9D%E5%B1%8F%E4%BF%AE%E5%A4%8D%E8%BF%87%E7%A8%8B"/>
+   <link href="http://urmyfaith.github.io/2014/06/25/%E8%93%9D%E5%B1%8F%E4%BF%AE%E5%A4%8D%E8%BF%87%E7%A8%8B"/>
    <updated>2014-06-25T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/06/25/蓝屏修复过程</id>
+   <id>http://urmyfaith.github.io/2014/06/25/蓝屏修复过程</id>
    <content type="html">&lt;p&gt;1.重启电脑&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1159,9 +1159,9 @@ urmyfaith.sinaapp.com POST HTTP/1.0 &quot;-&quot; &quot;Mozilla/4.0&quot; yq34
  
  <entry>
    <title>Read</title>
-   <link href="http://username.github.io/2014/06/13/read"/>
+   <link href="http://urmyfaith.github.io/2014/06/13/read"/>
    <updated>2014-06-13T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/06/13/read</id>
+   <id>http://urmyfaith.github.io/2014/06/13/read</id>
    <content type="html">&lt;ul&gt;
   &lt;li&gt;乳业
 &amp;gt;    目前全国有100余家生产婴幼儿配方奶粉的企业，年产量约60万吨&lt;/li&gt;
@@ -1322,9 +1322,9 @@ urmyfaith.sinaapp.com POST HTTP/1.0 &quot;-&quot; &quot;Mozilla/4.0&quot; yq34
  
  <entry>
    <title>Read</title>
-   <link href="http://username.github.io/2014/06/11/read"/>
+   <link href="http://urmyfaith.github.io/2014/06/11/read"/>
    <updated>2014-06-11T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/06/11/read</id>
+   <id>http://urmyfaith.github.io/2014/06/11/read</id>
    <content type="html">&lt;p&gt;家居
 白炽灯(卤钨灯)，荧光灯(日光灯、节能灯)，高强度气体放电灯(H ID )，半导体发光二极管(LED )。LED作为第四代电光源，拥有前三代电光源所不具备的特点，兼具环保和节能，是电光源的发展方向. 德豪润达拥有LED照明领先的核心技术，又控股雷士照明以进行销售渠道和上下游产业嫁接 全球照明巨头飞利浦日前首次提出“智能互联照明”概念，并针对家居、办公、商业及城市等各个领域推出全面的智能互联照明解决方案。&lt;/p&gt;
 
@@ -1341,9 +1341,9 @@ urmyfaith.sinaapp.com POST HTTP/1.0 &quot;-&quot; &quot;Mozilla/4.0&quot; yq34
  
  <entry>
    <title>Faraway</title>
-   <link href="http://username.github.io/2014/06/10/faraway"/>
+   <link href="http://urmyfaith.github.io/2014/06/10/faraway"/>
    <updated>2014-06-10T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/06/10/faraway</id>
+   <id>http://urmyfaith.github.io/2014/06/10/faraway</id>
    <content type="html">&lt;p&gt;无聊打开知乎,一个问题,一看那又是一个多小时,又到了睡觉的时间了.&lt;/p&gt;
 
 &lt;p&gt;十年的时间,2013年到2023年,23岁到33岁.&lt;/p&gt;
@@ -1356,9 +1356,9 @@ urmyfaith.sinaapp.com POST HTTP/1.0 &quot;-&quot; &quot;Mozilla/4.0&quot; yq34
  
  <entry>
    <title>Nextstep</title>
-   <link href="http://username.github.io/2014/06/04/NextStep"/>
+   <link href="http://urmyfaith.github.io/2014/06/04/NextStep"/>
    <updated>2014-06-04T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/06/04/NextStep</id>
+   <id>http://urmyfaith.github.io/2014/06/04/NextStep</id>
    <content type="html">&lt;h1 id=&quot;next-step&quot;&gt;&lt;em&gt;N&lt;/em&gt;ext Step&lt;/h1&gt;
 
 &lt;p&gt;项目审批迟迟下不来.每天就无所事事,只能自己找些事情来做了.什么推翻重来?什么发票不好找,什么开发票的都是骗子.什么租车不容易.全靠自己垫钱,还要借钱.还要请人吃饭,吃完饭还没有发票,怎么报销?&lt;/p&gt;
@@ -1379,9 +1379,9 @@ urmyfaith.sinaapp.com POST HTTP/1.0 &quot;-&quot; &quot;Mozilla/4.0&quot; yq34
  
  <entry>
    <title>Childrensday</title>
-   <link href="http://username.github.io/2014/06/02/ChildrensDay"/>
+   <link href="http://urmyfaith.github.io/2014/06/02/ChildrensDay"/>
    <updated>2014-06-02T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/06/02/ChildrensDay</id>
+   <id>http://urmyfaith.github.io/2014/06/02/ChildrensDay</id>
    <content type="html">&lt;h1 id=&quot;childrens-day&quot;&gt;Children’s Day&lt;/h1&gt;
 
 &lt;h3 id=&quot;begin&quot;&gt;begin:&lt;/h3&gt;
@@ -1540,9 +1540,9 @@ urmyfaith.sinaapp.com POST HTTP/1.0 &quot;-&quot; &quot;Mozilla/4.0&quot; yq34
  
  <entry>
    <title>Read</title>
-   <link href="http://username.github.io/2014/05/30/read"/>
+   <link href="http://urmyfaith.github.io/2014/05/30/read"/>
    <updated>2014-05-30T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/05/30/read</id>
+   <id>http://urmyfaith.github.io/2014/05/30/read</id>
    <content type="html">
 &lt;h2 id=&quot;section&quot;&gt;神舟租车&lt;/h2&gt;
 
@@ -1641,9 +1641,9 @@ urmyfaith.sinaapp.com POST HTTP/1.0 &quot;-&quot; &quot;Mozilla/4.0&quot; yq34
  
  <entry>
    <title>Read</title>
-   <link href="http://username.github.io/2014/05/29/read"/>
+   <link href="http://urmyfaith.github.io/2014/05/29/read"/>
    <updated>2014-05-29T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/05/29/read</id>
+   <id>http://urmyfaith.github.io/2014/05/29/read</id>
    <content type="html">&lt;h1 id=&quot;section&quot;&gt;电影票房&lt;/h1&gt;
 
 &lt;blockquote&gt;
@@ -1694,9 +1694,9 @@ urmyfaith.sinaapp.com POST HTTP/1.0 &quot;-&quot; &quot;Mozilla/4.0&quot; yq34
  
  <entry>
    <title>Html2chm</title>
-   <link href="http://username.github.io/2014/05/29/html2chm"/>
+   <link href="http://urmyfaith.github.io/2014/05/29/html2chm"/>
    <updated>2014-05-29T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/05/29/html2chm</id>
+   <id>http://urmyfaith.github.io/2014/05/29/html2chm</id>
    <content type="html">&lt;h1 id=&quot;html2chm&quot;&gt;html2chm&lt;/h1&gt;
 
 &lt;ul&gt;
@@ -1740,9 +1740,9 @@ urmyfaith.sinaapp.com POST HTTP/1.0 &quot;-&quot; &quot;Mozilla/4.0&quot; yq34
  
  <entry>
    <title>Dream</title>
-   <link href="http://username.github.io/2014/05/29/dream"/>
+   <link href="http://urmyfaith.github.io/2014/05/29/dream"/>
    <updated>2014-05-29T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/05/29/dream</id>
+   <id>http://urmyfaith.github.io/2014/05/29/dream</id>
    <content type="html">&lt;h1 id=&quot;dream&quot;&gt;dream&lt;/h1&gt;
 
 &lt;p&gt;i know its not true. &lt;/p&gt;
@@ -1764,9 +1764,9 @@ you dont know.&lt;/p&gt;
  
  <entry>
    <title>搭建过程</title>
-   <link href="http://username.github.io/2014/05/28/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B"/>
+   <link href="http://urmyfaith.github.io/2014/05/28/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B"/>
    <updated>2014-05-28T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/05/28/搭建过程</id>
+   <id>http://urmyfaith.github.io/2014/05/28/搭建过程</id>
    <content type="html">&lt;h2 id=&quot;section&quot;&gt;安装过程&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -1799,9 +1799,9 @@ you dont know.&lt;/p&gt;
  
  <entry>
    <title>Readme</title>
-   <link href="http://username.github.io/2014/05/28/readme"/>
+   <link href="http://urmyfaith.github.io/2014/05/28/readme"/>
    <updated>2014-05-28T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/05/28/readme</id>
+   <id>http://urmyfaith.github.io/2014/05/28/readme</id>
    <content type="html">&lt;h2 id=&quot;read-me&quot;&gt;Read ME&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -1813,9 +1813,9 @@ you dont know.&lt;/p&gt;
  
  <entry>
    <title>Md语法</title>
-   <link href="http://username.github.io/2014/05/28/md%E8%AF%AD%E6%B3%95"/>
+   <link href="http://urmyfaith.github.io/2014/05/28/md%E8%AF%AD%E6%B3%95"/>
    <updated>2014-05-28T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/05/28/md语法</id>
+   <id>http://urmyfaith.github.io/2014/05/28/md语法</id>
    <content type="html">&lt;ul&gt;
   &lt;li&gt;一级标题使用#&lt;/li&gt;
 &lt;/ul&gt;
@@ -1842,9 +1842,9 @@ you dont know.&lt;/p&gt;
  
  <entry>
    <title>How Are You Doing</title>
-   <link href="http://username.github.io/2014/05/28/how-are-you-doing"/>
+   <link href="http://urmyfaith.github.io/2014/05/28/how-are-you-doing"/>
    <updated>2014-05-28T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/05/28/how-are-you-doing</id>
+   <id>http://urmyfaith.github.io/2014/05/28/how-are-you-doing</id>
    <content type="html">&lt;h2 id=&quot;how-are-you-doing&quot;&gt;how are you doing&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;最近在做什么?
 忙么?
@@ -1858,9 +1858,9 @@ you dont know.&lt;/p&gt;
  
  <entry>
    <title>1984</title>
-   <link href="http://username.github.io/2014/05/28/1984"/>
+   <link href="http://urmyfaith.github.io/2014/05/28/1984"/>
    <updated>2014-05-28T00:00:00+08:00</updated>
-   <id>http://username.github.io/2014/05/28/1984</id>
+   <id>http://urmyfaith.github.io/2014/05/28/1984</id>
    <content type="html">
 &lt;h1 id=&quot;section&quot;&gt;1984 公司元年&lt;/h1&gt;
 
