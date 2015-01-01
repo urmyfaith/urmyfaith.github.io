@@ -18,6 +18,34 @@
 
 
   
+  <script type="text/javascript" src="/res/sh/scripts/brush.js"></script>
+  <link type="text/css" rel="stylesheet" href="/res/sh/styles/shCore.css"/>
+
+
+  
+	
+  
+  <link type="text/css" rel="stylesheet" href="/res/sh/styles/shThemeRDark.css"/>
+
+  <script type="text/javascript">
+    SyntaxHighlighter.config.clipboardSwf = '/res/sh/scripts/clipboard.swf';
+	SyntaxHighlighter.config.bloggerMode = false;//true会出现高亮代码"<br />"不被解析.变成换行.
+//	SyntaxHighlighter.config.stripBrs = false;//每一行末尾有<br />，不忽略处理  
+	SyntaxHighlighter.config.strings = {
+            expandSource : '展开代码',
+            viewSource : '查看代码',
+            copyToClipboard : '复制代码',
+            copyToClipboardConfirmation : '代码复制成功',
+            print : '打印',
+            help: '?',
+            alert: '语法高亮\n\n',
+            noBrush: '不能找到刷子: ',
+            brushNotHtmlScript: '刷子没有配置html-script选项',
+            aboutDialog: '<div>ComTu</div>'
+        };
+    SyntaxHighlighter.all();
+  </script>
+  
 
   <script src="/res/js/light.js"></script>
   <script>
@@ -388,7 +416,7 @@ Mac上可以使用tig代替diff和log，brew install tig</p>
 <a class="pagination-item newer" href="/blog/2014/10/19/Jekyll_Variables.html"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;Jekyll目录结构与变量</a>
 
 
-<a class="pagination-item older" href="/blog/2015/01/01/install_Jekyll.html">安装jekyll&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+<span class="pagination-item older">下一篇&nbsp;<i class="fa fa-chain-broken"></i></span>
 
 </div>
 <style>#ds-reset .ds-avatar img{border-radius:50%;}</style>
