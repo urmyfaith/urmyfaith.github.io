@@ -28,7 +28,7 @@ blog:
 author:
     name: z2xy                                          # 作者名称
     email: zuoxue@qq.com                                # 邮箱地址
-    weibo: http://weibo.com/autumn_0528                        # 微博地址
+    weibo: http://weibo.com/autumn0528                        # 微博地址
     github: https://github.com/urmyfaith                     # GitHub地址
     logo: /res/img/icon.jpg                              # logo地址
     douban:
