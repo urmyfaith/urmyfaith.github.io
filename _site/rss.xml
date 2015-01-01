@@ -1,0 +1,1682 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>Jekyll Bootstrap</title>
+        <description>Jekyll Bootstrap - Name Lastname</description>
+        <link>http://username.github.io</link>
+        <link>http://username.github.io</link>
+        <lastBuildDate>2015-01-01T19:01:28+08:00</lastBuildDate>
+        <pubDate>2015-01-01T19:01:28+08:00</pubDate>
+        <ttl>1800</ttl>
+
+
+        <item>
+                <title>Github Addpic Address</title>
+                <description>
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/Django/images/DemoAppPoll-url-view.png&quot; alt=&quot;pic-描述&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;前面一部分是    github项目地址: https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master/
+ 后面一部分是    本地文件路径     Django/images/DemoAppPoll-url-view.png&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+                <link>http://username.github.io/2014/09/06/github-addpic-address</link>
+                <guid>http://username.github.io/2014/09/06/github-addpic-address</guid>
+                <pubDate>2014-09-06T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Django Install</title>
+                <description>&lt;h2 id=&quot;django-&quot;&gt;Django 的安装:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;安装包: &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;百度盘里搜索”Django-1.7.tar.gz”&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;安装环境 WIN7&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;解压文件&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;移动到python安装目录下&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;python setup.py install&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;遇到错误,重复第三步&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;如果不是出现错误,耐心等待安装完成.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;测试安装是否完成:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;```python
+import django
+print  django.get_version()&lt;/p&gt;
+
+&lt;p&gt;```
+上面的代码可以查看django版本.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;升级安装要点&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;将下面的目录删除后,再安装新版本.&lt;/p&gt;
+
+&lt;p&gt;```python
+import django
+print  django.&lt;strong&gt;path&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master//images/Django-install.png&quot; alt=&quot;官网安装教程&quot; /&gt;&lt;/p&gt;
+</description>
+                <link>http://username.github.io/2014/09/04/Django-install</link>
+                <guid>http://username.github.io/2014/09/04/Django-install</guid>
+                <pubDate>2014-09-04T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>What Should I Do</title>
+                <description>&lt;pre&gt;&lt;code&gt;吃完饭,去运动运动,发现身上没有带零钱,真是很搞笑.想了会,买什么可以把5元钱找开呢?到小卖部里去买了一包纸,这样就有了零钱坐车.
+
+坐在公交车上,看着旁边的建筑:商场,小吃店,服装店,娱乐休闲场所,图书馆,学校,小区.让人感觉原来我生活在一个城市里.
+
+下车就是广场了.有打鞭玩陀螺的,多数是些成年人,年纪不大.年轻人多数就散散步的样子,小孩则放着风筝,多数都会有大人在旁边看着,或者指导放风筝.小孩子比较活泼.放风筝,玩滑板,玩轮滑,多么的幸福快乐!
+
+走了两步,就开始跑了,3公里的样子,花了大概20-30分钟的时间,因为不知道什么时候开始跑的,忘记看手机了.
+
+路上人也比较多,有一队队从江岸边疾走过的人,感觉就像黑社会,==.
+
+很多人都选择的是在岸边的这条路上快走.不少人还放着音乐,还是小苹果,真是够潮流的.
+“年轻可以折腾吗?”
+这是个很好的问题.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“自己什么都不感兴趣是不是因为自己什么都不会？因为什么都不会，所以什么都做不了，才会觉得自己什么都不喜欢”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Go where you want to be and then circle back to where you have to be.（先去尝试你最想做的东西，不用考虑太多。竭尽全力去试。如果真的不可为之的话再回到你只能去做的东西）”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;或许是因为我们&lt;strong&gt;想的太多?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;却做的太少?&lt;/strong&gt;&lt;/p&gt;
+</description>
+                <link>http://username.github.io/2014/08/12/what-should-I-do</link>
+                <guid>http://username.github.io/2014/08/12/what-should-I-do</guid>
+                <pubDate>2014-08-12T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Qq影音加载双字幕</title>
+                <description>&lt;p&gt;QQ影音加载双字幕的方法&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;播放视频&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;将字幕文件拖入视频中&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;视频中单击右键,选择”字幕”&amp;gt;”字幕选择”&amp;gt;”双字幕设置”&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;在”播放效果调节”对话框中,可以选择主字幕,次字幕等.&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/docs/image4blog/QQ影音双字幕.png&quot; alt=&quot;QQ影音加载双字幕的方法-图示&quot; /&gt;&lt;/p&gt;
+</description>
+                <link>http://username.github.io/2014/08/12/QQ%E5%BD%B1%E9%9F%B3%E5%8A%A0%E8%BD%BD%E5%8F%8C%E5%AD%97%E5%B9%95</link>
+                <guid>http://username.github.io/2014/08/12/QQ影音加载双字幕</guid>
+                <pubDate>2014-08-12T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Go To See The Rainbow</title>
+                <description>&lt;h1 id=&quot;section&quot;&gt;《激荡三十年》之2003,重型化运动.&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;读完这一部分已经是上个星期的事情了.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;由于上个星期为了实现自己的一个想法,花费了很多的时间.而且效果也不是特别的好.以前通过三种其他的方法实现过.这次最初的效果还是不错的,但是最后实现出来后,加载过慢.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;一步一步的实现自己的想法.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;列出目标&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;尝试着去做&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;发现不会的,有帮助文档可查,有在线资料可查,还可以使用AOL搜索来查询.(没有想到查到了一个很不错的论坛,一个不会的问题提出后,不久就有热心的人来回复,探讨了一下不同的思路,给出了很有意义的指导,真的是很谢谢Yacine的热心帮助.)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;将一步一步的实现串联起来.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;由于上上个周末(26号)去看了下丹顶鹤,有点晒,也有点热.其他的时间差不多都花在了上面提到了实现自己的一个想法.抽出时间也看了2003年,还没有来得及摘录下来.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;周三,周四,周五的都有电视剧/动漫可以看.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;周五的买了车票,周六(8月2号)的早上差点就没有赶上火车.从起床,正式坐上火车,只留了40分钟的时候.10分钟之内收拾出门.等出租车,清早的,没什么车,但是红灯却不得不等.去了火车站发现自动售票处暂停使用,而且排队买票的人不少.直接到窗口排队大概10分钟,取到了票.赶到隔壁的候车室,窗口已经关闭了.不过还有一个工作人员在哪里,掏出票给他看,就放我进去了.总算是踩着点赶上火车了.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;周一(8月4号)也就是今天,也差点没有赶上火车.以为自己留出的时间足够的充裕,没有想到还是有一点赶.7点多去吃的早餐,回来退房,然后走到镇汽车客运站站.到客运站发现已经没有了火车站的车,下一趟是10点,这样的话,我10点钟的火车票就得退了,然后买下午3点的火车了票了.果断跟着一个当地人先到了市里.售票员说好的下车后走两三百米就可以到市客运站,结果大约走了1km左右.买了到火车站的票,但是车要人满了才能走,看着时间真是哗哗的走.没有走高速,但是时间却话费的感觉更少了.从下车走到客运站大概10分钟.这次自动售票机终于可以使用了,取票后5分钟左右,登上车就走了.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;没有想到的是,两次的时间安排都这么的紧.一度以为还赶不上火车了.在时间安排的问题上,还是没有考虑好.&lt;/p&gt;
+
+&lt;p&gt;在火车上又看了下《把时间当作朋友》,里面也提到了避免迟到的一些建议:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;养成规律生活的习惯&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;每天检查自己的时间表至少三次&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;假定自己做的没件事件需要的时间比想象的更多一点.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;假定你永远都会遇到交通堵塞&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;假定其他人都会迟到&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;尽量不要因为别人迟到而责怪他们.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;时间过的真快,唠下嗑就11点半了,还好是10点睡醒了,还是言归正传,2003年的摘录.(关于地震的事情暂不提.)&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;# 《激荡三十年》之2003&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;朱镕基退出政坛&lt;/li&gt;
+  &lt;li&gt;SARS,非典来袭,增速&lt;strong&gt;9.1%&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;房地产热&lt;/li&gt;
+  &lt;li&gt;电荒–两垄断行业,煤电与电力的博弈&lt;/li&gt;
+  &lt;li&gt;重工业之路:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;1. 戴国芳的铁本(炼钢)
+2. 刘永好的铝业大王梦想
+3. 40多民营企业造车
+4. 石油领域,龙家龙,
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;互联网翻身:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;1. 网易股价70.27USD
+2. 阿里巴巴流量大增
+3. 百度在第三方评测超过google
+4. 江南春的楼宇广告遍地开花 ---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;朱镕基退出政坛&lt;/h2&gt;
+&lt;p&gt;-
+   2003年3月5日,朱镕基宣布退出政坛.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“如果说邓小平决定了中国变革的方向,那么,朱镕基则完成了&lt;strong&gt;路径的选择&lt;/strong&gt;.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“&lt;strong&gt;三八线&lt;/strong&gt;“,通货膨胀不超过3%,国内生产总值增长高于8%.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“&lt;strong&gt;分灶吃饭&lt;/strong&gt;“,改变了中央榆地方财政收入的格局.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;国企改革上,”&lt;strong&gt;抓大放小&lt;/strong&gt;“和”&lt;strong&gt;国退民进&lt;/strong&gt;”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;sars---91&quot;&gt;SARS时期经济—增速&lt;strong&gt;9.1%&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;-
+&amp;gt;2003年3月6日,第一例SARS侵入中国.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;2003年年底,国内生产总值增长率为&lt;strong&gt;9.1%&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;那么,在这么淬不及防的灾难来临后,中国不可遏制的经济态势是靠什么支撑?&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;“&lt;strong&gt;中国制造&lt;/strong&gt;“的外贸强劲拉动&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;房地产&lt;/strong&gt;市场旺盛.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;房地产热&lt;/h2&gt;
+
+&lt;p&gt;私人资本最为雄厚的浙江和珠三角的地区–&amp;gt; “&lt;strong&gt;温州炒房团&lt;/strong&gt;” –&amp;gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;温州约&lt;strong&gt;8w&lt;/strong&gt;人在全国购房地产,90%以上炒楼&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;15%回报率&lt;/strong&gt;,1000亿元投资净产出150亿元.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;给全国房产分级:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;一级市场: 北京,上海,深圳,杭州&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;二级市场: 东部沿海,如大连,烟台,南京,苏州,福州&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;三级市场: 东西部结合地区:呼和浩特,武汉,长沙,合肥,南昌,乌鲁木齐&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;四级市场:广西桂林,安徽黄山&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;政府是&lt;strong&gt;左手权利低价征地,右手以权利”市场化”出让土地&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;电荒–两垄断行业,煤电与电力的博弈&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;电荒出现的原因:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;经济快速成长&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;煤电两大垄断行业的多年扯皮&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;由于国家有关部门组织订货会,煤炭企业以低于&lt;strong&gt;市场价&lt;/strong&gt;的&lt;strong&gt;计划购销价&lt;/strong&gt;供煤给电力(&lt;em&gt;计划制经济&lt;/em&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;煤炭企业把大量煤炭出售给计划外的民营企业.(&lt;strong&gt;市场价&lt;/strong&gt; &amp;gt; &lt;strong&gt;计划购销价&lt;/strong&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;电力部门为了”&lt;strong&gt;保证&lt;/strong&gt;“自己的效益,宁可少要煤,也不肯提价买煤.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;现在终于知道”&lt;strong&gt;错峰,避峰&lt;/strong&gt;,拉闸限电”的那些数学题目的来源了. = =&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;重工业之路:&lt;/h2&gt;
+
+&lt;h4 id=&quot;section-5&quot;&gt;1. 戴国芳的铁本(炼钢)&lt;/h4&gt;
+&lt;p&gt;####    2. 刘永好的铝业大王梦想
+####    3. 40多民营企业造车
+####    4. 石油领域,龙家龙,&lt;/p&gt;
+
+&lt;p&gt;钢铁,炼铝,造车,石油,均为垄断性企业.(现在石油不也还是么?)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;section-6&quot;&gt;互联网翻身:&lt;/h2&gt;
+
+&lt;h4 id=&quot;usd&quot;&gt;1. 网易股价70.27USD&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;网易转型做游戏==&amp;gt;大赚&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;短信业务&lt;/strong&gt; &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;用户通过网易发送一条收费1元的短信,移动0.2,网易0.8.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;2002年,&lt;strong&gt;中国移动发送短信约750亿条,其中网易等约占20%&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;section-7&quot;&gt;2. 阿里巴巴流量大增&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;受SARS影响,人员大多居家不外出,众多企业通过互联网维持,商务活动,寻找商业信息,商业机会. ####  3. 百度在第三方评测超过google
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;section-8&quot;&gt;4. 江南春的楼宇广告遍地开花&lt;/h4&gt;
+</description>
+                <link>http://username.github.io/2014/08/04/go-to-see-the-rainbow</link>
+                <guid>http://username.github.io/2014/08/04/go-to-see-the-rainbow</guid>
+                <pubDate>2014-08-04T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>2002</title>
+                <description>&lt;h1 id=&quot;section&quot;&gt;《激荡三十年》之 2002年&lt;/h1&gt;
+
+&lt;p&gt;keyword:    &lt;strong&gt;中国制造&lt;/strong&gt; ,&lt;strong&gt;产权清晰化&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;今年的大事件也是频发,马航的失踪,被导弹摧毁,国内的公交车事故,云南昆明的爆恐案等等.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;一, 2002年&lt;strong&gt;中国制造&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;5月份韩日世界杯,中国队颗粒无收,中国上屏却出尽风头:①江苏扬州制造了30万只世界杯吉祥物;②义乌生产了225万面球迷呐喊旗帜,数十万球迷假发;   ③福建提供了百万件球迷服,护腕和足球袜&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;想想这和今年的世界杯不是很像么?
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;看看这几个新闻就知道了:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;【今年至少6款世界杯专用产品中国制造  】http://www.cncaa.org/news/content-21809-1.html&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;【2014巴西世界杯？应该叫中国制造的世界杯】http://www.sports.cn/industry/news/others/2014-06-24/2334283.html&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;【2014巴西世界杯上的中国制造 身影随处可见】http://gd.sina.com.cn/yj/finance/2014-06-14/1430536.html&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;就不具体分析了.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;1979年,英国杂志分析:尽管眼前中国需要大量的进口,但长远看,”&lt;strong&gt;洪水猛兽般的中国出口必将成为必然&lt;/strong&gt;”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;大国的兴衰验证的是制造业的兴衰&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;日不落帝国,大不列颠&lt;/li&gt;
+  &lt;li&gt;超级大国,美利坚&lt;/li&gt;
+  &lt;li&gt;挑起2次世界大战,德国&lt;/li&gt;
+  &lt;li&gt;创造东亚奇迹,日本&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;中国制造的优势来源?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;成本上的优势:    格兰仕微波炉(工人工资低,三班倒)&lt;/li&gt;
+  &lt;li&gt;价值链:芭比娃娃在北美市场零售价20美元,中国离岸价1美元(包括制造商,渠道商成本,利润,以及各项税收.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;二,&lt;strong&gt;产权清晰化&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;赶出健力宝的—李经纬&lt;/li&gt;
+  &lt;li&gt;科龙被接手—顾邹军,潘宁&lt;/li&gt;
+  &lt;li&gt;华晨—仰融&lt;/li&gt;
+  &lt;li&gt;春兰改制搁浅–陶建幸&lt;/li&gt;
+  &lt;li&gt;伊利—郑俊怀MBO–(有期徒刑6年,2004年)&lt;/li&gt;
+  &lt;li&gt;蒙牛—1999年成立–牛根生&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;中央和各级政府的换届&lt;/strong&gt;窗口:国有和集体企业的扭亏成为最重要的考核指标.
+(&lt;strong&gt;政治和经济双重改革的任务&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;p&gt;==&amp;gt;国退民进&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;健力宝&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“宁与外人,不与家人”:一是担心经营者上下其手;二是避嫌(承担国有资产流失)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;李经纬被认为侵吞国有财产,最后因为身体原因&quot;限制居住&quot;在医院,检察院从未对其进行正式的提诉.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;section-5&quot;&gt;科龙&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;2000年,科龙报6.78亿元,1999年净利润6.3亿元.(一来一去14亿元的反差)
+亏损三大可能:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;市场发生重大恶性事件,销售急剧萎缩.&lt;/li&gt;
+  &lt;li&gt;应收账款过大,巨大呆账,坏账==&amp;gt;财务黑洞&lt;/li&gt;
+  &lt;li&gt;大股东转移资产.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“容声集团(政府主导)”一直是科龙的大股东,但是,&lt;strong&gt;科龙和大股东之间的资产状况从未有过清晰交代.&lt;/strong&gt;,&lt;strong&gt;国有股东否定了潘宁的改制方案后,采取了”转移资产”的方式退出.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;1998年,潘宁以”莫须有”的理由”辞职”&lt;/p&gt;
+
+&lt;h2 id=&quot;section-6&quot;&gt;春兰&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;陶建幸将江苏泰州的县办企业,泰州冷气厂,从1985年负债550万元,经营到2000年,资产120亿元,净资产8亿元.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;陶建幸的自信,高调的改制方案出台,&lt;strong&gt;“触及了企业改革中一直被隐晦回避的制度和道德底线”&lt;/strong&gt;,导致春兰改制”见光而夭”&lt;/p&gt;
+
+&lt;h2 id=&quot;section-7&quot;&gt;伊利&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;伊利最初是呼和浩特市政府下年税利4.7万元的回民食品厂,在郑钧怀的经营下,1996年,伊利上市,2002年,销售收入40亿元.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;1998年,郑钧怀和老部下牛根生关系恶化,牛根生被”莫须有”的理由免职.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;牛根生(&lt;strong&gt;财散人聚,财聚人散&lt;/strong&gt;)1999年,召集旧部筹集1000万元,创办蒙牛,2次冒险:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;冒险采用国外推广的生产线,大获成功&lt;/li&gt;
+  &lt;li&gt;冒险与投资者签订对赌协议(失去控股权 or 获得股票(现金)赠予)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;2004年6月,郑钧还被举报,蒙牛在港交所挂牌上市.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;2002年12月,确定2010世博会在上海举办.===&amp;gt;这将成为继北京奥运会后,中国经济在数年内持续成长的有一个醒目的指标.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;新天地&lt;/strong&gt;    ——“中老年人觉得它很怀旧,年轻人觉得它很时尚,外古人觉得它很”中国”,中国人觉得它很洋气”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;-
+&amp;gt;    &lt;strong&gt;798军工厂&lt;/strong&gt;—–演变为艺术工作室—–国有工厂工(兵工厂)人下岗分流,车间停止运行,只好靠出租闲置厂房和买地皮来赚钱.&lt;/p&gt;
+
+&lt;p&gt;-&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;巴尔扎克:”每一笔巨大财富的背后都存在着犯罪.”&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;-&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;华晨&lt;/strong&gt;—-“如果此次合资成功,中国汽车行业的版图将全部改写,甚至连成长航线都可能赫然改道.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;   今天在微博上刚好看到一个微博,
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“一个企业成规模的时候，他的行为不仅影响自己，还影响别的企业，甚至有的决策可能撬动整条产业链。而当一个企业成长为巨无霸的时候，他的决策就可能产生更大的影响，波及产业和行业。单个企业可以做赔本赚吆喝的事，甚至可能因此成为英雄，但如果因此行为毁了整个产业、行业，我们又该如何评说呢？”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;小米对手机市场带来的影响,BAT对中国互联网带来的影响,还有阿里巴巴对中国传统销售的影响.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最后,2014年7月23日 01:05:04,这么晚的原因,因为看一个电影&lt;轮回&gt;,默默的感慨.然后又看了一个半年前解说视频,游戏不重要,重要的是有几句话,说的太好了,&quot;活着就要爽快&quot;,&quot;我就是要让大家看到我真实的一面&quot;,&quot;我现在行业和我的专业一点也不对口&quot;.看着半年前和现在的对比,已经从一个行业转到了另外一个方向.&lt;/轮回&gt;&lt;/p&gt;
+
+&lt;p&gt;认准了,就去做吧.&lt;/p&gt;
+
+&lt;p&gt;2014年7月23日 01:08:53&lt;/p&gt;
+</description>
+                <link>http://username.github.io/2014/07/23/2002</link>
+                <guid>http://username.github.io/2014/07/23/2002</guid>
+                <pubDate>2014-07-23T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Weixin</title>
+                <description>&lt;h1 id=&quot;section&quot;&gt;实现微信公众号/订阅号的一些功能&lt;/h1&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;###  需要实现的功能有哪些?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;最近学着开了一个订阅号,本来就是用来发一些文章,记录一些读书笔记的,后来,又不满足于这些,于是接着微信的开放借口,尝试着写出一些功能.
+
+最初是想学着自动回复,然后发现,自动回复里面的内容太多了,如果真的实现起来,像小黄鸡?像微软小兵一样的智能机器人,如果真的实现起来,就只有去抓去别人的结果了.
+
+归纳起来,最初想实现的是:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;接口的认证&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;自动回复消息&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;实现目标的过程&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;一开始看别人的代码,拷贝过来,然后发现,有点难度.所以就去学习了一下webpy.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;section-2&quot;&gt;0.开发环境&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;代码运行在SAE上&lt;/li&gt;
+  &lt;li&gt;代码使用SVN管理,在本地编写.&lt;/li&gt;
+  &lt;li&gt;使用SAE的”日志中心”&amp;gt;”http”&amp;gt;”request”和”日志中心”&amp;gt;”http”&amp;gt;”debug”来进行调试&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;weby&quot;&gt;1.学习weby&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;c
++---basic application
+|   +---helloword
+|   |       01helloworld.py
+|   |       01helloworld.pyc
+|   |       
+|   +---notfound
+|   |   |   notfound.py
+|   |   |   notfound.pyc
+|   |   |   notfound02.py
+|   |   |   notfound02.pyc
+|   |   |   
+|   |   \---templates
+|   |           notfound.html
+|   |           
+|   \---xmlfile
+|       |   xmlfile.py
+|       |   xmlfile.pyc
+|       |   xmlfiles.png
+|       |   
+|       \---templates
+|               response.xml
+|               
++---db
+|   |   dbV000_select.py
+|   |   dbV000_select.pyc
+|   |   dbV001_add.py
+|   |   dbV001_add.pyc
+|   |   todo.sql
+|   |   连接问题.txt
+|   |   
+|   \---templates
+|           index - 副本.html
+|           index.html
+|           
++---form
+|   |   formV000.py
+|   |   formV000.pyc
+|   |   formV001.py
+|   |   formV001.pyc
+|   |   formV002.png
+|   |   formV002.py
+|   |   formV002.pyc
+|   |   formV003.png
+|   |   formV003.py
+|   |   formV003.pyc
+|   |   formV004.py
+|   |   formV004.pyc
+|   |   
+|   \---templates
+|           formtest.html
+|           
++---Templetor
+|   |   01templetor.py
+|   |   01templetor.pyc
+|   |   02templetor-template-as-string.py
+|   |   03templetor-newline.py
+|   |   03templetor-newline.pyc
+|   |   04templetor-escaping .py
+|   |   04templetor-escaping .pyc
+|   |   05templetor-control-structures.py
+|   |   05templetor-control-structures.pyc
+|   |   
+|   \---templates
+|           controlStructures.html
+|           escaping.html
+|           index.html
+|           newline.html
+|           
++---urls
+|   |   codeV000.py
+|   |   codeV001.py
+|   |   codeV001.pyc
+|   |   codeV002.py
+|   |   codeV002.pyc
+|   |   
+|   \---templates
+|           index.html
+|           
+\---wiki
+    |   model.py
+    |   model.pyc
+    |   schema.sql
+    |   wiki.py
+    |   wiki.pyc
+    |   
+    \---templates
+            base.html
+            edit.html
+            index.html
+            new.html
+            view.html
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;学习webpy就照着官网,学习了:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;入门教程:  http://webpy.org/docs/0.3/tutorial.zh-cn&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;cookbook: http://webpy.org/cookbook/index.zh-cn&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;helloworld&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;urls&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;db&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;wiki&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Templetor&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;在学习了这些基础的知识之后,实现我们的目标:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;认证&lt;/li&gt;
+  &lt;li&gt;回复固定值&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;就相对容易了很多.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&quot;section-3&quot;&gt;2.拷贝代码,修改代码.&lt;/h5&gt;
+
+&lt;p&gt;实现认证的代码只需要三个主语的文件:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;index.wsgi&lt;/li&gt;
+  &lt;li&gt;weixinInterface.py&lt;/li&gt;
+  &lt;li&gt;config.yaml&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;第一个文件用来处理URL:/weixin 路径用第二个文件weixinInterface类来实现&lt;/p&gt;
+
+&lt;p&gt;第三个文件是一些SAE上的配置文件.&lt;/p&gt;
+
+&lt;h5 id=&quot;section-4&quot;&gt;3.遇到问题的解决&lt;/h5&gt;
+
+&lt;p&gt;遇到的问题有:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;认证通过后,回复消息,无应答,却不知道怎么调试.&lt;/li&gt;
+  &lt;li&gt;知道怎么调试之后,遇到的各种问题:405,500&lt;/li&gt;
+  &lt;li&gt;代码对齐的问题&lt;/li&gt;
+  &lt;li&gt;为导入库的问题&lt;/li&gt;
+  &lt;li&gt;获取值属性错误&lt;/li&gt;
+  &lt;li&gt;字符编码问题ascii和utf-8编码的问题&lt;/li&gt;
+  &lt;li&gt;结果为空的问题&lt;/li&gt;
+  &lt;li&gt;变量没有定于的问题&lt;/li&gt;
+  &lt;li&gt;无效的表达式,也就是代码一些括号匹配的问题
+10.某些属性的大小写问题&lt;/li&gt;
+  &lt;li&gt;如果使用SAE上的数据库的select,insert,delete等,关键是如何查询和删除.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;问题1:&lt;/strong&gt;
+调试后来在SAE的帮助文档里找到了:&lt;/p&gt;
+
+&lt;p&gt;http://sae.sina.com.cn/doc/python/runtime.html#id4&lt;/p&gt;
+
+&lt;p&gt;日志系统的使用.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;c
+101.226.62.85 [20/Jul/2014:18:10:43 +0800] /weixin?signature=b165650640ad0ddf52d84fe6d1a9eec69935f8f4&amp;amp;timestamp=1405851012&amp;amp;nonce=734319259 200 0.152 0.152 458 
+urmyfaith.sinaapp.com POST HTTP/1.0 &quot;-&quot; &quot;Mozilla/4.0&quot; yq34
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;从日志系统里可以找到HTTP响应码,200,404,405,500
+200 正常
+404 页面问找到
+405 请求方法错误(后来确定是因为POST方法的缩进导致)
+500 内部错误(需要到debug里定位错误)&lt;/p&gt;
+
+&lt;p&gt;从”日志中心”&amp;gt;”http”&amp;gt;”debug”里可以定位各种错误,很方便修改.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;问题2,3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;都是因为POST方法缩进错误导致.(缩进错误是因为editplus和python IDLE的缩进不一致导致)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;问题4&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;由于没有导入相应库导致,从debug里可以查看到.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;问题5,7,8&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;某些值的获取错误,从debug里定位,要么是因为结果为空,大小写不对应(sql数据库里的table里的字段名大小写不一致导致.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;问题6&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ascii和utf-8的问题也是由于各个系统的编码不一致导致,mysql里的默认为utf-8,然后python读出来ascii编码,需要进行encode,或者是在字符串前加u,例如:u”中国”.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;问题11&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;sae上数据库的读写时遇到两个问题:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;删除数据的条件&lt;/li&gt;
+  &lt;li&gt;选择数据的条件&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;删除数据的时候,&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;c
+            where_dict={&#39;id&#39;:currID,}
+            db.delete(&#39;article&#39;,where=web.db.sqlwhere(where_dict))
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;选择数据查询的时候,&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;c
+   myvar=dict(dateInWhere=dateNow)
+   currLines = db.select(&#39;birthday&#39;,myvar,where=&quot;date &amp;gt;         
+   $dateInWhere&quot;,limit=1,order=&quot;date ASC&quot;)
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;特别是后面的,myvar的使用,和&lt;strong&gt;myvar的位置&lt;/strong&gt;,以及date的数据库字段的设计的问题,究竟是TEXT,DATE类型的问题,还有选择逻辑的考虑(order by asc),还有冒号里面,究竟用不用$等问题,都需要去尝试才知道怎么做.&lt;/p&gt;
+
+&lt;p&gt;解决这些问题的时候,参考&lt;/p&gt;
+
+&lt;p&gt;http://webpy.org/cookbook/index.zh-cn&lt;/p&gt;
+
+&lt;p&gt;里的[Database 数据库]部分,很有大的帮助.&lt;/p&gt;
+
+&lt;p&gt;其次,去百度一下debug的错误,差不多都可以找到答案.(谷歌的原因,唉…)&lt;/p&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;目标实现后的小结&lt;/h3&gt;
+
+&lt;p&gt;确实很花时间,需要去学习webpy,熟悉微信API里的接口文档,SAE的调试,SAE数据库的操作,数据库字段的设计,原始数据的生成,数据怎么获得,格式的转换等等.&lt;/p&gt;
+
+&lt;p&gt;后续有时间再实现一些小功能吧.&lt;/p&gt;
+
+&lt;p&gt;现在实现的功能有:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;c
+                      &quot;00&quot;:反馈,
+                      &quot;12&quot;:分享文章,
+                      &quot;14&quot;:笑话(待完成,原始资料木有),
+                      &quot;25&quot;:发表情卖萌,
+                      &quot;36&quot;:格言(待完成,原始资料木有),
+                      &quot;47&quot;:猜你在做什么,
+                      &quot;0110907&quot;:班级生日总表,
+                      &quot;birthday&quot;:随机挑选一个生日,
+                      &quot;bd&quot;:最近要过生日的人,
+&lt;/code&gt;&lt;/p&gt;
+</description>
+                <link>http://username.github.io/2014/07/21/weixin</link>
+                <guid>http://username.github.io/2014/07/21/weixin</guid>
+                <pubDate>2014-07-21T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>蓝屏修复过程</title>
+                <description>&lt;p&gt;1.重启电脑&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;问题解决否？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;２.重启,进入安全模式&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;可以正常使用么?&lt;/li&gt;
+  &lt;li&gt;如果安装模式可以使用,重启电脑,进入普通模式
+    &lt;ul&gt;
+      &lt;li&gt;问题解决否?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;3.重启,进入安全模式&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;进入控制面板,&lt;/li&gt;
+  &lt;li&gt;添加/删除程序&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;选择左侧”查看已安装的更新”&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;查看最近是否有windows更新?&lt;/li&gt;
+      &lt;li&gt;根据日期,卸载相应更新?&lt;/li&gt;
+      &lt;li&gt;重启,问题解决否?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;选择”卸载程序”&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;查看刚刚安装的程序?&lt;/li&gt;
+      &lt;li&gt;卸载刚刚安装的程序?&lt;/li&gt;
+      &lt;li&gt;重启,问题解决否?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;4.重启,进入&lt;strong&gt;带网络的安全模式&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;百度云位置: 软件备份 &amp;gt; win7 蓝屏bluescreen &amp;gt; 蓝屏分析工具
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;下载[win7 蓝屏bluescreen]文件夹下的[蓝屏分析工具]&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用&lt;strong&gt;bluescreenview&lt;/strong&gt;或者&lt;strong&gt;AnalyseBSOD.zip&lt;/strong&gt;,来查看导致蓝屏的&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;文件?&lt;/li&gt;
+      &lt;li&gt;原因?&lt;/li&gt;
+      &lt;li&gt;删除相关文件&lt;/li&gt;
+      &lt;li&gt;重启,问题解决否?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;=======
+2014年6月25日 12:43:24&lt;/p&gt;
+</description>
+                <link>http://username.github.io/2014/06/25/%E8%93%9D%E5%B1%8F%E4%BF%AE%E5%A4%8D%E8%BF%87%E7%A8%8B</link>
+                <guid>http://username.github.io/2014/06/25/蓝屏修复过程</guid>
+                <pubDate>2014-06-25T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Read</title>
+                <description>&lt;ul&gt;
+  &lt;li&gt;乳业
+&amp;gt;    目前全国有100余家生产婴幼儿配方奶粉的企业，年产量约60万吨&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;工信部关于婴幼儿奶粉生产企业兼并重组的方案&lt;/strong&gt;
+&amp;gt;	第一阶段为摸底调查
+&amp;gt;	第二阶段培育10家年销售收入超过20亿元的大型企业，前10家国内品牌集中度达到65%
+&amp;gt;	到2018年底第三阶段工作完成，形成3-5家销售额超过50亿元的企业，最终配方奶粉企业整合到50家左右.&lt;/p&gt;
+
+&lt;p&gt;奶粉企业最关注的莫过于扶持政策&lt;/p&gt;
+
+&lt;p&gt;对于相关的国内婴幼儿奶粉生产企业，国家计划推出
+	税收优惠、
+	财政扶持、
+	金融综合授信、
+	发行股票和债券和
+	被兼并企业土地开发收益
+5项政策措施和保障
+从国内市场看，国产婴幼儿配方乳粉品牌近500个，但高端产品市场国产品牌份额仅占20%到25%。&lt;/p&gt;
+
+&lt;p&gt;在去年工信部宣布将引导婴幼儿配方乳粉优势企业实施强强联合、兼并重组后，从去年下半年开始行业先后出现了&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;蒙牛并购雅士利、
+伊利投资辉山乳业、
+圣元并购重组育婴博士、 合生元收购南山奶粉关联公司等多起并购事件。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;对原有的133家婴幼儿配方乳粉生产企业生产许可证审查和再审核工作中，全国有82家获得重新许可，未通过审查、申请延期审查和申请注销的企业有51家。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;拼脸APP&lt;/p&gt;
+
+    &lt;p&gt;‘脸萌’所瞄准的核心用户群，是千千万万和我一样，有着‘二次元’漫画般人生梦想，充满活力，喜爱卖萌，特立独行又群聚而行，希望用某些符号将自己与现实保持在若即若离距离的90后们.&lt;/p&gt;
+
+    &lt;p&gt;微信去年年底用户量已经超过6亿，每日活跃用户则达到了1亿这个可怕的数字。
+1亿人每天在微信干点什么？
+&amp;gt;	除了光看订阅号拿微信当RSS用的少数，大多数的基本需求是沟通和交流。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;pre&gt;&lt;code&gt;“脸萌”的火爆是因为产品本身具备传染力。
+ “脸萌”的原型是加拿大一款自制漫画应用Bitstrips。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;“脸萌”的历程与去年大热的魔漫相机惊人相似。
+公开资料显示，去年8月底，魔漫相机应用正式上线，
+创下了单日新增用户325万、4日新增用户破千万、7个月破亿等多个移动互联网行业纪录，如今用户数超过1.5亿。
+从产品角度来看，魔漫和脸萌的操作都相对简单，但魔漫的热度在去年10月下旬迎来顶峰之后，迅速回落，渐渐消失在“朋友圈”的视野之中。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;它火爆的原因就是&lt;strong&gt;具有新鲜感&lt;/strong&gt;，迎合了现在年轻人的追求，所以可以短时间积聚一个很大的爆发量。&lt;strong&gt;&lt;em&gt;目前这样的应用盈利模式非常不清晰，他更应该考虑怎么做好自己的用户体验、抓住用户，让用户更喜欢、高频次地使用&lt;/em&gt;&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;你画我猜、疯狂猜图、FlappyBird等等，它们都有一个共同的特征，玩法简单(甚至是粗糙)，短时间内风靡，迅速陨落。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;照郭列的规划，脸萌要做的是以头像为切入点，不加广告，做到千万级用户；然后再拓展到漫画，漫画在社交媒体中是一个持久而高频次的需求；未来脸萌更多会做成一个类似美图秀秀的工具，但是提供的并非实物的照片。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;家族管理&lt;/p&gt;
+
+    &lt;p&gt;麦肯锡的一项调查表明，全球范围内家族企业的平均寿命仅为24年，其中大约只有30%的家族企业能延续到第二代，而传至第三代的比例少于13%，只有5%能在三代以后还继续为股东创造价值。
+而在国内，根据统计，&lt;strong&gt;300&lt;/strong&gt;多万家私营企业&lt;strong&gt;90%&lt;/strong&gt;以上是家族企业。
+&lt;strong&gt;有60%的民企在5年内破产，有85%在10年内消亡，其平均寿命只有2 .9年。&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;如何规避风险？
+*    第一，制度化，家族企业是要讲规矩的，从关系契约到制度契约的转型，真功夫做得比较弱，包括董事会人员任命、内部管理，规章制度还没完全建立起来，这是一大硬伤；
+*     第二，当企业成长到一定阶段，负荷企业成长的，不再是忠诚和信任，而是市场化的运营能力和管理能力，必须引入职业经理人，但引入的是管理能力，而不是为了制衡另一家族成员内部的力量。
+*   另外，股权可能是家族化的，但运营管理上并不一定是家族的。&lt;br /&gt;
+*   从2010年蔡达标深陷官司以来，真功夫引入了一批职业经理人，形成了专业的管理团队。尽管股东纷争不断，真功夫门店已经从蔡达标陷入官司时的200多家发展到现在的500多家，整整翻了一倍多。可见真功夫已经度过股东纠纷的振动期，迈入全新良性发展期。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;在发生分歧的时候，企业往往会引入新的投资者，从两方的博弈变成了更复杂而平衡的局面。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;一是其中一方出资购买对方的股份，或是追加投资、增加股份，另一方淡出；&lt;/li&gt;
+  &lt;li&gt;二是通过外力，引进若干股东，朝着规范的公司治理方向迈进。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;矛盾都是因为利益上的问题，创业初期还好说，但企业一旦赚到钱就容易不平衡。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;家族成员&lt;/strong&gt;之间乃至&lt;strong&gt;合伙人&lt;/strong&gt;与家族成员之间、&lt;strong&gt;管理层&lt;/strong&gt;与&lt;strong&gt;创始人&lt;/strong&gt;之间甚至&lt;strong&gt;第三方投资机构&lt;/strong&gt;的多方博弈，分分钟都有可能一夜祸起萧墙之内。&lt;/p&gt;
+
+&lt;p&gt;2012年全年利润超过了2008到2010年三年利润总和。
+2013年，公司营收取得了两位数的增长，门店总数超过500家。
+而2014年真功夫门店总数据称将突破&lt;strong&gt;600&lt;/strong&gt;家，预计2016年超过&lt;strong&gt;1000&lt;/strong&gt;家。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;[回顾]&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2014年6月
+
+广州中院对蔡达标等5人涉职务侵占、挪用资金一案作出二审判决，蔡达标构成职务侵占罪和挪用资金罪被维持14年刑期。
+
+2013年12月
+
+广州市天河区法院一审以职务侵占罪、挪用资金罪判处蔡达标有期徒刑14年。
+
+2012年8月
+
+天河区检察院以职务侵占罪、挪用资金罪、抽逃注册资本罪对蔡达标等五人提起公诉。
+
+2011年4月
+
+广州市公安局立案调查，蔡达标及其弟、姐夫等人被逮捕。
+
+2009年3月
+
+双方的矛盾公开化，潘宇海要求查账。被蔡达标控制下的真功夫拒绝。潘宇海将真功夫告上法庭，要求履行股东知情权。
+
+2009年
+
+真功夫筹备上市，蔡达标被曝光“二奶门”，当年4月潘敏峰状告蔡达标，拿回25%股权。
+
+2007年10月
+
+真功夫引入今日资本和中山联动两家风投约3亿元人民币注资。
+
+2006年
+
+蔡达标和潘敏峰秘密离婚，潘敏峰25%股权归属蔡达标。
+
+1997年
+
+蔡达标和潘宇海(前妻弟)商量后注册成立了双种子饮食公司，潘宇海占50%，蔡达标和潘敏峰(前妻)各占25%。
+
+1994年
+
+潘宇海拿出“168甜品屋”50%股份吸收蔡达标、潘敏峰夫妇加盟，将“16甜品屋”更名为“168蒸品店”。
+
+1990年
+
+潘宇海在东莞创立“168甜品屋”，为真功夫的师祖。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;全部内容来自南都.&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;网贷平台&lt;/h1&gt;
+
+&lt;p&gt;据统计，今年以来，已经有45家P2P平台跑路。其中5月份就有8家平台跑路或关闭，包括马上有钱、日升财富、信誉财富、中信创投、股民贷、仁信贷、威泰创投和弘昌创投等.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;他们之所以最初会选择投“科迅网”，最主要的原因就是百度推广。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;公开信息显示，今年2月份以来，该平台频繁出现在各大网络媒体上。&lt;/strong&gt;&lt;/p&gt;
+
+</description>
+                <link>http://username.github.io/2014/06/13/read</link>
+                <guid>http://username.github.io/2014/06/13/read</guid>
+                <pubDate>2014-06-13T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Read</title>
+                <description>&lt;p&gt;家居
+白炽灯(卤钨灯)，荧光灯(日光灯、节能灯)，高强度气体放电灯(H ID )，半导体发光二极管(LED )。LED作为第四代电光源，拥有前三代电光源所不具备的特点，兼具环保和节能，是电光源的发展方向. 德豪润达拥有LED照明领先的核心技术，又控股雷士照明以进行销售渠道和上下游产业嫁接 全球照明巨头飞利浦日前首次提出“智能互联照明”概念，并针对家居、办公、商业及城市等各个领域推出全面的智能互联照明解决方案。&lt;/p&gt;
+
+&lt;p&gt;手机 黑莓跳槽至中兴的三个研发团队主要负责设计、安全和语音交互，这也是中兴在智能手机产品研发上的重 中兴2013年年报显示，三大板块中，运营商网络业务收入占比54 .1%，终端收入占比28 .8%，政企网业务收入占比17.1%，运营商网络业务仍然是中兴通讯收入的主体。
+房产&lt;/p&gt;
+
+&lt;p&gt;大型房企如万科由于整体市场布局较为合理，销售依然坚挺，因为其在三四线城市的布局所占整个销售额的比重较低 保利在全国主动做了一些促销，包括首付方式、折扣方面的让步，换来了销售量的回升&lt;/p&gt;
+
+&lt;p&gt;水&lt;/p&gt;
+
+&lt;p&gt;在我国北方一些地区，企业为躲避环保部门查出，竟将致命性污水通过高压泵灌入地下，殃及周围环境和居民健康，一个个景色优美的村庄正沦为不复之地的“癌症村”。 最好的水源都发源于高海拔的雪山峡谷之间。最著名的要数北纬36°-46°之间的世界黄金水源带。世界上80%的好水产于此。该地带分布有阿尔卑斯山、高加索山、大云雾山、昆仑山等世界名山，法国依云、意大利Sole、瑞士Sw is-seau等珍稀矿泉水均产于这一地带。&lt;/p&gt;
+</description>
+                <link>http://username.github.io/2014/06/11/read</link>
+                <guid>http://username.github.io/2014/06/11/read</guid>
+                <pubDate>2014-06-11T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Faraway</title>
+                <description>&lt;p&gt;无聊打开知乎,一个问题,一看那又是一个多小时,又到了睡觉的时间了.&lt;/p&gt;
+
+&lt;p&gt;十年的时间,2013年到2023年,23岁到33岁.&lt;/p&gt;
+
+&lt;p&gt;想好了,就去做吧.&lt;/p&gt;
+
+&lt;p&gt;make it true.&lt;/p&gt;
+</description>
+                <link>http://username.github.io/2014/06/10/faraway</link>
+                <guid>http://username.github.io/2014/06/10/faraway</guid>
+                <pubDate>2014-06-10T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Nextstep</title>
+                <description>&lt;h1 id=&quot;next-step&quot;&gt;&lt;em&gt;N&lt;/em&gt;ext Step&lt;/h1&gt;
+
+&lt;p&gt;项目审批迟迟下不来.每天就无所事事,只能自己找些事情来做了.什么推翻重来?什么发票不好找,什么开发票的都是骗子.什么租车不容易.全靠自己垫钱,还要借钱.还要请人吃饭,吃完饭还没有发票,怎么报销?&lt;/p&gt;
+
+&lt;p&gt;真是各种问题纠结在一起.&lt;/p&gt;
+
+&lt;p&gt;没有想到的有是,昨天和zzh聊,说有空再聊.没有想到的是,居然这就碰到了.&lt;/p&gt;
+
+&lt;p&gt;心情不好的时候,什么也不想做,觉得啥事都没有什么意义.真是可悲的一件事情.看了这10多年发展历程,看到很多人,很多公司的历程,越来越看到里面的这些成长起来的公司,最初是如何成长起来的.&lt;/p&gt;
+
+&lt;p&gt;原始资本的积累,是如此的神秘,看着制度上的变迁,看着人们的生活发生的巨大改变,时代的一步步发展,留下了如此深刻的印痕.&lt;/p&gt;
+
+&lt;p&gt;十一,放假几天?回家不?回家不是去参加婚礼?&lt;/p&gt;
+
+&lt;p&gt;没什么可写的,看会书,睡觉.&lt;/p&gt;
+</description>
+                <link>http://username.github.io/2014/06/04/NextStep</link>
+                <guid>http://username.github.io/2014/06/04/NextStep</guid>
+                <pubDate>2014-06-04T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Childrensday</title>
+                <description>&lt;h1 id=&quot;childrens-day&quot;&gt;Children’s Day&lt;/h1&gt;
+
+&lt;h3 id=&quot;begin&quot;&gt;begin:&lt;/h3&gt;
+
+&lt;p&gt;这个六一遇上了端午节,又是三天的假期.说长不长,说短不短的,所以说很让人纠结的事情:是出去玩呢?还是不出去玩呢?都不是很好.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;插曲:&lt;/h3&gt;
+
+&lt;p&gt;30号的时候,还做了一个梦,很奇怪,居然还能梦到高考,说是高考语文考试,我做还有的特别快,然后1个小时的时间在那里发呆,无聊,也没有检查试卷.令人震惊的是,模模糊糊语文老师居然在讲解语文试卷,然后我看到我的试卷后面的填空,文言文,还有作文都没有做!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;这是多么神奇的事情,如果这样的话,我会考个什么学校呢?真的不知道.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;30号-库伦沟-博克图&lt;/h3&gt;
+&lt;p&gt;#### 规划路线 ####&lt;/p&gt;
+
+&lt;p&gt;应该来说,都没有什么路线的规划就出去了,29号晚上联系的车,在&lt;em&gt;58同城&lt;/em&gt;上随便搜索了下,打了几个电话,就联系到司机了.也是不难,不过可想而而知的是,这车也不怎么滴.&lt;/p&gt;
+
+&lt;p&gt;说是去库伦沟,还给了个攻略.搜索到库伦沟的路线,就记住了几条道,几个路口,就出发了…&lt;/p&gt;
+
+&lt;p&gt;到了库伦沟才知道,根本也没有什么玩的地方.能称作是沟的地方,可想而知就是在山间的一些稍微平坦的地方就是所谓的库伦沟了.&lt;/p&gt;
+
+&lt;p&gt;值得看的是什么?有树林,树林也都特别笔直,细瘦,高拔的.在林间的时候,感觉有种恍如隔世的味道,身边的景,身边的人,仿佛一下子回到了那个时候.可惜是不能躺在上面休息的.如果能一直躺在上面休息,多好?有种痴人说梦了.&lt;/p&gt;
+
+&lt;p&gt;林间也会有松子,对于那些没有见过松子的人来说,是件很稀奇的事情.这里的落叶松和家乡的松子不同,不是那种很大的松果,小了很多.地上有零星的分布着一些,在稀稀落落的松针上面就可以发现它们.不过,抬头看看旁边的松树,在一人稍高的地方,也可以看到一些枯黄的松果挂在枝头,并没有脱落.不过,大白天的,却没有发现属鼠的身影.或许,它们正在某个指头伸出头来探望着这些突然到来的来访者.&lt;/p&gt;
+
+&lt;p&gt;山间也会有小河流,水不是很大.不过没有什么污染,当然除了生活这里的牛羊马了.水倒也很清澈,当你伸手进去的时候,水是彻骨的凉,冰凉冰凉的,放在里面不会超过10秒.在5秒的时候,凉意已经快透过骨头的感觉,是因为是山泉水的缘故?&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;插曲2 恒大冰泉&lt;/h3&gt;
+&lt;p&gt;关于恒大冰泉在广告上说的,一处水源供全球.虽然实际上是三个地方的高寒地区的岩层的水,水质确实有保障.但是,有没有人想过,这利益的背后,实际的上是对我们地球上仅存的为数不多的几处的进行最后的挖掘?如果我们连几千年,上万年,上亿年前的水都开采出来,为了利益,那么,最后我们还剩下什么?我们留给我们的子孙后代的是什么?&lt;/p&gt;
+
+&lt;p&gt;是现在一样的某些地区的地陷?你能预测到什么时候,开着车在路上,就眼前突然级一片黑暗,掉下去,不知道是死是活?让我们的后代继续向着更深的岩层去取水?把机井打个几百米?几千米深?&lt;/p&gt;
+
+&lt;p&gt;为了资本的积累,为了某些人的利益,硬是不顾一切了?原始资本的积累是多么的黑暗,这是每个资本家的必经之路么?&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;值得一看的还有话还有什么?就是这里的羊,牛,马等了.走十几分钟差不多应该可以看到一个养羊的小户吧.称作为小户或许不合适.可能是大户吧.现在羊肉市场价格都还不错.而且,这些户主貌似都养的还都是不少的.或许是我缺少一张发现的眼睛吧,在这些,牛,羊身上,找不到什么亮点.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;加入你愿意,你就恋爱吧,爱我.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;我们的生活是一些给人看的仪式么? 或者叫人安分守己.不知道什么叫”分”,假如人活到世上之前”分”都叫人安排好了,不如再死回去的好.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;中国人说苦处也就是乐处,这就可以说明有人为什么爱吃臭豆腐:他们都能从臭里体验出香来.这可以说明&lt;strong&gt;懒于改造世界的人多么勤于改造自己.&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;懒于进行思想劳动必然勤于体力劳动,懒于创造性的思想活动必然勤于死记硬背.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;想起那爬上喇嘛峰主峰的山顶上时,听到过一句话,”女儿呀,要是有雾的时候来的话,那种意境就更美啦!”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;坐在那水边的石头上,旁边是一颗巨大的红枫,寂静,清新的空气,我好想真的呼吸到带着甜味的空气.唉,哪里是多么美呵.陶醉,生命最美丽的一瞬就是陶醉,是么?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“我要用尽所有的生命之能画一条自身存在的曲线.似乎我没有最终的目的,可是这曲线上的每一点都有我的汗水和思维的痕迹.挖下去,永不停息.也许什么也挖不着.可是一定可以挖到我自己.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“爱也许是人对自己的一种欺骗,是一种奇异的想象力造出来的幻影.你的想象力强,所以总在我的周围看到一层光环.其实呢?那光芒并不存在.我怕你早晚会看到这一点,变得冷漠.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;向有限的一切都不能让人满足,向无限进军中才能让人满足.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;自从认识了你,所有的人都黯然失色.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;另一件值得一说的事情&lt;/h3&gt;
+
+&lt;p&gt;在库伦沟本身是没有什么特别的地方可说的.倒是在走出这个山间的乡村的时候,在路上遇到的一件事情可以说说.&lt;/p&gt;
+
+&lt;p&gt;在乡间公路上行走,忽然看到前面有一个卡车停在路边,有一个中年男子在朝我们挥手示意:让我们停下车来.&lt;/p&gt;
+
+&lt;p&gt;那一瞬间,给我的感觉是:遇上打劫的了.尼玛这阵子就天天听到是这种事情,看到司机手上的疤痕,一道刀疤,能不心惊胆寒?或许还是我胆子太小了?&lt;/p&gt;
+
+&lt;p&gt;ps.(无意中看到WDDC,apple会发布肾6么?)
+  如果不是亲自从司机口里得知那些在边境上的枪林弹雨的故事,你很难发现,这是昔日的故事,是如何惊心动魄,留下的是那一道道疤痕.
+  如果不是听到小伙子讲的特大杀人案,怎么会知道自己的处境?窖人!”不想活,来讷河”,在听了20多年前的杀人案之后,谁能不掌心里捏一把汗呢?&lt;/p&gt;
+
+&lt;p&gt;言归正传,当时我都在看周围有什么棍棒可用?有上面武器可以用来防身的,或者干一把?&lt;/p&gt;
+
+&lt;p&gt;当下车后,没有想到的是,中年男子,也就是停在路边卡车的司机,向我们说明了情况.是想让我们帮着作证,不是他撞的倒在路边的2个人,并且拨打120急救电话.&lt;strong&gt;一方面,他担心被倒在路边的2个人讹了,说是他撞的,另一方面,他想拨打120急救电话来.(但是这一拨打,刚说的被讹的话,怎么也说不清楚了.)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;只见路边的那两人倒在一辆摩托车旁,摩托车司机满脸是血,摔的特别的严重.(我是第一次在现实生活中见到),不要脑补现场画面,现在想起来都有些后怕.摩托车后面坐的是一个中年男子,远远的都可以闻到阵阵的酒味.我也喝过白酒,对那种味道特别的敏感,白酒的味道是太不好喝了.(喝喝啤酒倒是还不错的,这么热的天气,可以解暑,清凉一下.)摩托车司机捂着脸,满嘴嘟囔着:”你动什么动,坐着就不要动,动什么动”.&lt;/p&gt;
+
+&lt;p&gt;整个车祸的现在情况已经很清楚了,卡车司机给了一些纸巾那摩托车手机,也拨打了120,大家也就都走了.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;故事就到这里了,但是故事本身却不是要说的重点.重点在于什么?&lt;strong&gt;想帮忙,却怕被讹!不帮的话,却又良心过不去!&lt;/strong&gt;这是一个多么让人痛心的事情?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;社会风气一天天走下坡路,对于心存善良的人,遇到这种事情,该怎么过?敢去做么?春晚上不是也播了这个”扶不扶”的现象么?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;如果是我,我可能多半会去打120.但是,当我考虑到后面的这一连串可能的严重的后果的时候,我可能不会去做.如果这两个人讹我,说是我撞的他们,而我呢?我一个卡车司机的话,这么窄的路,撞上去很大程度上是会发生的事情.周围也没有什么人可以为我作证.这样,我就会面临一连串的问题:我的工作还保得住么?我会坐牢么?赔偿费我付不起怎么办?我家里的人怎么办?对面的亲人特别蛮横不讲理怎么办?…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;太多的问题,已经不是我个人所能解决的问题,是整个社会风尚的问题了.整个社会上,人们价值观的问题了.而且,太多的人的品质,到了什么地步了?为了利益,什么做不出来? 上面提到的恒大冰泉只是在商业领域的一个例子而已.人性的黑暗,或许是我们闭着眼睛想不去看就不存在的么?答案是显而易见的.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;2014年6月3日 01:26:50&lt;/p&gt;
+
+&lt;p&gt;时间太晚了,明天更新在巴林喇嘛山的事情,和放假的第三天吧.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;博克图&lt;/h3&gt;
+&lt;p&gt;博克图有什么好说的呢?
+  小镇人倒是不少,村民很多,很多的小商铺.
+  让大家们都没有想到的是,这个小镇里,有两样东西吸引了大家的注意力.一是这个小镇居然火车站.第二个是这里居然可以搭乘到出租车.因为在很多的县级的地区,都不一定有火车站.博克图站总体上来说,人不多,既当作客运,也做货运.
+  还有,一直没有明白,所谓的麦什么饺?反正就搞不懂它和饺子有什么区别.&lt;/p&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;巴林喇嘛山&lt;/h3&gt;
+
+&lt;p&gt;根本就没有想到,此次行程会有爬山的.行程规划说是没有规划,其实也是早就定好了的事情.第二天到了喇嘛山,买了门票,就一路爬山了.
+  爬山大致分2个部分,1个部分是石阶到山脚下的一段路.大约也要爬个半小时左右.不算陡,也不是特别高.但是天气很炎热,走起来还算是比较热的了.&lt;/p&gt;
+
+&lt;p&gt;另一个部分就是过了喇嘛关,降魔石,将军岩之后往上攀爬的一部分了.这部分应该来说是最难爬的,很多人都是在第二个阶段放弃了爬到峰顶去的.年纪太小,不适合往上爬.太胖,没有臂力的也不适合往上爬.手上拿东西也不适合往上爬的. 不过,应该来说,爬上去的也还是有一部分人的.年轻人,学生,中年人等等.&lt;/p&gt;
+
+&lt;p&gt;和以前爬过的山相比来说,可能会比深圳的第一高峰更加的难爬.这边爬上去都没有路,只是用凿洞做的2个铁栏杆和凿出来的一些鞋头大小部分.只能是双手拉着铁栏杆,脚蹬着凿出来的脚蹬里,一步一步的往上爬.部分地方坡的角度直逼90°.真是不容易.&lt;/p&gt;
+
+&lt;p&gt;上面已经说过了,这爬山给我印象最深的莫过于在山顶上的那对父女的对话了.有雾的时候的风景会更加漂亮.很值得人去想象一番.&lt;/p&gt;
+
+&lt;p&gt;有雾的风景,或许已经超出这风景本身的意义.雾所包含的迷茫,模糊的意思,对于人生来讲,正如我们生活的道路,看不清前面的风景,只有一步一步的前行去探索未知的明天.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;section-6&quot;&gt;端午节&lt;/h3&gt;
+
+&lt;p&gt;端午节的时候,在劳动湖居然举行了赛龙舟,可惜我不知道.上午睡过去了,下午就去理了个发,买了件衣服,没有买到合适的裤子.末了,还是走那么远去吃烧烤和啤酒.累的不行.&lt;/p&gt;
+
+&lt;p&gt;很多的时候,很多的事情,真的是不可想象.在你面前是一个人,在你背后又是另外的一个人.这差距之大,很难想像.&lt;/p&gt;
+
+&lt;p&gt;以至于知道真相的我,无法接受,或许不知道会不会好一些?&lt;/p&gt;
+
+&lt;p&gt;2014年6月3日 23:17:09&lt;/p&gt;
+
+</description>
+                <link>http://username.github.io/2014/06/02/ChildrensDay</link>
+                <guid>http://username.github.io/2014/06/02/ChildrensDay</guid>
+                <pubDate>2014-06-02T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Read</title>
+                <description>
+&lt;h2 id=&quot;section&quot;&gt;神舟租车&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;在新浪微博、聚美优品、京东、迅雷、阿里等中资公司纷纷赶赴美国资本市场“吸金”的时候，国内租车业的老大神州租车却反其道而行之，放弃了纳斯达克市场，而是选择了香港作为IP O的登陆地.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;之所以选择中国香港而不是美国，是因为中国香港及亚洲的投资者更加&lt;strong&gt;熟悉中国市场&lt;/strong&gt;和&lt;strong&gt;神州租车的商业模式&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;公司总收入&lt;/strong&gt;:&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;2011年的8.2亿元&lt;/li&gt;
+    &lt;li&gt;2013年的27 .0亿元&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;增长这么快?是因为联想控股和赫兹入股带来的强大现金流?
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;汽车牌照&lt;/strong&gt;:&lt;/p&gt;
+
+  &lt;p&gt;公司仅在北京和广州两市，就分别拥有约13，000张和约8，000张汽车牌照。&lt;em&gt;在汽车限购大趋势下，汽车牌照成为稀缺资源。&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;车队规模&lt;/strong&gt; &lt;/p&gt;
+
+  &lt;p&gt;2009年的区区几百辆，飞速扩展到2013年底的53000多辆，&lt;strong&gt;增长近百倍&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;车队数量增长近百倍 ?这带来的影响是有多大?从人员管理,人员素质,车队管理?都是一个大问题.
+
+那么,这个持续的增长,能够维持多久?
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;阿里巴巴入股新加坡邮政&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;[link](http://epaper.oeeee.com/D/html/2014-05/30/content_2081239.htm)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;人口众多，商业发展不足的东南亚地区是最好的契机&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;在不发达的地区,基础设施的建设是很多在国外人从事的行业?比如通信基础设施,道路,桥梁,铁路,高铁?
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;华润万家&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;华润万家作为中国零售超市的民族品牌，反过来收购外资零售超市，这是前所未有的创举.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;婴幼儿奶粉&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;政策&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;2013年工信部公开披露的计划，目前国内的127家婴幼儿配方乳粉生产企业中，2015年将只剩80家企业，而到2018年时这一数字减少到50家&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;上海市食药监局则公布，&lt;strong&gt;多美滋、晨冠、花冠、纽贝滋&lt;/strong&gt;等4家上海地区的婴幼儿配方乳粉生产企业全部通过换证审查&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;乳业大省 黑龙江&lt;/strong&gt;食药监局: 知名乳企贝&lt;strong&gt;因美、飞鹤、光明、雀巢、完达山、大庆、红星&lt;/strong&gt; 拿到了新证&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;换证带来的影响&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;价格是市场推动的，不是政策推动的&lt;strong&gt;。如果企业想要涨价，会对比同类产品，如果全行业提价，才可能有涨价的可能&lt;/strong&gt;，一两家企业不会也不敢轻举妄动&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;总会有那么几个出头鸟?不是么? &amp;gt;  * 目前市场上奶粉供应充足，竞争饱和，供过于求. &amp;gt;  * 提价会给整个市场带来不利影响 &amp;gt;  * 一些企业开始**推出新品**，走低价路线，其他品牌也不会盲目提价 &amp;gt;  * 外资品牌享有天然优势的奶粉行业内，国产品牌未来挑战更多
+&lt;/code&gt;&lt;/pre&gt;
+
+</description>
+                <link>http://username.github.io/2014/05/30/read</link>
+                <guid>http://username.github.io/2014/05/30/read</guid>
+                <pubDate>2014-05-30T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Read</title>
+                <description>&lt;h1 id=&quot;section&quot;&gt;电影票房&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;2010年，中国电影年票房首次突破100亿元。4年时间，中国电影年票房破百亿元的用时一直在缩短：2011年在10月，2012年在8月，2013年在6月。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;电影事业赚钱靠什么?
+卖爆米花?不是最赚钱的么?
+但是这个准入的门槛?谁会把这么赚钱的东西让出来?没有.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;移动互联网争抢公众服务金矿 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;支付宝着手布局“未来医院”项目，微信近日开放京东入口&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;城市的本质是什么?是提供各种服务,各种公众服务.比如交通,饮食,娱乐休闲,购物,工作机会,交流等等.
+从一个购物广场差不多就可以看出来.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;交通:到这个购物广场有公交车,地铁,出租车,良好的道路情况.&lt;/li&gt;
+  &lt;li&gt;饮食:购物广场里面,周围总有着餐馆,餐厅,够时间让人们逗留 .&lt;/li&gt;
+  &lt;li&gt;娱乐休闲:电影? 电玩? 书城? 咖啡店? 服装店? 宠物店?&lt;/li&gt;
+  &lt;li&gt;工作机会: 
+    &lt;ul&gt;
+      &lt;li&gt;交通==&amp;gt;出租司机,公汽,交警&lt;/li&gt;
+      &lt;li&gt;饮食==&amp;gt;餐馆服务员,厨师,原材料供应,菜农&lt;/li&gt;
+      &lt;li&gt;各种售票员&lt;/li&gt;
+      &lt;li&gt;不胜枚举&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;这些服务在农村里是没有这么完善的.如何抢占这些服务?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;pre&gt;&lt;code&gt;同行业的知名公司西部钛业、宝钛股份等，都是国企。五环钛业目前是国内领先的民营钛及钛合金材料制造商。尤其是其产品的军工前景非常有发展空间，已经有国内外军工企业直接接洽下订单。有望成为中国资本市场‘民营钛业第一股’，这才是江粉磁材并购五环钛业的真正动力。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;军工企业,想过没有?资源不够
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+                <link>http://username.github.io/2014/05/29/read</link>
+                <guid>http://username.github.io/2014/05/29/read</guid>
+                <pubDate>2014-05-29T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Html2chm</title>
+                <description>&lt;h1 id=&quot;html2chm&quot;&gt;html2chm&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;download from &lt;a href=&quot;http://download.csdn.net/detail/aipeli/41313&quot; title=&quot;html2zip&quot;&gt;http://download.csdn.net/detail/aipeli/41313&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;or form &lt;a href=&quot;http://www.urmyfaith.info/docs/softerware/htm2chm.rar&quot;&gt;html2chm.rar&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;run html2chm.exe&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/docs/image4blog/html2chm.exe.png&quot; alt=&quot;html2chm.exe&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;preare source html files
+    &lt;ul&gt;
+      &lt;li&gt;eg:git help files&lt;/li&gt;
+      &lt;li&gt;git help files  &lt;a href=&quot;_blank&quot; title=&quot;C:/Users/XXXX/AppData/Local/GitHub/XXX/doc/git/html/&quot;&gt;dir&lt;/a&gt;	&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;create dir info&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/docs/image4blog/generate.png&quot; alt=&quot;generate dir info&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;create chm file&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/docs/image4blog/compile.png&quot; alt=&quot;compile&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;show it now:&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/docs/image4blog/show-git.chm.png&quot; alt=&quot;show-git.chm&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+                <link>http://username.github.io/2014/05/29/html2chm</link>
+                <guid>http://username.github.io/2014/05/29/html2chm</guid>
+                <pubDate>2014-05-29T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Dream</title>
+                <description>&lt;h1 id=&quot;dream&quot;&gt;dream&lt;/h1&gt;
+
+&lt;p&gt;i know its not true. &lt;/p&gt;
+
+&lt;p&gt;i heard Someone called  you，so  i  run  to  you， but there were a car  crash. i joined the  people to call 120 and  save injured person. but how  could i wandered that  you were on  the  bus. &lt;/p&gt;
+
+&lt;p&gt;you were heavily injured， bleeding on your heard. i  carried you to a
+hospital， I  FOUND that you  turned into a cat, after the surgery ,you were
+gone.Then we found you were under the bed.&lt;/p&gt;
+
+&lt;p&gt;then i woke up.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;do you know?
+you dont know.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+                <link>http://username.github.io/2014/05/29/dream</link>
+                <guid>http://username.github.io/2014/05/29/dream</guid>
+                <pubDate>2014-05-29T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>搭建过程</title>
+                <description>&lt;h2 id=&quot;section&quot;&gt;安装过程&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;创建仓库&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;下载模版&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;修改js,index.html&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;md文件夹下添加文章&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用&lt;strong&gt;mardownPad2&lt;/strong&gt;预览&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用&lt;strong&gt;givm&lt;/strong&gt;来编辑&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用&lt;strong&gt;github for windows&lt;/strong&gt;来提交&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;5/28/2014 1:51:35 PM &lt;/p&gt;
+</description>
+                <link>http://username.github.io/2014/05/28/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B</link>
+                <guid>http://username.github.io/2014/05/28/搭建过程</guid>
+                <pubDate>2014-05-28T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Readme</title>
+                <description>&lt;h2 id=&quot;read-me&quot;&gt;Read ME&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;how to post an article&lt;/li&gt;
+  &lt;li&gt;how to add CNAME&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <link>http://username.github.io/2014/05/28/readme</link>
+                <guid>http://username.github.io/2014/05/28/readme</guid>
+                <pubDate>2014-05-28T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>Md语法</title>
+                <description>&lt;ul&gt;
+  &lt;li&gt;一级标题使用#&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;h1&quot;&gt;这是 H1&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;二级标题使用##&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;h2&quot;&gt;这是H2&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;标题使用##&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;图片使用&lt;img src=&quot;/images/pic.jpg&quot; alt=&quot;Alt text&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+                <link>http://username.github.io/2014/05/28/md%E8%AF%AD%E6%B3%95</link>
+                <guid>http://username.github.io/2014/05/28/md语法</guid>
+                <pubDate>2014-05-28T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>How Are You Doing</title>
+                <description>&lt;h2 id=&quot;how-are-you-doing&quot;&gt;how are you doing&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;最近在做什么?
+忙么?
+咋都不见人呢?
+
+            5/28/2014  
+	from zuoxue@qq.com ----------
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+                <link>http://username.github.io/2014/05/28/how-are-you-doing</link>
+                <guid>http://username.github.io/2014/05/28/how-are-you-doing</guid>
+                <pubDate>2014-05-28T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>1984</title>
+                <description>
+&lt;h1 id=&quot;section&quot;&gt;1984 公司元年&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;中国公司与美国公司之间的距离,并不在于创始资本的大小,而在于各自对产业成长的视野和理解的差距.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+                <link>http://username.github.io/2014/05/28/1984</link>
+                <guid>http://username.github.io/2014/05/28/1984</guid>
+                <pubDate>2014-05-28T00:00:00+08:00</pubDate>
+        </item>
+
+
+</channel>
+</rss>
