@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!--百度轻应用-->
+    <script type="text/javascript" name="baidu-tc-cerfication" data-appid="5027706" src="http://apps.bdimg.com/cloudaapi/lightapp.js"></script>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="description" content="z2ex">
+  <meta name="author" content="z2xy">
+  <meta name="keywords" content="Jekyll目录结构与变量, z2xy, z2xy">
+  <title>Jekyll目录结构与变量 - z2xy</title>
+  <link rel="canonical" href="http://5i01314.vipsinaapp.com//blog/2014/10/19/Jekyll_Variables.html">
+  <link rel="icon" id="icon"  href="/res/img/icon/1.ico" type="image/x-icon">
+  <link rel="shortcut icon" id="shortcut_icon" href="/res/img/icon/1.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/res/css/public.css">
+  <link rel="stylesheet" href="/res/css/light.css">
+
+
+  
+
+  <script src="/res/js/light.js"></script>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+</head>
+<body>
+  <div id="blog">
+    <div class="sidebar">
+  <div class="profilepic">
+    <a href="/"><img src="/res/img/icon.jpg" alt="logo"></img></a>
+  </div>
+  <h1 class="title" ><a href="/" ><font id="change">z2xy</font></a></h1>
+  <h2 class="sub-title" >The time is passing</h2>
+  <nav id="nav">
+    <ul>
+    
+      <li><a href="/page/timing.html"><i class="fa fa-clock-o"></i>&nbsp;时间穿梭</a></li>
+    
+      <li><a href="/page/category.html"><i class="fa fa-tags"></i>&nbsp;文章分类</a></li>
+    
+      <li><a href="/page/resource.html"><i class="fa fa-book"></i>&nbsp;资源收藏</a></li>
+    
+      <li><a href="/page/about.html"><i class="fa fa-star"></i>&nbsp;关于作者</a></li>
+    
+    </ul>
+  </nav>  
+  <nav id="sub-nav">
+    <a class="weibo " href="http://weibo.com/autumn_0528" title="新浪微博" target="_blank"><i class="fa fa-weibo"></i></a>
+    <a class="github" href="https://github.com/urmyfaith" title="GitHub" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+    <a class="rss" href="/page/feed.xml" title="RSS订阅" target="_blank"><i class="fa fa-rss"></i></a>
+  </nav>
+  <div id="license">
+    <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" title="本站所有作品采用：&#10;知识共享《署名 非商业性使用 相同方式共享 3.0》&#10;进行许可" >
+    <img alt="License" height="31" width="88" src="/res/img/license.png" /></a>
+  </div>
+</div>
+
+
+
+   <script>
+    window.self.setInterval("reviseColor()",10000);
+    function reviseColor(){
+	var dom = window.document;
+	var f = dom.getElementById("change");
+	("white"==f.style.color) ? (f.style.color = "red") : (("red" == f.style.color) ? (f.style.color = "green") :  ("green" == f.style.color)?f.style.color = "blue":(f.style.color = "white"));
+
+	}
+   </script>
+    <div class="main">
+    <header class="post-header">
+  <h1 class="post-title"><a href="/blog/2014/10/19/Jekyll_Variables.html">Jekyll目录结构与变量</a></h2>
+  <p class="post-meta">
+    <i class="fa fa-calendar"></i>
+    2014年10月19日
+    <i class="space"></i>
+    <i class="fa fa-tag"></i>
+    <a class="post-category" href="/page/category.html#jekyll">jekyll</a>
+	<br />
+	<i class="fa fa-tags"></i>
+	<a class="post-category" href="/page/tags.html#Jekyll">Jekyll</a><i class="space"></i>
+  </p>
+</header>
+<div class="post-main">
+<p><strong>Jekyll 目录及一些说明</strong></p>
+
+<p>Jekyll 标准目录树</p>
+
+<pre><code>_config.yml   Jekyll的配置文件
+_includes     include 文件所在的文件夹
+_layouts      模版文件夹
+_posts        自己要发布的内容
+_sites        预览时产生的文件都放在该文件夹中
+</code></pre>
+
+<!-- more -->
+
+<p>Jekyll的安装及配置</p>
+
+<blockquote>
+  <ul>
+    <li>_includes文件夹中所放的文件是最终要放到模版中的一些代码片段。 </li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>_layouts中放的一些模版，模版是用包含page或post内容的。Jekyll的模版使用HTML语法来写，并包含YAML Front Matter。所有的模版都可用Liquid来与网站进行交互。所的的模版都可以使用全局变量site和page，site变量包含该网站所有可以接触得到的内容和元数据(meta-data)，page变量包含的是当前渲染的page或post的所有可以接触得到的数据。 </li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>_post文件夹中放的是自己要发布的post文章。post文件的命名规则为YEAR-MONTH-DATE-title.MARKUP，使用rake post会自动将post文件命名合适。而对于page，所有放在根目录下或不以下划线开头的文件夹中有格式的文件都会被Jekyll处理成page。这里说的有格式是指文件含有YAML Front Matter。所有的post和page都要用markdown或者texile或者HTML语法来写，并可以包含Liquid模版的语法。还要有 YAML Front Matter (Jekyll只处理具有YAML Front Matter的文件)。YAML Front Matter必须放在文件的开头，一对—之间，用户可在这一对—间设置预先定义的变量或用户自己的数据</li>
+  </ul>
+</blockquote>
+
+<hr />
+
+<p><strong>Jekyll模板全局变量</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>变量</th>
+      <th style="text-align: left">描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>site</td>
+      <td style="text-align: left">全站的信息+_config.yml文件中的配置选项</td>
+    </tr>
+    <tr>
+      <td>page</td>
+      <td style="text-align: left">这个变量中包含YAML前置数据,另外加上两个额外的变量值:url和content。</td>
+    </tr>
+    <tr>
+      <td>content</td>
+      <td style="text-align: left">在布局模板文件中，这里变量包含了页面的子视图。这个变量将会把渲染后的内容插入到模板文件中。这个变量不能在文章和页面文件中使用。</td>
+    </tr>
+    <tr>
+      <td>paginator</td>
+      <td style="text-align: left">一旦paginate配置选项被设置了，这个变量才能被使用。</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><strong>Jekyll模板Site变量</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>变量</th>
+      <th style="text-align: left">描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>site.time</td>
+      <td style="text-align: left">当前的时间(当你运行Jekyll时的时间)</td>
+    </tr>
+    <tr>
+      <td>site.posts</td>
+      <td style="text-align: left">一个按时间逆序的文章列表。</td>
+    </tr>
+    <tr>
+      <td>site.related_posts</td>
+      <td style="text-align: left">如果当前被处理的页面是一个文章文件，那这个变量是一个包含了最多10篇相关文章的列表。默认来说，这些相关文章是低质量但计算快的。为了得到高质量但计算慢的结果，运行Jekyll命令时可以加上–lsi选项。(潜在语意索引)</td>
+    </tr>
+    <tr>
+      <td>site.categories.CATEGORY</td>
+      <td style="text-align: left">所有在CATEGORY分类中的文章列表</td>
+    </tr>
+    <tr>
+      <td>site.tags.TAG</td>
+      <td style="text-align: left">所有拥有TAG标签的文章的列表</td>
+    </tr>
+    <tr>
+      <td>site.[CONFIGURATION_DATA]</td>
+      <td style="text-align: left">截止0.5.2版本，所有在_config.yml中的数据都能够通过site变量调用。举例来说，如果你有一个这样的选项在你的配置文件中:url: http://higrid.net，那在文章和页面文件中可以这样调用{ { site.url } }。Jekyll并不会自动解析修改过的_config.yml文件，你想要启用新的设置选项，你需要重启Jekyll</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><strong>Jekyll模板Page变量</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>变量</th>
+      <th style="text-align: left">描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>page.content</td>
+      <td style="text-align: left">页面中未渲染的内容</td>
+    </tr>
+    <tr>
+      <td>page.title</td>
+      <td style="text-align: left">文章的标题</td>
+    </tr>
+    <tr>
+      <td>page.url</td>
+      <td style="text-align: left">除去域名以外的URL，例子:/2013/12/14/higrid-net.html</td>
+    </tr>
+    <tr>
+      <td>page.date</td>
+      <td style="text-align: left">指定每一篇文章的时间，这个选项能够覆盖一篇文章中前置数据设置的时间，它的格式是这样的:YYYY-MM-DD HH:MM:SS</td>
+    </tr>
+    <tr>
+      <td>page.id</td>
+      <td style="text-align: left">每一篇文章的唯一标示符(在RSS中非常有用) 例子：/2008/12/14/higrid-net</td>
+    </tr>
+    <tr>
+      <td>page.categories</td>
+      <td style="text-align: left">这篇文章隶属的分类的一个列表，分类是通过在_post目录中的目录结构推导而来的。举例来说，在路径/work/code/_posts/2008-12-24-closures.textile下的文件，这个变量将会是[work,code]。这个变量也能在YAML前置数据中被指定。</td>
+    </tr>
+    <tr>
+      <td>page.tags</td>
+      <td style="text-align: left">这篇文章的标签的列表。这些数据能够在YAML前置数据中指定</td>
+    </tr>
+    <tr>
+      <td>page.next</td>
+      <td style="text-align: left">按时间序的下一篇文章</td>
+    </tr>
+    <tr>
+      <td>page.content</td>
+      <td style="text-align: left">按时间序的上一篇文章</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>注意:任何你自己指定的自定义前置数据都能够通过page调用。举例来说，如果你在页面的前置数据中设置了custom_css: true，那这个值可以在模板可以这样调用:page.custom_css</p>
+</blockquote>
+
+<hr />
+
+<p><strong>Jekyll模板Paginator变量</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>变量</th>
+      <th style="text-align: left">描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>paginator.per_page</td>
+      <td style="text-align: left">每一个页面上文章的数量</td>
+    </tr>
+    <tr>
+      <td>paginator.posts</td>
+      <td style="text-align: left">当前页面上可用的文章</td>
+    </tr>
+    <tr>
+      <td>paginator.total_posts</td>
+      <td style="text-align: left">所有文章的数量</td>
+    </tr>
+    <tr>
+      <td>paginator.total_pages</td>
+      <td style="text-align: left">所有页面的数量</td>
+    </tr>
+    <tr>
+      <td>paginator.page</td>
+      <td style="text-align: left">当前页面的数量</td>
+    </tr>
+    <tr>
+      <td>paginator.previous_page</td>
+      <td style="text-align: left">前面的页面的数量</td>
+    </tr>
+    <tr>
+      <td>paginator.next_page</td>
+      <td style="text-align: left">接下来的的页面的数量</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><strong>Post或Page的创建及发布</strong></p>
+
+<p>创建Post文章</p>
+
+<pre><code>rake post title="文章标题"
+</code></pre>
+
+<p>会自动创建一个具有合适文件名和YAML Front Matter的文件(使用时将”文章标题”替换成你要创建的文章的标题)。</p>
+
+<p>创建Page页面</p>
+
+<pre><code>rake page name="页面名称.md"   或者
+rake page name="pages/页面名称.md"
+</code></pre>
+
+<p>发布Post或Page</p>
+
+<pre><code>git add .
+git commit -m '一些说明'
+git push origin master
+</code></pre>
+
+<hr />
+
+<p><strong>[<a href="http://jekyllrb.com/docs/variables/">原文地址</a>]</strong></p>
+
+</div>
+<div class="share">
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+  </div>
+  <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":["qzone","tsina","weixin","sqq"],"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/res/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</div>
+<div class="pagination">
+
+<a class="pagination-item newer" href="/blog/2014/10/18/windows_configuration_Jekyll.html"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;Windows平台配置Jekyll环境并与GitHub连接</a>
+
+
+<a class="pagination-item older" href="/blog/2014/10/19/git_common_command.html">Git 常用命令整理&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+
+</div>
+<style>#ds-reset .ds-avatar img{border-radius:50%;}</style>
+<div class="comments">
+  <div class="ds-thread" data-title="Jekyll目录结构与变量" data-thread-key="/blog/2014/10/19/Jekyll_Variables" data-url="http://5i01314.vipsinaapp.com//blog/2014/10/19/Jekyll_Variables.html"></div>
+  <script type="text/javascript">var duoshuoQuery = {short_name:""};(function(){var ds = document.createElement('script');ds.type = 'text/javascript';ds.async = true;ds.src = '/res/js/embed.js';ds.charset = 'UTF-8';(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);})();</script>
+</div>
+    <footer>Copyright&nbsp;&copy;&nbsp;2015 <a href="http://5i01314.vipsinaapp.com/">z2xy</a><br/><i class="fa fa-cogs" style="color:blueviolet;">&nbsp;</i>Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a></footer>
+    </div>
+  </div>    
+  <div id="top"><a id="rocket" href="javascript:;" title="返回顶部"><i></i></a></div>
+  
+</body>
+</html>

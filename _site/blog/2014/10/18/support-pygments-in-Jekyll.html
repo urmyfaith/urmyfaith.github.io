@@ -1,0 +1,461 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!--百度轻应用-->
+    <script type="text/javascript" name="baidu-tc-cerfication" data-appid="5027706" src="http://apps.bdimg.com/cloudaapi/lightapp.js"></script>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="description" content="z2ex">
+  <meta name="author" content="z2xy">
+  <meta name="keywords" content="Jekyll中的语法高亮:Pygments, z2xy, z2xy">
+  <title>Jekyll中的语法高亮:Pygments - z2xy</title>
+  <link rel="canonical" href="http://5i01314.vipsinaapp.com//blog/2014/10/18/support-pygments-in-Jekyll.html">
+  <link rel="icon" id="icon"  href="/res/img/icon/1.ico" type="image/x-icon">
+  <link rel="shortcut icon" id="shortcut_icon" href="/res/img/icon/1.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/res/css/public.css">
+  <link rel="stylesheet" href="/res/css/light.css">
+
+
+  
+
+  <script src="/res/js/light.js"></script>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+</head>
+<body>
+  <div id="blog">
+    <div class="sidebar">
+  <div class="profilepic">
+    <a href="/"><img src="/res/img/icon.jpg" alt="logo"></img></a>
+  </div>
+  <h1 class="title" ><a href="/" ><font id="change">z2xy</font></a></h1>
+  <h2 class="sub-title" >The time is passing</h2>
+  <nav id="nav">
+    <ul>
+    
+      <li><a href="/page/timing.html"><i class="fa fa-clock-o"></i>&nbsp;时间穿梭</a></li>
+    
+      <li><a href="/page/category.html"><i class="fa fa-tags"></i>&nbsp;文章分类</a></li>
+    
+      <li><a href="/page/resource.html"><i class="fa fa-book"></i>&nbsp;资源收藏</a></li>
+    
+      <li><a href="/page/about.html"><i class="fa fa-star"></i>&nbsp;关于作者</a></li>
+    
+    </ul>
+  </nav>  
+  <nav id="sub-nav">
+    <a class="weibo " href="http://weibo.com/autumn_0528" title="新浪微博" target="_blank"><i class="fa fa-weibo"></i></a>
+    <a class="github" href="https://github.com/urmyfaith" title="GitHub" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+    <a class="rss" href="/page/feed.xml" title="RSS订阅" target="_blank"><i class="fa fa-rss"></i></a>
+  </nav>
+  <div id="license">
+    <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" title="本站所有作品采用：&#10;知识共享《署名 非商业性使用 相同方式共享 3.0》&#10;进行许可" >
+    <img alt="License" height="31" width="88" src="/res/img/license.png" /></a>
+  </div>
+</div>
+
+
+
+   <script>
+    window.self.setInterval("reviseColor()",10000);
+    function reviseColor(){
+	var dom = window.document;
+	var f = dom.getElementById("change");
+	("white"==f.style.color) ? (f.style.color = "red") : (("red" == f.style.color) ? (f.style.color = "green") :  ("green" == f.style.color)?f.style.color = "blue":(f.style.color = "white"));
+
+	}
+   </script>
+    <div class="main">
+    <header class="post-header">
+  <h1 class="post-title"><a href="/blog/2014/10/18/support-pygments-in-Jekyll.html">Jekyll中的语法高亮:Pygments</a></h2>
+  <p class="post-meta">
+    <i class="fa fa-calendar"></i>
+    2014年10月18日
+    <i class="space"></i>
+    <i class="fa fa-tag"></i>
+    <a class="post-category" href="/page/category.html#jekyll">jekyll</a>
+	<br />
+	<i class="fa fa-tags"></i>
+	<a class="post-category" href="/page/tags.html#Jekyll">Jekyll</a><i class="space"></i><a class="post-category" href="/page/tags.html#Pygments">Pygments</a><i class="space"></i><a class="post-category" href="/page/tags.html#语法高亮">语法高亮</a><i class="space"></i>
+  </p>
+</header>
+<div class="post-main">
+<hr />
+
+<p>在安装成功Jekyll环境的情况下.</p>
+
+<h2 id="pygments">一.安装Pygments</h2>
+
+<p>Jekyll 里默认的语法高亮插件是 <a href="http://pygments.org/">Pygments</a>。Pygments <a href="http://pygments.org/docs/lexers/">支持多种语言高亮</a>。</p>
+
+<p><strong>一.1)如果你是linux</strong></p>
+
+<ul>
+  <li><strong>1.安装 pygments</strong></li>
+</ul>
+
+<p>archlinux:</p>
+
+<pre><code>$ sudo pacman -S python2-pygments
+</code></pre>
+
+<!-- more -->
+
+<p>或直接通过 pip 来安装</p>
+
+<pre><code>$ pip install pygments --user
+</code></pre>
+
+<ul>
+  <li><strong>2.安装 pygments.rb</strong></li>
+</ul>
+
+<p>命令使用: </p>
+
+<pre><code>$ gem install pygments.rb
+</code></pre>
+
+<hr />
+
+<p><strong>一.2)如果你是Windows</strong></p>
+
+<p>它需要安装 Python 并在网站的配置文件<code>_config.yml</code> 里将 <code>highlighter</code> 的值设置为<code>pygments</code>。</p>
+
+<p>不久之前，Jekyll 还添加另一个高亮引擎名为 <a href="https://github.com/jayferd/rouge">Rouge</a>， </p>
+
+<p>尽管暂时不如 Pygments 支持那么多的语言，但它是原生 <a href="https://www.ruby-lang.org/zh_cn/">Ruby</a> 程序，而不需要使用 <a href="https://www.python.org/download/">Python</a> 。 </p>
+
+<hr />
+
+<ul>
+  <li><strong>一.2)1.安装 Python</strong></li>
+</ul>
+
+<p>前往 <a href="http://www.python.org/download/">http://www.python.org/download/</a>
+下载合适的 Python windows 安装包，如 Python 2.7.8 Windows Installer。</p>
+
+<p>请注意，Python 2 可能会更合适，因为暂时 Python 3 可能不会正常工作。</p>
+
+<p>安装</p>
+
+<pre><code>添加安装路径 (如： C:\Python27) 至 PATH。
+</code></pre>
+
+<p>检验 Python 安装是否成功</p>
+
+<pre><code>python –V
+</code></pre>
+
+<p>输出示例：</p>
+
+<pre><code>Python 2.7.8
+</code></pre>
+
+<hr />
+
+<ul>
+  <li><strong>一.2)2.安装 ‘Easy Install’</strong></li>
+</ul>
+
+<p>浏览 <a href="https://pypi.python.org/pypi/setuptools#installation-instructions">https://pypi.python.org/pypi/setuptools#installation-instructions</a> 来查看详细的安装指南。</p>
+
+<p>对于 Windows 7 的机器，下载 <a href="https://bootstrap.pypa.io/ez_setup.py">ez_setup.py</a> 并保存，例如，至C:\。 然后从命令行使用 Python 运行此文件：</p>
+
+<pre><code>python C:\ez_setup.py
+</code></pre>
+
+<p>添加 ‘Python Scripts’ 路径 (如： C:\Python27\Scripts) 至 PATH</p>
+
+<hr />
+
+<ul>
+  <li><strong>一.2)3.安装 Pygments</strong></li>
+</ul>
+
+<p>确保 easy_install 已经正确安装</p>
+
+<pre><code>easy_install --version
+</code></pre>
+
+<p>输出示例：</p>
+
+<pre><code>setuptools 7.0
+</code></pre>
+
+<p>使用 “easy_install” 来安装 Pygments</p>
+
+<pre><code>easy_install Pygments
+</code></pre>
+
+<hr />
+
+<h2 id="section">二.配置</h2>
+
+<hr />
+<ul>
+  <li><strong>1.配置_config.yml文件</strong></li>
+</ul>
+
+<p>在 Jekyll 的配置文件 _config.yml 中设置打开 Pygments</p>
+
+<pre><code>pygments: true
+mardown: redcarpet
+</code></pre>
+
+<blockquote>
+  <p>注意：新版本 Jekyll 中，<code>pygments: true</code> 替换为 <code>highlighter: pygments</code>。  </p>
+</blockquote>
+
+<hr />
+<ul>
+  <li><strong>2.生成css文件</strong></li>
+</ul>
+
+<p>进到我们的网站目录，运行下面代码生成 Pygments 样式</p>
+
+<pre><code>$ pygmentize -S default -f html &gt; your/path/pygments.css
+</code></pre>
+
+<hr />
+<ul>
+  <li><strong>3.导入css文件</strong></li>
+</ul>
+
+<p>生成的样式文件加到我们的网页中</p>
+
+<pre><code>&lt;link rel="stylesheet" href="/your/path/pygments.css"&gt;
+</code></pre>
+
+<hr />
+
+<h2 id="section-1">三. 使用</h2>
+
+<p>语法高亮的代码片段要放在标签对 <code>{% highlight language %}</code> 和 <code>{% endhighlight %}</code> 之间，其中的 language 为<a href="http://pygments.org/docs/lexers/">多种语言高亮</a>页面中的 Short names。</p>
+
+<pre><code>{% highlight c %}
+/* hello world demo */
+#include &lt;stdio.h&gt;
+int main(int argc, char **argv)
+{
+    printf("Hello, World!\n");
+    return 0;
+}
+{% endhighlight %}
+</code></pre>
+
+<p>也可以采用这样的写法</p>
+
+<pre><code>```c
+/* hello world demo */
+#include &lt;stdio.h&gt;
+int main(int argc, char **argv)
+{
+    printf("Hello, World!\n");
+    return 0;
+}
+```
+</code></pre>
+
+<p>```符号需要markdownx解释引擎，</p>
+
+<pre><code>markdown: redcarpet
+redcarpet:
+	extensions: ["fenced_code_blocks", "tables", "highlight", "strikethrough"]
+</code></pre>
+
+<hr />
+
+<p>生成的 html 高亮结果  以下结束是使用Pygments 样式的 default 与 vs 的并集样式</p>
+
+<p>C</p>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="cm">/* hello world demo */</span>
+<span class="cp">#include &lt;stdio.h&gt;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello, World!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Java </p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">pexcn</span><span class="o">.</span><span class="na">activity</span><span class="o">.</span><span class="na">demo</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.app.Activity</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.util.Log</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">Activity</span> <span class="o">{</span>
+	<span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">TAG</span> <span class="o">=</span> <span class="s">&quot;ActivityDemo&quot;</span><span class="o">;</span>
+	
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+        <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">main</span><span class="o">);</span>
+        <span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">&quot;onCreate() start...&quot;</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></div>
+
+<hr />
+
+<h2 id="pygments-">四. Pygments 样式</h2>
+
+<p>Pygments 样式 默认提供了 monokai、manni、rrt、perldoc、borland、colorful、default 等等，多种的样式。</p>
+
+<p>可以通过 Python Shell 中用以下命令列出当前 Pygments 支持的样式：</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pygments.styles</span> <span class="kn">import</span> <span class="n">STYLE_MAP</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">STYLE_MAP</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="p">[</span><span class="s">&#39;manni&#39;</span><span class="p">,</span> <span class="s">&#39;igor&#39;</span><span class="p">,</span> <span class="s">&#39;xcode&#39;</span><span class="p">,</span> <span class="s">&#39;vim&#39;</span><span class="p">,</span> <span class="s">&#39;autumn&#39;</span><span class="p">,</span> <span class="s">&#39;vs&#39;</span><span class="p">,</span> <span class="s">&#39;rrt&#39;</span><span class="p">,</span> <span class="s">&#39;native&#39;</span><span class="p">,</span> <span class="s">&#39;perldoc&#39;</span><span class="p">,</span> <span class="s">&#39;borland&#39;</span><span class="p">,</span> <span class="s">&#39;tango&#39;</span><span class="p">,</span> <span class="s">&#39;emacs&#39;</span><span class="p">,</span> <span class="s">&#39;friendly&#39;</span><span class="p">,</span> <span class="s">&#39;monokai&#39;</span><span class="p">,</span> <span class="s">&#39;paraiso-dark&#39;</span><span class="p">,</span> <span class="s">&#39;colorful&#39;</span><span class="p">,</span> <span class="s">&#39;murphy&#39;</span><span class="p">,</span> <span class="s">&#39;bw&#39;</span><span class="p">,</span> <span class="s">&#39;pastie&#39;</span><span class="p">,</span> <span class="s">&#39;paraiso-light&#39;</span><span class="p">,</span> <span class="s">&#39;trac&#39;</span><span class="p">,</span> <span class="s">&#39;default&#39;</span><span class="p">,</span> <span class="s">&#39;fruity&#39;</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span></code></pre></div>
+
+<p>通过 -S 来选择，需要生成 monokai 的样式：</p>
+
+<pre><code>$ pygmentize -S monokai -f html &gt; your/path/pygments.css
+</code></pre>
+
+<p>下面是 pygments 个各样式 show：</p>
+
+<ul>
+  <li>
+    <p><strong>monokai</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-monokai.png" alt="pygments-monokai" />  </p>
+  </li>
+  <li>
+    <p><strong>autumn</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-autumn.png" alt="pygments-autumn" />  </p>
+  </li>
+  <li>
+    <p><strong>borland</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-borland.png" alt="pygments-borland" />  </p>
+  </li>
+  <li>
+    <p><strong>bw</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-bw.png" alt="pygments-bw" />  </p>
+  </li>
+  <li>
+    <p><strong>colorful</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-colorful.png" alt="pygments-colorful" />  </p>
+  </li>
+  <li>
+    <p><strong>default</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-default.png" alt="pygments-default" />  </p>
+  </li>
+  <li>
+    <p><strong>emacs</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-emacs.png" alt="pygments-emacs" />  </p>
+  </li>
+  <li>
+    <p><strong>friendly</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-friendly.png" alt="pygments-friendly" />  </p>
+  </li>
+  <li>
+    <p><strong>fruity</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-fruity.png" alt="pygments-fruity" />  </p>
+  </li>
+  <li>
+    <p><strong>manni</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-manni.png" alt="pygments-manni" />  </p>
+  </li>
+  <li>
+    <p><strong>monokai</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-monokai.png" alt="pygments-monokai" />  </p>
+  </li>
+  <li>
+    <p><strong>murphy</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-murphy.png" alt="pygments-murphy" />  </p>
+  </li>
+  <li>
+    <p><strong>native</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-native.png" alt="pygments-native" />  </p>
+  </li>
+  <li>
+    <p><strong>pastie</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-pastie.png" alt="pygments-pastie" />  </p>
+  </li>
+  <li>
+    <p><strong>perldoc</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-perldoc.png" alt="pygments-perldoc" />  </p>
+  </li>
+  <li>
+    <p><strong>rrt</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-rrt.png" alt="pygments-rrt" />  </p>
+  </li>
+  <li>
+    <p><strong>tango</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-tango.png" alt="pygments-tango" />  </p>
+  </li>
+  <li>
+    <p><strong>trac</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-trac.png" alt="pygments-trac" />  </p>
+  </li>
+  <li>
+    <p><strong>vim</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-vim.png" alt="pygments-vim" />  </p>
+  </li>
+  <li>
+    <p><strong>vs</strong></p>
+
+    <p><img src="/res/img/blog/2014/11/18/pygments-vs.png" alt="pygments-vs" />  </p>
+  </li>
+</ul>
+
+<h2 id="section-2">参考:</h2>
+
+<p><strong><a href="http://pygments.org/docs/cmdline/">http://pygments.org/docs/cmdline/</a></strong></p>
+
+</div>
+<div class="share">
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+  </div>
+  <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":["qzone","tsina","weixin","sqq"],"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/res/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</div>
+<div class="pagination">
+
+<a class="pagination-item newer" href="/blog/2014/10/18/hello%20world.html"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;hello world</a>
+
+
+<a class="pagination-item older" href="/blog/2014/10/18/windows_configuration_Jekyll.html">Windows平台配置Jekyll环境并与GitHub连接&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+
+</div>
+<style>#ds-reset .ds-avatar img{border-radius:50%;}</style>
+<div class="comments">
+  <div class="ds-thread" data-title="Jekyll中的语法高亮:Pygments" data-thread-key="/blog/2014/10/18/support-pygments-in-Jekyll" data-url="http://5i01314.vipsinaapp.com//blog/2014/10/18/support-pygments-in-Jekyll.html"></div>
+  <script type="text/javascript">var duoshuoQuery = {short_name:""};(function(){var ds = document.createElement('script');ds.type = 'text/javascript';ds.async = true;ds.src = '/res/js/embed.js';ds.charset = 'UTF-8';(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);})();</script>
+</div>
+    <footer>Copyright&nbsp;&copy;&nbsp;2015 <a href="http://5i01314.vipsinaapp.com/">z2xy</a><br/><i class="fa fa-cogs" style="color:blueviolet;">&nbsp;</i>Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a></footer>
+    </div>
+  </div>    
+  <div id="top"><a id="rocket" href="javascript:;" title="返回顶部"><i></i></a></div>
+  
+</body>
+</html>
