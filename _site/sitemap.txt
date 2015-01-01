@@ -14,8 +14,7 @@ http://5i01314.vipsinaapp.com//page/category.html
 http://5i01314.vipsinaapp.com//page/about.html
 http://5i01314.vipsinaapp.com//404.html
 
-http://5i01314.vipsinaapp.com//blog/2014/10/20/Design_pattern_Template.html
-http://5i01314.vipsinaapp.com//blog/2014/10/20/Design_pattern_Singleton.html
+http://5i01314.vipsinaapp.com//blog/2015/01/01/install_Jekyll.html
 http://5i01314.vipsinaapp.com//blog/2014/10/19/git_common_command.html
 http://5i01314.vipsinaapp.com//blog/2014/10/19/Jekyll_Variables.html
 http://5i01314.vipsinaapp.com//blog/2014/10/18/windows_configuration_Jekyll.html

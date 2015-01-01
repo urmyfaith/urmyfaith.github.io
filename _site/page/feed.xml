@@ -5,291 +5,31 @@
     <description>z2xy - The time is passing</description>
     <link>http://5i01314.vipsinaapp.com/</link>
     <atom:link href="http://5i01314.vipsinaapp.com//page/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 01 Jan 2015 16:01:53 +0800</pubDate>
-    <lastBuildDate>Thu, 01 Jan 2015 16:01:53 +0800</lastBuildDate>
+    <pubDate>Thu, 01 Jan 2015 16:28:29 +0800</pubDate>
+    <lastBuildDate>Thu, 01 Jan 2015 16:28:29 +0800</lastBuildDate>
     <generator>z2xy</generator>
     
       <item>
-        <title>模板设计模式</title>
-        <description>&lt;h2 id=&quot;section&quot;&gt;模板设计模式&lt;/h2&gt;
+        <title>安装jekyll</title>
+        <description>&lt;p&gt;安装过程&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;模版模式设计步骤&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;git clone https://github.com/comtu/comtu.github.io&lt;/li&gt;
+  &lt;li&gt;修改cname&lt;/li&gt;
+  &lt;li&gt;添加_posts&lt;/li&gt;
+  &lt;li&gt;修改	_config.yml&lt;/li&gt;
+  &lt;li&gt;修改 page/about&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;	1. 写出解决某一类问题的固有的模版代码
-	2. 抽取模版代码中可变的部分，形成独立的函数
-	3. 可变部分抽取的函数定义为抽象函数，类定义为抽象类
-	4. 创建实现类继承并实现父类的未实现的函数
-	5. 为了避免子类重写父类的模版代码，需要将模版代码修饰为final
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;!-- more --&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RunCode&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//3.有抽象方法code()所以必须定义为抽象类&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;c1&quot;&gt;// 1.计算一段代码的运行时间&lt;/span&gt;
-		&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getRuntime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;//5.方法为最终代码final修饰&lt;/span&gt;
-		    &lt;span class=&quot;c1&quot;&gt;// 获取运行前系统的当前时间  毫秒  一秒 = 1000毫秒&lt;/span&gt;
-		&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;currentTimeMillis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; 
-			&lt;span class=&quot;c1&quot;&gt;// 测试代码&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;//2.调用需要测试运行时间的方法,&lt;/span&gt;
-			&lt;span class=&quot;c1&quot;&gt;// 运行结束后获取系统的当前时间&lt;/span&gt;
-		&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;currentTimeMillis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; 
-			&lt;span class=&quot;c1&quot;&gt;//结束时间减开始时间等于运行用时&lt;/span&gt;
-		   &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;运行时间： &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//3.不知这方法如何实现,定义成抽象&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyRunCode&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RunCode&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;//4.实现类 继承抽象类&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;			&lt;span class=&quot;c1&quot;&gt;//4.实现抽象方法&lt;/span&gt;
-			 &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-			 &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-				 &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;目前打印的是第&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;次&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-			 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Demo&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;//演示类 &lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 
-		&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;MyRunCode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getRuntime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;//调用&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;模板设计模式方式二: 接口版&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;接口版比较适合在同一个类中出现重复代码时 将重复代码封装成一个函数.定义接口,与接口实现类进行实现&lt;/p&gt;
-
-&lt;p&gt;案例:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.junit.Test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;cm&quot;&gt;/***&lt;/span&gt;
-&lt;span class=&quot;cm&quot;&gt;	 * 模板设计模式基于接口版&lt;/span&gt;
-&lt;span class=&quot;cm&quot;&gt;	 * @author ComTu&lt;/span&gt;
-&lt;span class=&quot;cm&quot;&gt;	 */&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Template_Inter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;c1&quot;&gt;//接口&lt;/span&gt;
-		&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RunCode_inter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//1.编写接口&lt;/span&gt;
-			&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//2.编写抽象方法 (接口中方法默认是abstract)&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;c1&quot;&gt;//模板块  //3.编写一个模板代码方法需要带接口类型的参数.&lt;/span&gt;
-		&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;RunCode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RunCode_inter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;runcode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-			&lt;span class=&quot;c1&quot;&gt;//运行时的毫秒数&lt;/span&gt;
-			&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;currentTimeMillis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;runcode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//4.调用接口的code方法 &lt;/span&gt;
-			&lt;span class=&quot;c1&quot;&gt;//结束运行的毫秒数&lt;/span&gt;
-			&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;currentTimeMillis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;运行时间: &amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;c1&quot;&gt;//测试函数&lt;/span&gt;
-		&lt;span class=&quot;nd&quot;&gt;@Test&lt;/span&gt;
-		&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;startFor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt; 
-			&lt;span class=&quot;n&quot;&gt;RunCode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;RunCode_inter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//5.模板块 ( 创建接口实现类 )&lt;/span&gt;
-				&lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-				&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//6.需要在模板中执行的代码&lt;/span&gt;
-
-					&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-						&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;i : &amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-					&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-				&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-			&lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;如果非要在其它类中进行调用的话可以使用如下方法:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;c1&quot;&gt;//导入  类名.接口名  类似与java.util.Map.Entry  Map接口.Entry接口&lt;/span&gt;
-			&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Template_Inter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;RunCode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Template_Inter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;RunCode_inter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//5.模板块 (创建接口实现类)&lt;/span&gt;
-				&lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-				&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//6.模板中执行的代码.&lt;/span&gt;
-					&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;运行的代码...&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-				&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-			&lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
+&lt;p&gt;&lt;code&gt;Objective-c
+hello world!
+&lt;/code&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 20 Oct 2014 00:00:00 +0800</pubDate>
-        <link>http://5i01314.vipsinaapp.com//blog/2014/10/20/Design_pattern_Template.html</link>
-        <guid isPermaLink="true">http://5i01314.vipsinaapp.com//blog/2014/10/20/Design_pattern_Template.html</guid>
+        <pubDate>Thu, 01 Jan 2015 00:00:00 +0800</pubDate>
+        <link>http://5i01314.vipsinaapp.com//blog/2015/01/01/install_Jekyll.html</link>
+        <guid isPermaLink="true">http://5i01314.vipsinaapp.com//blog/2015/01/01/install_Jekyll.html</guid>
         
-        <category>设计模式</category>
-        
-      </item>
-    
-      <item>
-        <title>单例设计模式</title>
-        <description>&lt;h2 id=&quot;section&quot;&gt;单例设计模式&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;意图&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;保证一个类仅有一个实例，并提供一个访问它的全局访问点。
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;适用性&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;当类只能有一个实例而且客户可以从一个众所周知的访问点访问它时。
-当这个唯一实例应该是通过子类化可扩展的，并且客户应该无需更改代码就能使用一个扩展的实例时。
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;&lt;strong&gt;单例的设计模式&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;问题：可以通过new关键字调用构造函数对类的对象进行初始化	
-	单例中如果解决了无法对创建的对象进行初始化，那么就不会将对象赋值给引用变量。
-	(保持对象的唯一性)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;单例的实现步骤&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;私有化构造函数 ， 禁止直接通过构造函数创建实例
-在类中自定义一个对象
-对外提供该对象的公共访问方式
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;单例的一般实现有两中模式&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;ol&gt;
-    &lt;li&gt;&lt;code&gt;饿汉式&lt;/code&gt;  指全局的单例实例在类装载时构建。(存在对象生命周期过长问题)    &lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;懒汉式&lt;/code&gt;  指全局的单例实例在第一次被使用时构建。(存在线程安全问题,使用锁后推荐使用)     &lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;内部类&lt;/code&gt;  &lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;枚举&lt;/code&gt;  &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;例:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;饿汉式&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SingletonHungry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;//饿汉式&lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;// 1. 提供显示的私有的构造函数&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SingletonHungry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){}&lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;// 2. 定义一个该类的引用变量并调用构造函数初始化非静态成员属性&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SingletonHungry&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SingletonHungry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//饿汉式单例&lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;// 3. 对单例的对象进行封装&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SingletonHungry&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-	  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;// 提供服务&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-	   &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;提供服务........&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;懒汉式&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SingletonLazy1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//懒汉式 _ 双重检查锁定&lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;// 1. 提供显示的私有的构造函数&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SingletonLazy1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){}&lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;// 2. 定义一个该类的引用变量并调用构造函数初始化   非静态成员属性&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SingletonLazy1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// 懒汉式单例&lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;// 3. 对单例的对象进行封装&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt;  &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SingletonLazy1&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;//需要用到的时候进行调用&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//查看是否有实例,有则直接返回&lt;/span&gt;
-			&lt;span class=&quot;kd&quot;&gt;synchronized&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SingletonLazy1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//多线程操作,有可能会出现多个线程同时必发范围_加锁.&lt;/span&gt;
-				&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-					&lt;span class=&quot;kd&quot;&gt;synchronized&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SingletonLazy1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;//线程同步&lt;/span&gt;
-						&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-							&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SingletonLazy1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-						&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-					&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-				&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-	  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;// 提供服务&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-	   &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;提供服务........&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SingletonLazy2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// 双重检查锁定 &lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;//注意在JDK1.4以及更早版本的Java中许多JVM对于 volatile 关键字的实现会导致双重检查加锁失效,此种方法只能用在JDK5及以后版本&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;volatile&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SingletonLazy2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UNIQUE_INSTANCE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//注意 volatile 关键字&lt;/span&gt;
-
-	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SingletonLazy2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){}&lt;/span&gt;
-
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SingletonLazy2&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UNIQUE_INSTANCE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-			&lt;span class=&quot;kd&quot;&gt;synchronized&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SingletonLazy2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-				&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UNIQUE_INSTANCE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-					&lt;span class=&quot;n&quot;&gt;UNIQUE_INSTANCE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SingletonLazy2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-				&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UNIQUE_INSTANCE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;内部类&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SingletonInnerClass&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//内部类&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SingletonHolder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;  
-	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SingletonInnerClass&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;INSTANCE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SingletonInnerClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;  
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;  
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SingletonInnerClass&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(){}&lt;/span&gt;  
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SingletonInnerClass&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;  
-	 &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SingletonHolder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;INSTANCE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;  
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;  
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;枚举&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SingletonEnum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;//枚举&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;INSTANCE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;  
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;whateverMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;  
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;  
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Demo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//调用测试&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;SingletonLazy2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;SingletonLazy2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;SingletonLazy2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;SingletonLazy2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-	
-		
-
-		&lt;span class=&quot;n&quot;&gt;SingletonEnum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;INSTANCE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;whateverMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//枚举&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;参考文档链接&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~pugh/java/memoryModel/DoubleCheckedLocking.html&quot;&gt;“双重检查锁定”会发生非预期行为声明&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/haoel/article/details/4028232&quot;&gt;深入浅出单实例Singleton设计模式&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://cantellow.iteye.com/blog/838473&quot;&gt;单例模式的七种写法&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/java2000_net/article/details/3983958#&quot;&gt;枚举增强单例模式的可靠性&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 20 Oct 2014 00:00:00 +0800</pubDate>
-        <link>http://5i01314.vipsinaapp.com//blog/2014/10/20/Design_pattern_Singleton.html</link>
-        <guid isPermaLink="true">http://5i01314.vipsinaapp.com//blog/2014/10/20/Design_pattern_Singleton.html</guid>
-        
-        <category>设计模式</category>
+        <category>install,jekyll</category>
         
       </item>
     
@@ -1759,6 +1499,42 @@ print  django.&lt;strong&gt;path&lt;/strong&gt;&lt;/p&gt;
         <pubDate>Tue, 12 Aug 2014 00:00:00 +0800</pubDate>
         <link>http://5i01314.vipsinaapp.com//blog/2014/08/12/what-should-I-do.html</link>
         <guid isPermaLink="true">http://5i01314.vipsinaapp.com//blog/2014/08/12/what-should-I-do.html</guid>
+        
+      </item>
+    
+      <item>
+        <title>Qq影音加载双字幕</title>
+        <description>&lt;p&gt;QQ影音加载双字幕的方法&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;播放视频&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;将字幕文件拖入视频中&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;视频中单击右键,选择”字幕”&amp;gt;”字幕选择”&amp;gt;”双字幕设置”&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;在”播放效果调节”对话框中,可以选择主字幕,次字幕等.&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/docs/image4blog/QQ影音双字幕.png&quot; alt=&quot;QQ影音加载双字幕的方法-图示&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 12 Aug 2014 00:00:00 +0800</pubDate>
+        <link>http://5i01314.vipsinaapp.com//blog/2014/08/12/QQ%E5%BD%B1%E9%9F%B3%E5%8A%A0%E8%BD%BD%E5%8F%8C%E5%AD%97%E5%B9%95.html</link>
+        <guid isPermaLink="true">http://5i01314.vipsinaapp.com//blog/2014/08/12/QQ%E5%BD%B1%E9%9F%B3%E5%8A%A0%E8%BD%BD%E5%8F%8C%E5%AD%97%E5%B9%95.html</guid>
         
       </item>
     
