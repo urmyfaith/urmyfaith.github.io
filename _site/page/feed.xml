@@ -5,9 +5,23 @@
     <description>z2xy - The time is passing</description>
     <link>http://5i01314.vipsinaapp.com/</link>
     <atom:link href="http://5i01314.vipsinaapp.com//page/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 01 Jan 2015 16:36:55 +0800</pubDate>
-    <lastBuildDate>Thu, 01 Jan 2015 16:36:55 +0800</lastBuildDate>
+    <pubDate>Thu, 01 Jan 2015 16:41:36 +0800</pubDate>
+    <lastBuildDate>Thu, 01 Jan 2015 16:41:36 +0800</lastBuildDate>
     <generator>z2xy</generator>
+    
+      <item>
+        <title>demo</title>
+        <description>&lt;p&gt;2015-01-01_16_40_07&lt;/p&gt;
+
+&lt;p&gt;this is a demo file.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 01 Jan 2015 00:00:00 +0800</pubDate>
+        <link>http://5i01314.vipsinaapp.com//blog/2015/01/01/demo.html</link>
+        <guid isPermaLink="true">http://5i01314.vipsinaapp.com//blog/2015/01/01/demo.html</guid>
+        
+        <category>demo</category>
+        
+      </item>
     
       <item>
         <title>Git 常用命令整理</title>
@@ -1511,258 +1525,6 @@ print  django.&lt;strong&gt;path&lt;/strong&gt;&lt;/p&gt;
         <pubDate>Tue, 12 Aug 2014 00:00:00 +0800</pubDate>
         <link>http://5i01314.vipsinaapp.com//blog/2014/08/12/QQ%E5%BD%B1%E9%9F%B3%E5%8A%A0%E8%BD%BD%E5%8F%8C%E5%AD%97%E5%B9%95.html</link>
         <guid isPermaLink="true">http://5i01314.vipsinaapp.com//blog/2014/08/12/QQ%E5%BD%B1%E9%9F%B3%E5%8A%A0%E8%BD%BD%E5%8F%8C%E5%AD%97%E5%B9%95.html</guid>
-        
-      </item>
-    
-      <item>
-        <title>Go To See The Rainbow</title>
-        <description>&lt;h1 id=&quot;section&quot;&gt;《激荡三十年》之2003,重型化运动.&lt;/h1&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;读完这一部分已经是上个星期的事情了.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;由于上个星期为了实现自己的一个想法,花费了很多的时间.而且效果也不是特别的好.以前通过三种其他的方法实现过.这次最初的效果还是不错的,但是最后实现出来后,加载过慢.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;一步一步的实现自己的想法.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;列出目标&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;尝试着去做&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;发现不会的,有帮助文档可查,有在线资料可查,还可以使用AOL搜索来查询.(没有想到查到了一个很不错的论坛,一个不会的问题提出后,不久就有热心的人来回复,探讨了一下不同的思路,给出了很有意义的指导,真的是很谢谢Yacine的热心帮助.)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;将一步一步的实现串联起来.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;由于上上个周末(26号)去看了下丹顶鹤,有点晒,也有点热.其他的时间差不多都花在了上面提到了实现自己的一个想法.抽出时间也看了2003年,还没有来得及摘录下来.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;周三,周四,周五的都有电视剧/动漫可以看.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;周五的买了车票,周六(8月2号)的早上差点就没有赶上火车.从起床,正式坐上火车,只留了40分钟的时候.10分钟之内收拾出门.等出租车,清早的,没什么车,但是红灯却不得不等.去了火车站发现自动售票处暂停使用,而且排队买票的人不少.直接到窗口排队大概10分钟,取到了票.赶到隔壁的候车室,窗口已经关闭了.不过还有一个工作人员在哪里,掏出票给他看,就放我进去了.总算是踩着点赶上火车了.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;周一(8月4号)也就是今天,也差点没有赶上火车.以为自己留出的时间足够的充裕,没有想到还是有一点赶.7点多去吃的早餐,回来退房,然后走到镇汽车客运站站.到客运站发现已经没有了火车站的车,下一趟是10点,这样的话,我10点钟的火车票就得退了,然后买下午3点的火车了票了.果断跟着一个当地人先到了市里.售票员说好的下车后走两三百米就可以到市客运站,结果大约走了1km左右.买了到火车站的票,但是车要人满了才能走,看着时间真是哗哗的走.没有走高速,但是时间却话费的感觉更少了.从下车走到客运站大概10分钟.这次自动售票机终于可以使用了,取票后5分钟左右,登上车就走了.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;没有想到的是,两次的时间安排都这么的紧.一度以为还赶不上火车了.在时间安排的问题上,还是没有考虑好.&lt;/p&gt;
-
-&lt;p&gt;在火车上又看了下《把时间当作朋友》,里面也提到了避免迟到的一些建议:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;养成规律生活的习惯&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;每天检查自己的时间表至少三次&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;假定自己做的没件事件需要的时间比想象的更多一点.&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;假定你永远都会遇到交通堵塞&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;假定其他人都会迟到&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;尽量不要因为别人迟到而责怪他们.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;时间过的真快,唠下嗑就11点半了,还好是10点睡醒了,还是言归正传,2003年的摘录.(关于地震的事情暂不提.)&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;# 《激荡三十年》之2003&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;朱镕基退出政坛&lt;/li&gt;
-  &lt;li&gt;SARS,非典来袭,增速&lt;strong&gt;9.1%&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;房地产热&lt;/li&gt;
-  &lt;li&gt;电荒–两垄断行业,煤电与电力的博弈&lt;/li&gt;
-  &lt;li&gt;重工业之路:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;1. 戴国芳的铁本(炼钢)
-2. 刘永好的铝业大王梦想
-3. 40多民营企业造车
-4. 石油领域,龙家龙,
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;互联网翻身:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;1. 网易股价70.27USD
-2. 阿里巴巴流量大增
-3. 百度在第三方评测超过google
-4. 江南春的楼宇广告遍地开花 ---
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;section-1&quot;&gt;朱镕基退出政坛&lt;/h2&gt;
-&lt;p&gt;-
-   2003年3月5日,朱镕基宣布退出政坛.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“如果说邓小平决定了中国变革的方向,那么,朱镕基则完成了&lt;strong&gt;路径的选择&lt;/strong&gt;.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“&lt;strong&gt;三八线&lt;/strong&gt;“,通货膨胀不超过3%,国内生产总值增长高于8%.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“&lt;strong&gt;分灶吃饭&lt;/strong&gt;“,改变了中央榆地方财政收入的格局.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;国企改革上,”&lt;strong&gt;抓大放小&lt;/strong&gt;“和”&lt;strong&gt;国退民进&lt;/strong&gt;”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;sars---91&quot;&gt;SARS时期经济—增速&lt;strong&gt;9.1%&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;-
-&amp;gt;2003年3月6日,第一例SARS侵入中国.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;2003年年底,国内生产总值增长率为&lt;strong&gt;9.1%&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;那么,在这么淬不及防的灾难来临后,中国不可遏制的经济态势是靠什么支撑?&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;“&lt;strong&gt;中国制造&lt;/strong&gt;“的外贸强劲拉动&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;房地产&lt;/strong&gt;市场旺盛.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;section-2&quot;&gt;房地产热&lt;/h2&gt;
-
-&lt;p&gt;私人资本最为雄厚的浙江和珠三角的地区–&amp;gt; “&lt;strong&gt;温州炒房团&lt;/strong&gt;” –&amp;gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;温州约&lt;strong&gt;8w&lt;/strong&gt;人在全国购房地产,90%以上炒楼&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;15%回报率&lt;/strong&gt;,1000亿元投资净产出150亿元.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;给全国房产分级:&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;一级市场: 北京,上海,深圳,杭州&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;二级市场: 东部沿海,如大连,烟台,南京,苏州,福州&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;三级市场: 东西部结合地区:呼和浩特,武汉,长沙,合肥,南昌,乌鲁木齐&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;四级市场:广西桂林,安徽黄山&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;政府是&lt;strong&gt;左手权利低价征地,右手以权利”市场化”出让土地&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&quot;section-3&quot;&gt;电荒–两垄断行业,煤电与电力的博弈&lt;/h1&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;电荒出现的原因:&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;经济快速成长&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;煤电两大垄断行业的多年扯皮&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;由于国家有关部门组织订货会,煤炭企业以低于&lt;strong&gt;市场价&lt;/strong&gt;的&lt;strong&gt;计划购销价&lt;/strong&gt;供煤给电力(&lt;em&gt;计划制经济&lt;/em&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;煤炭企业把大量煤炭出售给计划外的民营企业.(&lt;strong&gt;市场价&lt;/strong&gt; &amp;gt; &lt;strong&gt;计划购销价&lt;/strong&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;电力部门为了”&lt;strong&gt;保证&lt;/strong&gt;“自己的效益,宁可少要煤,也不肯提价买煤.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;现在终于知道”&lt;strong&gt;错峰,避峰&lt;/strong&gt;,拉闸限电”的那些数学题目的来源了. = =&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;section-4&quot;&gt;重工业之路:&lt;/h2&gt;
-
-&lt;h4 id=&quot;section-5&quot;&gt;1. 戴国芳的铁本(炼钢)&lt;/h4&gt;
-&lt;p&gt;####    2. 刘永好的铝业大王梦想
-####    3. 40多民营企业造车
-####    4. 石油领域,龙家龙,&lt;/p&gt;
-
-&lt;p&gt;钢铁,炼铝,造车,石油,均为垄断性企业.(现在石油不也还是么?)&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;section-6&quot;&gt;互联网翻身:&lt;/h2&gt;
-
-&lt;h4 id=&quot;usd&quot;&gt;1. 网易股价70.27USD&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;网易转型做游戏==&amp;gt;大赚&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;短信业务&lt;/strong&gt; &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;用户通过网易发送一条收费1元的短信,移动0.2,网易0.8.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;2002年,&lt;strong&gt;中国移动发送短信约750亿条,其中网易等约占20%&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;section-7&quot;&gt;2. 阿里巴巴流量大增&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;受SARS影响,人员大多居家不外出,众多企业通过互联网维持,商务活动,寻找商业信息,商业机会. ####  3. 百度在第三方评测超过google
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&quot;section-8&quot;&gt;4. 江南春的楼宇广告遍地开花&lt;/h4&gt;
-</description>
-        <pubDate>Mon, 04 Aug 2014 00:00:00 +0800</pubDate>
-        <link>http://5i01314.vipsinaapp.com//blog/2014/08/04/go-to-see-the-rainbow.html</link>
-        <guid isPermaLink="true">http://5i01314.vipsinaapp.com//blog/2014/08/04/go-to-see-the-rainbow.html</guid>
         
       </item>
     
