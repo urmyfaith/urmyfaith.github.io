@@ -1,6 +1,6 @@
 markdown: kramdown
 permalink: pretty
-pygments: true
+highlighter: true
 safe: false
 permalink: /blog/posts/:title.html
 exclude:

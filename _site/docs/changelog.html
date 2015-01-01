@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="keywords" content="" />
+<meta name="google-site-verification" content="RylW_eYZwk85sTyPMVT0Rw1yBeplLJEEuL1Z6WDKcq0" />
+<meta name="baidu-tc-verification" content="6090c58a8b2b73e1c4820cd2aa2aa9a5" />
+<title>elf+js: 文档 / 变更记录</title>
+<link rel="stylesheet" type="text/css" href="/assets/css/site.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/docs.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/code/github.css" />
+
+
+</head>
+
+<body>
+
+<div id="Holder">
+	<div id="MainPage" class="page-type-content page-type-docs">
+		<div id="Header">
+			<div class="layout-section">
+				<div class="logo"><a href="http://elfjs.com/"><img src="/assets/img/logo-90x30.png" alt="elf+js" title="体验愉悦的JavaScript开发" /></a></div>
+				<div class="additional">/ <a href="/docs/">文档</a>
+<span class="sub-path">/ <a href="/docs/changelog.html">变更记录</a></span>
+</div>
+			</div>
+			<div class="layout-aside">
+				<ul>
+					<li><a href="/">首页</a></li>
+					<li><a href="/downloads/">下载</a></li>
+					<li><a href="/docs/">文档</a></li>
+					<li><a href="/blog/">博客</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="MainBody" class="doc-change-page"><div id="DocToc" class="layout-content-side">
+	<div class="doc-menu">
+		<h2><a href="#" title="点击回到顶部">内容目录</a></h2>
+		<div class="doc-toc"></div>
+	</div>
+</div>
+<div class="doc-main" title="双击隐藏/展开目录">
+	<form action="/search/" method="get" class="search-box"><input type="search" name="q" placeholder="搜索" /><button type="submit" class="button">Q</button></form>
+	<div id="DocContent" class="doc-content">
+		<h1>变更记录</h1>
+		<ul id="markdown-toc">
+  <li><a href="#section">0.5.0</a></li>
+  <li><a href="#section-1">0.4.1</a></li>
+  <li><a href="#section-2">0.4.0</a></li>
+  <li><a href="#section-3">0.3.3</a></li>
+  <li><a href="#section-4">0.3.2</a></li>
+  <li><a href="#section-5">0.3.1</a></li>
+  <li><a href="#section-6">0.3.0</a></li>
+  <li><a href="#section-7">0.2.0</a></li>
+</ul>
+
+<h2 id="section">0.5.0</h2>
+
+<dl>
+  <dt>发布日期：</dt>
+  <dd>2014-04-12</dd>
+  <dt>版本摘要：</dt>
+  <dd>此版本调整了几个接口名称，修复一些问题，并改进了部分功能。</dd>
+  <dt>功能变更列表：</dt>
+  <dd>
+    <ul>
+      <li>增加<code>elf()</code>上的DOM操作类快捷方法；</li>
+      <li>增加<code>js.client.Device</code>对象，以判断Android/iPhone/iPad设备；</li>
+      <li>修改接口<code>js.text.Escaper.escapeReg()</code>为<code>js.text.Escaper.escapeRegExp()</code>；</li>
+      <li>修改接口<code>js.text.Encoder.encodeHTML()</code>为<code>js.text.Escaper.escapeHTML()</code>；</li>
+      <li>修复<code>Processor</code>类的异步队列方法；</li>
+      <li>增加<code>js.dom.Flash</code>类用于处理Flash相关；</li>
+      <li>增加<code>Ajax</code>类的请求<code>header</code>处理；</li>
+      <li>增加<code>Ajax</code>类发送纯文本的数据类型；</li>
+      <li>修复<code>Style</code>类获取样式方法的问题；</li>
+      <li>增加<code>Node</code>类实例的<code>map</code>方法；</li>
+      <li>修复获取<code>Document</code>对象时针对WebKit的适应；</li>
+      <li>修复<code>Node</code>类接口工厂方法；</li>
+      <li>修复DOM关系类相关方法；</li>
+      <li>修复DOM操作类相关方法，添加测试用例；</li>
+      <li>修复DOM事件类<code>input</code>事件处理；</li>
+      <li>修复<code>Hash</code>类修改时值为<code>null</code>的判断；</li>
+      <li>增加继承类的<code>__super__</code>指向超类引用；</li>
+      <li>修改<code>js.util.Class.implement</code>方法实现；</li>
+      <li>补全Array的ES5方法<code>[].lastIndexOf</code>；</li>
+      <li>补全Array的ES5方法<code>[].reduce</code>；</li>
+      <li>补全Array的ES5方法<code>[].reduceRight</code>；</li>
+      <li>增加<code>js.dom.BoxModel.isViewable()</code>方法，用于判断元素是否在可视范围内；</li>
+      <li>修复<code>js.util.Processor</code>中单词拼写错误；</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="section-1">0.4.1</h2>
+
+<dl>
+  <dt>发布日期：</dt>
+  <dd>2012-12-10</dd>
+  <dt>版本摘要：</dt>
+  <dd>此版本增强了小部分功能，并修复一些问题。</dd>
+  <dt>功能变更列表：</dt>
+  <dd>
+    <ul>
+      <li>添加对鼠标进入和离开事件的特性嗅探；</li>
+      <li>添加对<code>&lt;script&gt;</code>标签<code>onerror</code>和<code>onload</code>事件的特性嗅探；</li>
+      <li>修正拖拽handler元素id问题；</li>
+      <li>将鼠标轨迹跟踪还原为闭包实现，默认添加全局跟踪事件；</li>
+      <li>增强<code>js.dom.Node</code>类的<code>filter</code>方法，支持传入<code>function</code>类型的自定义判断方法；</li>
+      <li>修正<code>js.dom.Relation</code>类的各种获取方法；</li>
+      <li>修正<code>js.dom.Stage.loadScript</code>的<code>onload</code>事件实现；</li>
+      <li>将<code>js.net.Ajax</code>的<code>JSON</code>类型解析改为使用<code>JSON.parse</code>方法；</li>
+      <li>抽取并优化<code>js.util.Class.mix</code>方法；</li>
+      <li>增加部分测试用例；</li>
+      <li>修复<code>js.dom.Cookie.clear</code>方法的Bug；</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="section-2">0.4.0</h2>
+
+<dl>
+  <dt>发布日期：</dt>
+  <dd>2012-04-18</dd>
+  <dt>版本摘要：</dt>
+  <dd>此版本增加了一些兼容性事件的支持，并修复一些问题。</dd>
+  <dt>功能变更列表：</dt>
+  <dd>
+    <ul>
+      <li>增加功能<a href="https://github.com/elfjs/jslib/issue/2">#2</a>：添加<code>js.dom.Event</code>对<code>onmouseenter</code>和<code>onmouseleave</code>事件的兼容支持；</li>
+      <li>增加功能<a href="https://github.com/elfjs/jslib/issue/7">#7</a>：添加<code>js.dom.Event.once</code>方法，支持绑定只执行一次的事件；</li>
+      <li>将原<code>js.dom.Event</code>类拆散为各方法独立文件，以便今后扩展其他兼容事件；</li>
+      <li>补充测试用例，以排查样式设置方法中对<code>textAlign</code>属性设置的问题<a href="https://github.com/elfjs/jslib/issue/9">#9</a>；</li>
+      <li>修复问题<a href="https://github.com/elfjs/jslib/issue/10">#10</a>：<code>js.dom.Stage.loadScript</code>方法的<code>onLoad</code>选项改为<code>onload</code>，以保持事件接口统一为小写的规范；</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="section-3">0.3.3</h2>
+
+<dl>
+  <dt>发布日期：</dt>
+  <dd>2012-03-01</dd>
+  <dt>版本摘要：</dt>
+  <dd>对动画和拖动事件函数接口进行了统一化的调整，并修复节点集合集成动画调用一些问题，详见下方的变更记录。</dd>
+  <dt>功能变更列表：</dt>
+  <dd>
+    <ul>
+      <li>修复问题<a href="https://github.com/elfjs/jslib/issue/3">#3</a>：将所有<code>js.transition.Timeline</code>类和<code>js.dom.Tween</code>类中的事件名改为小写，以按规范统一；</li>
+      <li>增加<code>js.transition.Timeline</code>类实例<code>onstart</code>接口返回<code>false</code>时阻止变化启动的功能；</li>
+      <li>修复问题<a href="https://github.com/elfjs/jslib/issue/4">#4</a>：修改<code>js.dom.Node</code>类动画接口<code>js.dom.INodeTween</code>中的集合调用实现方式，解决调用出错的问题；</li>
+      <li>修复问题<a href="https://github.com/elfjs/jslib/issue/5">#5</a>：将启动动画的接口修改为<code>tween()</code>与<code>Tween</code>类名字保持一致；</li>
+      <li>增加针对<code>js.dom.Node</code>类实例调用<code>tween()</code>方法的测试用例，确保方法调用正常；</li>
+      <li>修改动画类事件名改为小写的测试用例；</li>
+      <li>将<code>js.dom.Drag</code>类和<code>js.dom.MouseTracker</code>类事件名改为小写；</li>
+      <li>修改<code>elf</code>中动画类快捷方式调用方法为<code>tween()</code>；</li>
+      <li>修改<code>elf</code>中简单文本模板的调用方式为<code>template()</code>；</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="section-4">0.3.2</h2>
+
+<dl>
+  <dt>发布日期：</dt>
+  <dd>2012-02-12</dd>
+  <dt>版本摘要：</dt>
+  <dd>事件接口函数调整，并修复大量bug，补充部分test case。</dd>
+  <dt>功能变更列表：</dt>
+  <dd>
+    <ul>
+      <li>修改对<code>js.util.XArray</code>类的类型判断方式，从使用<code>js.util.Type</code>类改为原生判断；</li>
+      <li>修复<code>js.util.XArray</code>类使用<code>js.util.Class.create</code>进行继承错误的问题；</li>
+      <li>修复<code>js.util.XArray</code>类中无法使用<code>for in</code>遍历<code>prototype</code>上扩展的原生方法问题；</li>
+      <li>将<code>js.net.Ajax</code>类所有事件名称改为小写以形成规范；</li>
+      <li>将<code>js.net.Ajax</code>类的<code>load()</code>方法改名为<code>request()</code>方法；</li>
+      <li>增加<code>js.dom.Event</code>新增监听事件时CSS选择器委托方式支持；</li>
+      <li>修复<code>js.dom.Event.remove()</code>方法在事件过程中移除事件后不继续执行的问题；</li>
+      <li>修复<code>js.util.Global.guid()</code>方法前缀或后缀为数字0时的错误；</li>
+      <li>修复<a href="https://github.com/elfjs/jslib/issue/1">#1</a>：在<code>js.dom.BoxModel.getPosition()</code>方法返回对象中增加<code>left</code>和<code>top</code>属性；</li>
+      <li>修复<code>js.dom.Selector</code>类查询完成后没有移除元素对象上的临时标识的问题；</li>
+      <li>修复<code>js.dom.Node</code>类子级查询方法<code>query()</code>出错的问题；</li>
+      <li>修复<code>js.dom.Node</code>类扩展<code>css()</code>方法调用错误的问题；</li>
+      <li>修复<code>js.dom.Node</code>类扩展<code>attr()</code>方法调用错误的问题；</li>
+      <li>修复<code>js.dom.Node</code>类初始化<code>null</code>对象的问题；</li>
+      <li>新增<code>js.dom.ClassName.get()</code>方法以获取元素classname数组；</li>
+      <li>修复拖动类中当鼠标拖动离开文档释放鼠标，再移回文档区域后无法停止拖动的问题；</li>
+      <li>修正<code>js.dom.BoxModel</code>类注释错误；</li>
+      <li>将<a href="https://github.com/jquery/qunit/">qunit</a>作为子模块添加到测试中；</li>
+      <li>整理并补充部分test case；</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="section-5">0.3.1</h2>
+
+<dl>
+  <dt>发布日期：</dt>
+  <dd>2011-12-27</dd>
+  <dt>版本摘要：</dt>
+  <dd>上一个版本（<a href="/blog/posts/0.3.0-release-note.html">0.3.0</a>）发布后发现一些问题，所以在修复后紧急更新了代码和并发布这个新版本0.3.1。</dd>
+  <dt>功能变更列表：</dt>
+  <dd>
+    <ul>
+      <li><code>js.dom.Node</code>类<code>merge</code>方法<code>length</code>属性计算错误；</li>
+      <li><code>js.util.XArray</code>类修改实现为包装原生数组，以支持IE&lt;8的浏览器；</li>
+      <li>移除nightly中未完成的<code>js.net.Path</code>类；</li>
+      <li>针对IE&lt;8浏览器修复所有<code>[].slice.call(argument)</code>缺少第二个索引参数的问题；</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="section-6">0.3.0</h2>
+
+<dl>
+  <dt>发布日期：</dt>
+  <dd>2011-12-24</dd>
+  <dt>版本摘要：</dt>
+  <dd>部分接口再次调整，使之整体风格一致。整合测试用例文件，设计制作项目网站，补充大量文档，启用<a href="http://elfjs.com/">elfjs.com</a>域名，首次正式发布。</dd>
+  <dt>功能变更列表：</dt>
+  <dd>
+    <ul>
+      <li><code>js.dom.Attribute</code>针对一些特殊属性的兼容适应；</li>
+      <li>拖动类增加可以直接使一个元素可拖的方法；</li>
+      <li>拆分鼠标轨迹类实现作为拖动类底层支持；</li>
+      <li>增加DOM事件类型枚举对象；</li>
+      <li>Node类添加创建一个Node节点的方法；</li>
+      <li>Node类集合css操作实现bug修复；</li>
+      <li>Node类增加按索引获取新集合的方法；</li>
+      <li>Global类拆分为零散函数文件；</li>
+      <li><code>js.util.Class.extend</code>改名为<code>js.util.Class.mix</code>；</li>
+      <li><code>js.util.Class.copy</code>方法支持使用多个源对象拷贝；</li>
+      <li>类继承取消构造函数继承，新的方法如需继承构造函数必须手动指明，否则只创建空函数为构造器，同时取消._super和.superClass对父类的引用；</li>
+      <li>ready函数拆分线程队列处理类为底层支持；</li>
+      <li>Ajax类请求失败的接口名修改为onfailure，增加JSON解析失败和重复发送的事件，其他所有事件名都改为小写；</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="section-7">0.2.0</h2>
+
+<dl>
+  <dt>发布日期：</dt>
+  <dd>2011-06-24</dd>
+  <dt>版本摘要：</dt>
+  <dd>严格保证命名规范，由于大量接口变更，不再向下兼容，所以废弃了上一个0.1.0版本。并增加很多功能，提交到github进行维护，补充部分测试用例，为正式发布做准备。<a href="/blog/?p=1">发布初衷</a>。</dd>
+</dl>
+
+<p>-EOF-</p>
+
+	</div>
+</div>
+</div>
+		
+		<div id="Footer">
+			<p>该项目所有代码使用<a href="http://github.com/elfjs/" target="_blank">github</a>托管，并以<a href="/LICENSE" target="_blank">MIT协议</a>授权许可。[<a href="/docs/develop/contributor.html">贡献者</a>]</p>
+			<p>&copy; Since 2011 <a href="http://elfjs.com/">elfjs.com</a> | <a href="http://groups.google.com/group/elfjs" target="_blank">Google Group</a> | <a href="#" class="email-link">elfjs<span class="symbol">[at]</span>googlegroups<span class="symbol">[dot]</span>com</a></p>
+		</div>
+	</div>
+</div>
+
+<script src="http://elfjs.qiniudn.com/code/elf-0.5.0.min.js"></script>
+<script src="/assets/js/site.js"></script>
+<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+
+
+<div style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc721ec118ef865ee41646415bc0e9734' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-27954937-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</div>
+
+</body>
+</html>
