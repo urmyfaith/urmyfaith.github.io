@@ -11,4 +11,5 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-markdown: kramdown
+highlighter: pygments
+markdown: redcarpet

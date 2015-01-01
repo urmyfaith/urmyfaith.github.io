@@ -1,54 +1,37 @@
-<h2 id="django-">Django 的安装:</h2>
+<h2>Django 的安装:</h2>
 
 <ul>
-  <li>安装包: </li>
+<li>安装包: </li>
 </ul>
 
-<p>百度盘里搜索”Django-1.7.tar.gz”</p>
+<p>百度盘里搜索&quot;Django-1.7.tar.gz&quot;</p>
 
 <ul>
-  <li>安装环境 WIN7</li>
+<li>安装环境 WIN7</li>
 </ul>
 
 <ol>
-  <li>
-    <p>解压文件</p>
-  </li>
-  <li>
-    <p>移动到python安装目录下</p>
-  </li>
-  <li>
-    <p>python setup.py install</p>
-  </li>
-  <li>
-    <p>遇到错误,重复第三步</p>
-  </li>
-  <li>
-    <p>如果不是出现错误,耐心等待安装完成.</p>
-  </li>
+<li><p>解压文件</p></li>
+<li><p>移动到python安装目录下</p></li>
+<li><p>python setup.py install</p></li>
+<li><p>遇到错误,重复第三步</p></li>
+<li><p>如果不是出现错误,耐心等待安装完成.</p></li>
 </ol>
 
 <ul>
-  <li>测试安装是否完成:</li>
+<li>测试安装是否完成:</li>
 </ul>
-
-<p>```python
-import django
-print  django.get_version()</p>
-
-<p>```
-上面的代码可以查看django版本.</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">django</span>
+<span class="k">print</span>  <span class="n">django</span><span class="o">.</span><span class="n">get_version</span><span class="p">()</span>
+</code></pre></div>
+<p>上面的代码可以查看django版本.</p>
 
 <ul>
-  <li>升级安装要点</li>
+<li>升级安装要点</li>
 </ul>
 
 <p>将下面的目录删除后,再安装新版本.</p>
-
-<p>```python
-import django
-print  django.<strong>path</strong></p>
-
-<p>```</p>
-
-<p><img src="https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master//images/Django-install.png" alt="官网安装教程" /></p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">django</span>
+<span class="k">print</span>  <span class="n">django</span><span class="o">.</span><span class="n">__path__</span>
+</code></pre></div>
+<p><img src="https://raw.githubusercontent.com/urmyfaith/urmyfaith.github.io/master//images/Django-install.png" alt="官网安装教程"></p>

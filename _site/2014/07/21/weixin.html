@@ -1,212 +1,188 @@
-<h1 id="section">实现微信公众号/订阅号的一些功能</h1>
+<h1>实现微信公众号/订阅号的一些功能</h1>
 
-<hr />
-<p>###  需要实现的功能有哪些?</p>
+<hr>
 
-<pre><code>最近学着开了一个订阅号,本来就是用来发一些文章,记录一些读书笔记的,后来,又不满足于这些,于是接着微信的开放借口,尝试着写出一些功能.
+<h3>需要实现的功能有哪些?</h3>
+<div class="highlight"><pre><code class="language-text" data-lang="text">最近学着开了一个订阅号,本来就是用来发一些文章,记录一些读书笔记的,后来,又不满足于这些,于是接着微信的开放借口,尝试着写出一些功能.
 
 最初是想学着自动回复,然后发现,自动回复里面的内容太多了,如果真的实现起来,像小黄鸡?像微软小兵一样的智能机器人,如果真的实现起来,就只有去抓去别人的结果了.
 
 归纳起来,最初想实现的是:
-</code></pre>
-
+</code></pre></div>
 <ul>
-  <li>
-    <p>接口的认证</p>
-  </li>
-  <li>
-    <p>自动回复消息</p>
-  </li>
+<li><p>接口的认证</p></li>
+<li><p>自动回复消息</p></li>
 </ul>
 
-<hr />
+<hr>
 
-<h3 id="section-1">实现目标的过程</h3>
-
-<pre><code>一开始看别人的代码,拷贝过来,然后发现,有点难度.所以就去学习了一下webpy.
-</code></pre>
-
-<h5 id="section-2">0.开发环境</h5>
+<h3>实现目标的过程</h3>
+<div class="highlight"><pre><code class="language-text" data-lang="text">一开始看别人的代码,拷贝过来,然后发现,有点难度.所以就去学习了一下webpy.
+</code></pre></div>
+<h5>0.开发环境</h5>
 
 <ul>
-  <li>代码运行在SAE上</li>
-  <li>代码使用SVN管理,在本地编写.</li>
-  <li>使用SAE的”日志中心”&gt;”http”&gt;”request”和”日志中心”&gt;”http”&gt;”debug”来进行调试</li>
+<li>代码运行在SAE上</li>
+<li>代码使用SVN管理,在本地编写.</li>
+<li>使用SAE的&quot;日志中心&quot;&gt;&quot;http&quot;&gt;&quot;request&quot;和&quot;日志中心&quot;&gt;&quot;http&quot;&gt;&quot;debug&quot;来进行调试</li>
 </ul>
 
-<h5 id="weby">1.学习weby</h5>
-
-<p><code>c
-+---basic application
-|   +---helloword
-|   |       01helloworld.py
-|   |       01helloworld.pyc
-|   |       
-|   +---notfound
-|   |   |   notfound.py
-|   |   |   notfound.pyc
-|   |   |   notfound02.py
-|   |   |   notfound02.pyc
-|   |   |   
-|   |   \---templates
-|   |           notfound.html
-|   |           
-|   \---xmlfile
-|       |   xmlfile.py
-|       |   xmlfile.pyc
-|       |   xmlfiles.png
-|       |   
-|       \---templates
-|               response.xml
-|               
-+---db
-|   |   dbV000_select.py
-|   |   dbV000_select.pyc
-|   |   dbV001_add.py
-|   |   dbV001_add.pyc
-|   |   todo.sql
-|   |   连接问题.txt
-|   |   
-|   \---templates
-|           index - 副本.html
-|           index.html
-|           
-+---form
-|   |   formV000.py
-|   |   formV000.pyc
-|   |   formV001.py
-|   |   formV001.pyc
-|   |   formV002.png
-|   |   formV002.py
-|   |   formV002.pyc
-|   |   formV003.png
-|   |   formV003.py
-|   |   formV003.pyc
-|   |   formV004.py
-|   |   formV004.pyc
-|   |   
-|   \---templates
-|           formtest.html
-|           
-+---Templetor
-|   |   01templetor.py
-|   |   01templetor.pyc
-|   |   02templetor-template-as-string.py
-|   |   03templetor-newline.py
-|   |   03templetor-newline.pyc
-|   |   04templetor-escaping .py
-|   |   04templetor-escaping .pyc
-|   |   05templetor-control-structures.py
-|   |   05templetor-control-structures.pyc
-|   |   
-|   \---templates
-|           controlStructures.html
-|           escaping.html
-|           index.html
-|           newline.html
-|           
-+---urls
-|   |   codeV000.py
-|   |   codeV001.py
-|   |   codeV001.pyc
-|   |   codeV002.py
-|   |   codeV002.pyc
-|   |   
-|   \---templates
-|           index.html
-|           
-\---wiki
-    |   model.py
-    |   model.pyc
-    |   schema.sql
-    |   wiki.py
-    |   wiki.pyc
-    |   
-    \---templates
-            base.html
-            edit.html
-            index.html
-            new.html
-            view.html
-</code></p>
-
+<h5>1.学习weby</h5>
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="o">+---</span><span class="n">basic</span> <span class="n">application</span>
+<span class="o">|</span>   <span class="o">+---</span><span class="n">helloword</span>
+<span class="o">|</span>   <span class="o">|</span>       <span class="mo">01</span><span class="n">helloworld</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>       <span class="mo">01</span><span class="n">helloworld</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>       
+<span class="o">|</span>   <span class="o">+---</span><span class="n">notfound</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="n">notfound</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="n">notfound</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="n">notfound02</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="n">notfound02</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   
+<span class="o">|</span>   <span class="o">|</span>   <span class="err">\</span><span class="o">---</span><span class="n">templates</span>
+<span class="o">|</span>   <span class="o">|</span>           <span class="n">notfound</span><span class="p">.</span><span class="n">html</span>
+<span class="o">|</span>   <span class="o">|</span>           
+<span class="o">|</span>   <span class="err">\</span><span class="o">---</span><span class="n">xmlfile</span>
+<span class="o">|</span>       <span class="o">|</span>   <span class="n">xmlfile</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>       <span class="o">|</span>   <span class="n">xmlfile</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>       <span class="o">|</span>   <span class="n">xmlfiles</span><span class="p">.</span><span class="n">png</span>
+<span class="o">|</span>       <span class="o">|</span>   
+<span class="o">|</span>       <span class="err">\</span><span class="o">---</span><span class="n">templates</span>
+<span class="o">|</span>               <span class="n">response</span><span class="p">.</span><span class="n">xml</span>
+<span class="o">|</span>               
+<span class="o">+---</span><span class="n">db</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">dbV000_select</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">dbV000_select</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">dbV001_add</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">dbV001_add</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">todo</span><span class="p">.</span><span class="n">sql</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="err">连接问题</span><span class="p">.</span><span class="n">txt</span>
+<span class="o">|</span>   <span class="o">|</span>   
+<span class="o">|</span>   <span class="err">\</span><span class="o">---</span><span class="n">templates</span>
+<span class="o">|</span>           <span class="n">index</span> <span class="o">-</span> <span class="err">副本</span><span class="p">.</span><span class="n">html</span>
+<span class="o">|</span>           <span class="n">index</span><span class="p">.</span><span class="n">html</span>
+<span class="o">|</span>           
+<span class="o">+---</span><span class="n">form</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">formV000</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">formV000</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">formV001</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">formV001</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">formV002</span><span class="p">.</span><span class="n">png</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">formV002</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">formV002</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">formV003</span><span class="p">.</span><span class="n">png</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">formV003</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">formV003</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">formV004</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">formV004</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>   
+<span class="o">|</span>   <span class="err">\</span><span class="o">---</span><span class="n">templates</span>
+<span class="o">|</span>           <span class="n">formtest</span><span class="p">.</span><span class="n">html</span>
+<span class="o">|</span>           
+<span class="o">+---</span><span class="n">Templetor</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="mo">01</span><span class="n">templetor</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="mo">01</span><span class="n">templetor</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="mo">02</span><span class="n">templetor</span><span class="o">-</span><span class="n">template</span><span class="o">-</span><span class="n">as</span><span class="o">-</span><span class="n">string</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="mo">03</span><span class="n">templetor</span><span class="o">-</span><span class="n">newline</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="mo">03</span><span class="n">templetor</span><span class="o">-</span><span class="n">newline</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="mo">04</span><span class="n">templetor</span><span class="o">-</span><span class="n">escaping</span> <span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="mo">04</span><span class="n">templetor</span><span class="o">-</span><span class="n">escaping</span> <span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="mo">05</span><span class="n">templetor</span><span class="o">-</span><span class="n">control</span><span class="o">-</span><span class="n">structures</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="mo">05</span><span class="n">templetor</span><span class="o">-</span><span class="n">control</span><span class="o">-</span><span class="n">structures</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>   
+<span class="o">|</span>   <span class="err">\</span><span class="o">---</span><span class="n">templates</span>
+<span class="o">|</span>           <span class="n">controlStructures</span><span class="p">.</span><span class="n">html</span>
+<span class="o">|</span>           <span class="n">escaping</span><span class="p">.</span><span class="n">html</span>
+<span class="o">|</span>           <span class="n">index</span><span class="p">.</span><span class="n">html</span>
+<span class="o">|</span>           <span class="n">newline</span><span class="p">.</span><span class="n">html</span>
+<span class="o">|</span>           
+<span class="o">+---</span><span class="n">urls</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">codeV000</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">codeV001</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">codeV001</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">codeV002</span><span class="p">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="n">codeV002</span><span class="p">.</span><span class="n">pyc</span>
+<span class="o">|</span>   <span class="o">|</span>   
+<span class="o">|</span>   <span class="err">\</span><span class="o">---</span><span class="n">templates</span>
+<span class="o">|</span>           <span class="n">index</span><span class="p">.</span><span class="n">html</span>
+<span class="o">|</span>           
+<span class="err">\</span><span class="o">---</span><span class="n">wiki</span>
+    <span class="o">|</span>   <span class="n">model</span><span class="p">.</span><span class="n">py</span>
+    <span class="o">|</span>   <span class="n">model</span><span class="p">.</span><span class="n">pyc</span>
+    <span class="o">|</span>   <span class="n">schema</span><span class="p">.</span><span class="n">sql</span>
+    <span class="o">|</span>   <span class="n">wiki</span><span class="p">.</span><span class="n">py</span>
+    <span class="o">|</span>   <span class="n">wiki</span><span class="p">.</span><span class="n">pyc</span>
+    <span class="o">|</span>   
+    <span class="err">\</span><span class="o">---</span><span class="n">templates</span>
+            <span class="n">base</span><span class="p">.</span><span class="n">html</span>
+            <span class="n">edit</span><span class="p">.</span><span class="n">html</span>
+            <span class="n">index</span><span class="p">.</span><span class="n">html</span>
+            <span class="n">new</span><span class="p">.</span><span class="n">html</span>
+            <span class="n">view</span><span class="p">.</span><span class="n">html</span>
+</code></pre></div>
 <p>学习webpy就照着官网,学习了:</p>
 
 <ul>
-  <li>
-    <p>入门教程:  http://webpy.org/docs/0.3/tutorial.zh-cn</p>
-  </li>
-  <li>
-    <p>cookbook: http://webpy.org/cookbook/index.zh-cn</p>
-  </li>
-  <li>
-    <ul>
-      <li>helloworld</li>
-    </ul>
-  </li>
-  <li>
-    <ul>
-      <li>urls</li>
-    </ul>
-  </li>
-  <li>
-    <ul>
-      <li>db</li>
-    </ul>
-  </li>
-  <li>
-    <ul>
-      <li>wiki</li>
-    </ul>
-  </li>
-  <li>
-    <ul>
-      <li>Templetor</li>
-    </ul>
-  </li>
+<li><p>入门教程:  http://webpy.org/docs/0.3/tutorial.zh-cn</p></li>
+<li><p>cookbook: http://webpy.org/cookbook/index.zh-cn</p></li>
+<li><ul>
+<li> helloworld</li>
+</ul></li>
+<li><ul>
+<li> urls</li>
+</ul></li>
+<li><ul>
+<li> db</li>
+</ul></li>
+<li><ul>
+<li> wiki</li>
+</ul></li>
+<li><ul>
+<li> Templetor</li>
+</ul></li>
 </ul>
 
 <p>在学习了这些基础的知识之后,实现我们的目标:</p>
 
 <ul>
-  <li>认证</li>
-  <li>回复固定值</li>
+<li>认证</li>
+<li>回复固定值</li>
 </ul>
 
 <p>就相对容易了很多.</p>
 
-<hr />
+<hr>
 
-<h5 id="section-3">2.拷贝代码,修改代码.</h5>
+<h5>2.拷贝代码,修改代码.</h5>
 
 <p>实现认证的代码只需要三个主语的文件:</p>
 
 <ul>
-  <li>index.wsgi</li>
-  <li>weixinInterface.py</li>
-  <li>config.yaml</li>
+<li>index.wsgi</li>
+<li>weixinInterface.py</li>
+<li>config.yaml</li>
 </ul>
 
 <p>第一个文件用来处理URL:/weixin 路径用第二个文件weixinInterface类来实现</p>
 
 <p>第三个文件是一些SAE上的配置文件.</p>
 
-<h5 id="section-4">3.遇到问题的解决</h5>
+<h5>3.遇到问题的解决</h5>
 
 <p>遇到的问题有:</p>
 
 <ol>
-  <li>认证通过后,回复消息,无应答,却不知道怎么调试.</li>
-  <li>知道怎么调试之后,遇到的各种问题:405,500</li>
-  <li>代码对齐的问题</li>
-  <li>为导入库的问题</li>
-  <li>获取值属性错误</li>
-  <li>字符编码问题ascii和utf-8编码的问题</li>
-  <li>结果为空的问题</li>
-  <li>变量没有定于的问题</li>
-  <li>无效的表达式,也就是代码一些括号匹配的问题
+<li>认证通过后,回复消息,无应答,却不知道怎么调试.</li>
+<li>知道怎么调试之后,遇到的各种问题:405,500</li>
+<li>代码对齐的问题</li>
+<li>为导入库的问题</li>
+<li>获取值属性错误</li>
+<li>字符编码问题ascii和utf-8编码的问题</li>
+<li>结果为空的问题</li>
+<li>变量没有定于的问题</li>
+<li>无效的表达式,也就是代码一些括号匹配的问题
 10.某些属性的大小写问题</li>
-  <li>如果使用SAE上的数据库的select,insert,delete等,关键是如何查询和删除.</li>
+<li>如果使用SAE上的数据库的select,insert,delete等,关键是如何查询和删除.</li>
 </ol>
 
 <p><strong>问题1:</strong>
@@ -215,19 +191,16 @@
 <p>http://sae.sina.com.cn/doc/python/runtime.html#id4</p>
 
 <p>日志系统的使用.</p>
-
-<p><code>c
-101.226.62.85 [20/Jul/2014:18:10:43 +0800] /weixin?signature=b165650640ad0ddf52d84fe6d1a9eec69935f8f4&amp;timestamp=1405851012&amp;nonce=734319259 200 0.152 0.152 458 
-urmyfaith.sinaapp.com POST HTTP/1.0 "-" "Mozilla/4.0" yq34
-</code></p>
-
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="mf">101.226.62.85</span> <span class="p">[</span><span class="mi">20</span><span class="o">/</span><span class="n">Jul</span><span class="o">/</span><span class="mi">2014</span><span class="o">:</span><span class="mi">18</span><span class="o">:</span><span class="mi">10</span><span class="o">:</span><span class="mi">43</span> <span class="o">+</span><span class="mi">0800</span><span class="p">]</span> <span class="o">/</span><span class="n">weixin</span><span class="o">?</span><span class="n">signature</span><span class="o">=</span><span class="n">b165650640ad0ddf52d84fe6d1a9eec69935f8f4</span><span class="o">&amp;</span><span class="n">timestamp</span><span class="o">=</span><span class="mi">1405851012</span><span class="o">&amp;</span><span class="n">nonce</span><span class="o">=</span><span class="mi">734319259</span> <span class="mi">200</span> <span class="mf">0.152</span> <span class="mf">0.152</span> <span class="mi">458</span> 
+<span class="n">urmyfaith</span><span class="p">.</span><span class="n">sinaapp</span><span class="p">.</span><span class="n">com</span> <span class="n">POST</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.0</span> <span class="s">&quot;-&quot;</span> <span class="s">&quot;Mozilla/4.0&quot;</span> <span class="n">yq34</span>
+</code></pre></div>
 <p>从日志系统里可以找到HTTP响应码,200,404,405,500
 200 正常
 404 页面问找到
 405 请求方法错误(后来确定是因为POST方法的缩进导致)
 500 内部错误(需要到debug里定位错误)</p>
 
-<p>从”日志中心”&gt;”http”&gt;”debug”里可以定位各种错误,很方便修改.</p>
+<p>从&quot;日志中心&quot;&gt;&quot;http&quot;&gt;&quot;debug&quot;里可以定位各种错误,很方便修改.</p>
 
 <p><strong>问题2,3</strong></p>
 
@@ -243,32 +216,26 @@ urmyfaith.sinaapp.com POST HTTP/1.0 "-" "Mozilla/4.0" yq34
 
 <p><strong>问题6</strong></p>
 
-<p>ascii和utf-8的问题也是由于各个系统的编码不一致导致,mysql里的默认为utf-8,然后python读出来ascii编码,需要进行encode,或者是在字符串前加u,例如:u”中国”.</p>
+<p>ascii和utf-8的问题也是由于各个系统的编码不一致导致,mysql里的默认为utf-8,然后python读出来ascii编码,需要进行encode,或者是在字符串前加u,例如:u&quot;中国&quot;.</p>
 
 <p><strong>问题11</strong></p>
 
 <p>sae上数据库的读写时遇到两个问题:</p>
 
 <ol>
-  <li>删除数据的条件</li>
-  <li>选择数据的条件</li>
+<li>删除数据的条件</li>
+<li>选择数据的条件</li>
 </ol>
 
 <p>删除数据的时候,</p>
-
-<p><code>c
-            where_dict={'id':currID,}
-            db.delete('article',where=web.db.sqlwhere(where_dict))
-</code></p>
-
+<div class="highlight"><pre><code class="language-c" data-lang="c">            <span class="n">where_dict</span><span class="o">=</span><span class="p">{</span><span class="err">&#39;</span><span class="n">id</span><span class="err">&#39;</span><span class="o">:</span><span class="n">currID</span><span class="p">,}</span>
+            <span class="n">db</span><span class="p">.</span><span class="n">delete</span><span class="p">(</span><span class="err">&#39;</span><span class="n">article</span><span class="err">&#39;</span><span class="p">,</span><span class="n">where</span><span class="o">=</span><span class="n">web</span><span class="p">.</span><span class="n">db</span><span class="p">.</span><span class="n">sqlwhere</span><span class="p">(</span><span class="n">where_dict</span><span class="p">))</span>
+</code></pre></div>
 <p>选择数据查询的时候,</p>
-
-<p><code>c
-   myvar=dict(dateInWhere=dateNow)
-   currLines = db.select('birthday',myvar,where="date &gt;         
-   $dateInWhere",limit=1,order="date ASC")
-</code></p>
-
+<div class="highlight"><pre><code class="language-c" data-lang="c">   <span class="n">myvar</span><span class="o">=</span><span class="n">dict</span><span class="p">(</span><span class="n">dateInWhere</span><span class="o">=</span><span class="n">dateNow</span><span class="p">)</span>
+   <span class="n">currLines</span> <span class="o">=</span> <span class="n">db</span><span class="p">.</span><span class="n">select</span><span class="p">(</span><span class="err">&#39;</span><span class="n">birthday</span><span class="err">&#39;</span><span class="p">,</span><span class="n">myvar</span><span class="p">,</span><span class="n">where</span><span class="o">=</span><span class="s">&quot;date &gt;         </span>
+   <span class="err">$</span><span class="n">dateInWhere</span><span class="s">&quot;,limit=1,order=&quot;</span><span class="n">date</span> <span class="n">ASC</span><span class="s">&quot;)</span>
+</code></pre></div>
 <p>特别是后面的,myvar的使用,和<strong>myvar的位置</strong>,以及date的数据库字段的设计的问题,究竟是TEXT,DATE类型的问题,还有选择逻辑的考虑(order by asc),还有冒号里面,究竟用不用$等问题,都需要去尝试才知道怎么做.</p>
 
 <p>解决这些问题的时候,参考</p>
@@ -277,24 +244,22 @@ urmyfaith.sinaapp.com POST HTTP/1.0 "-" "Mozilla/4.0" yq34
 
 <p>里的[Database 数据库]部分,很有大的帮助.</p>
 
-<p>其次,去百度一下debug的错误,差不多都可以找到答案.(谷歌的原因,唉…)</p>
+<p>其次,去百度一下debug的错误,差不多都可以找到答案.(谷歌的原因,唉...)</p>
 
-<h3 id="section-5">目标实现后的小结</h3>
+<h3>目标实现后的小结</h3>
 
 <p>确实很花时间,需要去学习webpy,熟悉微信API里的接口文档,SAE的调试,SAE数据库的操作,数据库字段的设计,原始数据的生成,数据怎么获得,格式的转换等等.</p>
 
 <p>后续有时间再实现一些小功能吧.</p>
 
 <p>现在实现的功能有:</p>
-
-<p><code>c
-                      "00":反馈,
-                      "12":分享文章,
-                      "14":笑话(待完成,原始资料木有),
-                      "25":发表情卖萌,
-                      "36":格言(待完成,原始资料木有),
-                      "47":猜你在做什么,
-                      "0110907":班级生日总表,
-                      "birthday":随机挑选一个生日,
-                      "bd":最近要过生日的人,
-</code></p>
+<div class="highlight"><pre><code class="language-c" data-lang="c">                      <span class="s">&quot;00&quot;</span><span class="o">:</span><span class="err">反馈</span><span class="p">,</span>
+                      <span class="s">&quot;12&quot;</span><span class="o">:</span><span class="err">分享文章</span><span class="p">,</span>
+                      <span class="s">&quot;14&quot;</span><span class="o">:</span><span class="err">笑话</span><span class="p">(</span><span class="err">待完成</span><span class="p">,</span><span class="err">原始资料木有</span><span class="p">),</span>
+                      <span class="s">&quot;25&quot;</span><span class="o">:</span><span class="err">发表情卖萌</span><span class="p">,</span>
+                      <span class="s">&quot;36&quot;</span><span class="o">:</span><span class="err">格言</span><span class="p">(</span><span class="err">待完成</span><span class="p">,</span><span class="err">原始资料木有</span><span class="p">),</span>
+                      <span class="s">&quot;47&quot;</span><span class="o">:</span><span class="err">猜你在做什么</span><span class="p">,</span>
+                      <span class="s">&quot;0110907&quot;</span><span class="o">:</span><span class="err">班级生日总表</span><span class="p">,</span>
+                      <span class="s">&quot;birthday&quot;</span><span class="o">:</span><span class="err">随机挑选一个生日</span><span class="p">,</span>
+                      <span class="s">&quot;bd&quot;</span><span class="o">:</span><span class="err">最近要过生日的人</span><span class="p">,</span>
+</code></pre></div>
