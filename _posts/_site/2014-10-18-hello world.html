@@ -1,0 +1,316 @@
+<h1 id="h1">H1</h1>
+
+<h2 id="h2">H2</h2>
+
+<h3 id="h3">H3</h3>
+
+<h4 id="h4">H4</h4>
+
+<h5 id="h5">H5</h5>
+
+<h6 id="h6">H6</h6>
+
+<p>默认字号字体</p>
+
+<p><strong>加粗</strong></p>
+
+<!-- more -->
+
+<p><em>斜体</em>
+<em>斜体</em></p>
+
+<p><strong><em>加粗斜体</em></strong></p>
+
+<p>内容<code>颜色</code>背景</p>
+
+<blockquote>
+  <p>内容加边  </p>
+</blockquote>
+
+<blockquote>
+  <p>再加边<br />
+再再加边<br />
+再再再加边<br />
+注意事项<strong><code>"内容后面有两个空格"</code></strong>  </p>
+</blockquote>
+
+<hr />
+
+<pre><code>缩进
+</code></pre>
+
+<hr />
+
+<p><a href="http://comtu.github.com">我是链接,下面的是图片链接</a></p>
+
+<p><img src="/res/img/icon.jpg" alt="图片链接" /></p>
+
+<hr />
+
+<ul>
+  <li>
+    <h1 id="h1-1">1.H1内容</h1>
+
+    <ul>
+      <li>
+        <h2 id="h2-1">1.1H2内容</h2>
+      </li>
+      <li>
+        <h3 id="h3-1">1.2H3内容</h3>
+        <ul>
+          <li>
+            <h4 id="h4-1">1.2.1H4内容</h4>
+          </li>
+          <li>
+            <h5 id="h5-1">1.2.2H5内容</h5>
+            <ul>
+              <li>
+                <h6 id="h6-1">1.2.2.1H6内容</h6>
+              </li>
+              <li>01.2.2.2默认什么字号内容</li>
+            </ul>
+          </li>
+          <li><strong>1.2.3加粗内容</strong></li>
+          <li><em>1.2.4斜体内容</em></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong><em>2.加粗斜体内容</em></strong></li>
+  <li>3.内容<code>颜色</code>背景</li>
+  <li>4.<a href="http://comtu.github.com">我是链接</a></li>
+</ul>
+
+<ol>
+  <li>内容1</li>
+  <li>内容2</li>
+  <li>内容(注意这里的Markdown源代码)</li>
+  <li>内容x</li>
+</ol>
+
+<hr />
+
+<p>下面是表格</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>head1</th>
+      <th style="text-align: left">head2</th>
+      <th style="text-align: right">head3</th>
+      <th style="text-align: center">head4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>row1text1</td>
+      <td style="text-align: left">row1text2</td>
+      <td style="text-align: right">row1text3</td>
+      <td style="text-align: center">row1text4</td>
+    </tr>
+    <tr>
+      <td>row2text1</td>
+      <td style="text-align: left">row2text2</td>
+      <td style="text-align: right">row2text3</td>
+      <td style="text-align: center">row2text4</td>
+    </tr>
+    <tr>
+      <td>row3text1</td>
+      <td style="text-align: left">row3text2</td>
+      <td style="text-align: right">row3text3</td>
+      <td style="text-align: center">row3text4</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><strong><a href="http://pygments.org/">使用 pygments 高亮</a></strong></p>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="lineno">1</span> <span class="cm">/* hello world demo 代码高亮*/</span>
+<span class="lineno">2</span> <span class="cp">#include &lt;stdio.h&gt;</span>
+<span class="lineno">3</span> <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span>
+<span class="lineno">4</span> <span class="p">{</span>
+<span class="lineno">5</span>     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello, World!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="lineno">6</span>     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="lineno">7</span> <span class="p">}</span></code></pre></div>
+
+<hr />
+
+<pre><code>{% highlight c %} 
+/* hello world demo 禁止解析*/
+#include &lt;stdio.h&gt;
+int main(int argc, char **argv)
+{
+    printf("Hello, World!\n");
+    return 0;
+}
+{% endhighlight %}
+</code></pre>
+
+<hr id="line" />
+<p><br /></p>
+
+<p><strong><a href="http://alexgorbatchev.com/SyntaxHighlighter/">用 SyntaxHihglighter 高亮</a></strong></p>
+
+<pre class="brush: js; ">
+function helloSyntaxHighlighter()
+{
+	return "hi!";
+}
+</pre>
+
+<pre><code>&lt;pre class="brush: js; "&gt;&lt;!--禁止解析--&gt;
+function helloSyntaxHighlighter()
+{
+	return "hi!";
+}
+&lt;/pre&gt;
+</code></pre>
+
+<pre class="brush: java; ruler: true; first-line: 0; highlight: [2, 4, 6] ; auto-links: false ; collapse: true ; gutter: false; ">
+/*http://comtu.githut.io*/
+class SingletonTest {
+	private static class SingletonHolder {
+		private static final SingletonTest INSTANCE = new SingletonTest();
+	}
+
+	private SingletonTest() {
+	}
+
+	public static final SingletonTest getInstance() {
+		return SingletonHolder.INSTANCE;
+	}
+}
+
+</pre>
+
+<pre class="brush: java;  collapse: true ; first-line: 10; highlight: [11, 13, 15] ">
+/**
+ * 枚举_单例
+ */
+enum SingletonEnum {  
+    INSTANCE;  
+    public void whateverMethod() {  
+    }  
+}  
+</pre>
+
+<hr />
+
+<p><strong><a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html">使用 script 方式高亮</a></strong></p>
+
+<script type="syntaxhighlighter" class="brush: php ; html-script: true ; collapse: true "><![CDATA[
+  <html>
+  <body>
+      <div style="font-weight: bold"><?= str_replace("\n", "<br/>", $var) ?></div>
+       
+      <?
+      /***********************************
+       ** Multiline block comments
+       **********************************/
+       
+      $stringWithUrl = "http://alexgorbatchev.com";
+      $stringWithUrl = 'http://alexgorbatchev.com';
+           
+      ob_start("parseOutputBuffer");      // Start Code Buffering
+      session_start();
+      ?>
+  </body>
+  </html>
+]]></script>
+
+<hr />
+
+<p><strong><a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html">使用 pre 方式高亮 . 不支持 &lt; 符号,需要进行转义为 &amp;lt ; (但能很好的支持RSS订阅)</a></strong></p>
+
+<pre class="brush: html;  collapse: true">
+  &lt;html&gt;
+  &lt;body&gt;
+      &lt;div style="font-weight: bold"&gt;&lt;?= str_replace("\n", "&lt;br/&gt;", $var) ?&gt;&lt;/div&gt;
+       
+      &lt;?
+      /***********************************
+       ** Multiline block comments
+       **********************************/
+       
+      $stringWithUrl = "http://alexgorbatchev.com";
+      $stringWithUrl = 'http://alexgorbatchev.com';
+           
+      ob_start("parseOutputBuffer");      // Start Code Buffering
+      session_start();
+      ?&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+</pre>
+
+<p><a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html">SyntaxHihglighter使用方法</a></p>
+
+<p><a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/configuration/">SyntaxHihglighter参数</a></p>
+
+<hr />
+
+<p><strong>视频</strong></p>
+
+<video controls="controls" poster="/res/video/2014-10-18-hello world/anim_page_transformer_zoomout.jpg" width="320" height="auto">
+    <source src="/res/video/2014-10-18-hello world/anim_page_transformer_zoomout.mp4" type="video/mp4" />
+    <source src="/res/video/2014-10-18-hello world/anim_page_transformer_zoomout.webm" type="video/webm" />
+    <source src="/res/video/2014-10-18-hello world/anim_page_transformer_zoomout.ogv" type="video/ogv" />
+</video>
+
+<hr />
+
+<p><strong>Markdown 免费编辑器</strong></p>
+
+<p>Windows 平台</p>
+
+<ul>
+  <li><a href="http://markdownpad.com/">MarkdownPad</a></li>
+  <li><a href="http://code52.org/DownmarkerWPF/">MarkPad</a></li>
+</ul>
+
+<p>Linux 平台</p>
+
+<ul>
+  <li><a href="http://sourceforge.net/p/retext/home/ReText/">ReText</a></li>
+</ul>
+
+<p>Mac 平台</p>
+
+<ul>
+  <li><a href="http://mouapp.com/">Mou</a></li>
+</ul>
+
+<p>在线编辑器</p>
+
+<ul>
+  <li><a href="http://markable.in/">Markable.in</a></li>
+  <li><a href="http://dillinger.io/">Dillinger.io</a></li>
+</ul>
+
+<p>浏览器插件</p>
+
+<ul>
+  <li><a href="https://chrome.google.com/webstore/detail/oknndfeeopgpibecfjljjfanledpbkog">MaDe</a> (Chrome)</li>
+</ul>
+
+<p>高级应用</p>
+
+<ul>
+  <li><a href="http://www.sublimetext.com/2">Sublime Text 2</a> + <a href="http://ttscoff.github.com/MarkdownEditing/">MarkdownEditing</a> / <a href="http://lucifr.com/2012/07/12/markdownediting-for-sublime-text-2/">教程</a></li>
+</ul>
+
+<hr />
+
+<section>
+<h3><b>最新评论</b></h3>
+<ul class="ds-recent-comments" data-num-items="10" data-show-avatars="0" data-show-time="0" data-show-title="0" data-show-admin="0" data-excerpt-length="18"></ul>
+</section>
+
+<section style="width:250px;">
+<h3><b>最近访客</b></h3>
+<ul class="ds-recent-visitors" data-num-items="4" data-avatar-size="45" style="margin-top:10px;"></ul>
+</section>
+
+<hr />
+
