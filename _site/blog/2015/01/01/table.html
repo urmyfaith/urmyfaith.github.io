@@ -8,9 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta name="description" content="z2ex">
   <meta name="author" content="z2xy">
-  <meta name="keywords" content="demo, z2xy, z2xy">
-  <title>demo - z2xy</title>
-  <link rel="canonical" href="http://5i01314.vipsinaapp.com//blog/2015/01/01/demo.html">
+  <meta name="keywords" content="hello, z2xy, z2xy">
+  <title>hello - z2xy</title>
+  <link rel="canonical" href="http://5i01314.vipsinaapp.com//blog/2015/01/01/table.html">
   <link rel="icon" id="icon"  href="/res/img/icon/1.ico" type="image/x-icon">
   <link rel="shortcut icon" id="shortcut_icon" href="/res/img/icon/1.ico" type="image/x-icon">
   <link rel="stylesheet" href="/res/css/public.css">
@@ -103,22 +103,201 @@
    </script>
     <div class="main">
     <header class="post-header">
-  <h1 class="post-title"><a href="/blog/2015/01/01/demo.html">demo</a></h2>
+  <h1 class="post-title"><a href="/blog/2015/01/01/table.html">hello</a></h2>
   <p class="post-meta">
     <i class="fa fa-calendar"></i>
     2015年01月01日
     <i class="space"></i>
     <i class="fa fa-tag"></i>
-    <a class="post-category" href="/page/category.html#demo">demo</a>
+    <a class="post-category" href="/page/category.html#"></a>
 	<br />
 	<i class="fa fa-tags"></i>
 	
   </p>
 </header>
 <div class="post-main">
-<p>2015-01-01_16_40_07</p>
+<p>2014-12-31</p>
 
-<p>this is a demo file.</p>
+<h2 id="section">知识复习</h2>
+
+<ul>
+  <li>简单介绍</li>
+  <li>捕获对象</li>
+  <li>简单应用	
+    <ul>
+      <li>排序</li>
+      <li>自定义的button(点击方法在类内部)</li>
+      <li>实现动画(动画的过程在block内部)</li>
+    </ul>
+  </li>
+  <li>反向传值</li>
+  <li>GCD(多任务,多线程,并发任务)</li>
+</ul>
+
+<p>代码块的声明和调用在两个不同类==&gt;block作为另外一个类的参数===&gt;在另一个类中调用====&gt;实现了传值.</p>
+
+<p>通过触发一个界面的控件===&gt;修改另外一个界面的内容.</p>
+
+<h2 id="section-1">音频</h2>
+
+<ul>
+  <li>导入系统库
+    <ul>
+      <li>“#import &lt;AVFoundation/AVFoundation.h&gt;”</li>
+    </ul>
+  </li>
+  <li>导入头文件</li>
+  <li>创建音频播放器对象</li>
+  <li>导入音频文件</li>
+  <li>播放</li>
+  <li>另外,音频也有代理方法(例如在播放完成的时候执行的方法/中断,高优先级的方法)</li>
+</ul>
+
+<p>```Objective-c
+-(void)testAudio{
+    NSString *path = [[NSBundle mainBundle]pathForResource:@”lalala” ofType:@”mp3”];</p>
+
+<pre><code>//取文件的时候需要使用fileURLWithPath,而不是之前的urlwithString之类的.
+NSURL *url = [NSURL fileURLWithPath:path];
+
+self.player = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
+[self.player prepareToPlay];
+[self.player play]; } ```
+</code></pre>
+
+<p>声音调节,进度调节,</p>
+
+<p>滑块===&gt;进度</p>
+
+<p>progress表示进度</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>属性</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>playing</td>
+      <td>是否正在播放</td>
+    </tr>
+    <tr>
+      <td>duration</td>
+      <td>音频的长度</td>
+    </tr>
+    <tr>
+      <td>currentTime</td>
+      <td>当前播放的时间</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>~</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>方法</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>prepareToPlay</td>
+      <td>即将播放</td>
+    </tr>
+    <tr>
+      <td>pause</td>
+      <td>暂停波烦恼歌</td>
+    </tr>
+    <tr>
+      <td>play</td>
+      <td>恢复播放/播放</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="section-2">视频的播放</h2>
+
+<ul>
+  <li>导入系统库
+    <ul>
+      <li>“#import &lt;MediaPlayer/MediaPlayer.h&gt;”</li>
+    </ul>
+  </li>
+  <li>导入头文件</li>
+  <li>找到视频文件</li>
+  <li>创建视频播放器对象</li>
+  <li>播放</li>
+</ul>
+
+<p>```Objective-c
+-(void)testVideo{</p>
+
+<pre><code>NSString *path = [[NSBundle mainBundle]pathForResource:@"dzs" ofType:@"mp4"];
+NSURL *url = [NSURL fileURLWithPath:path];
+
+self.moviePlayer = [[MPMoviePlayerViewController alloc]initWithContentURL:url];
+self.moviePlayer.view.frame  = self.view.bounds;
+[self.view addSubview:self.moviePlayer.view]; } ```
+</code></pre>
+
+<h2 id="section-3">简版微博示例</h2>
+
+<p>分析:</p>
+
+<ul>
+  <li>获取数据
+    <ul>
+      <li>从数据库获取</li>
+      <li>从本地文件获取</li>
+      <li>从网络获取数据</li>
+      <li>假数据</li>
+    </ul>
+  </li>
+  <li>解析数据
+    <ul>
+      <li>json</li>
+      <li>xml</li>
+    </ul>
+  </li>
+  <li>表示数据
+    <ul>
+      <li>将数据放入数据模型,再放入数组</li>
+    </ul>
+  </li>
+  <li>展示数据
+    <ul>
+      <li>通过tableView显示数据</li>
+      <li>自定义cell</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="cell">自定义的cell</h4>
+
+<ul>
+  <li>a)子控件的加载根据具体需要(是否进行加载子控件)(如果数据源中没有===&gt;隐藏子控件)</li>
+  <li>b)子控件的内容根据数据量进行自适应(文本较多===&gt;换行处理)</li>
+  <li>c)cell的高度根据需要进行调整</li>
+  <li>d)表格加载的顺序</li>
+</ul>
+
+<p>```Objective-c
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    ZXTweetCell *cell = [ZXTweetCell cellWithTableView:tableView];</p>
+
+<p>-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+```</p>
+
+<p>是先执行的高度,然后加载的cell的创建.</p>
+
+<ul>
+  <li>e)QQ的聊天界面</li>
+</ul>
+
 
 </div>
 <div class="share">
@@ -131,15 +310,15 @@
 </div>
 <div class="pagination">
 
-<a class="pagination-item newer" href="/blog/2014/10/19/git_common_command.html"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;Git 常用命令整理</a>
+<a class="pagination-item newer" href="/blog/2015/01/01/demo.html"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;demo</a>
 
 
-<a class="pagination-item older" href="/blog/2015/01/01/table.html">hello&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+<span class="pagination-item older">下一篇&nbsp;<i class="fa fa-chain-broken"></i></span>
 
 </div>
 <style>#ds-reset .ds-avatar img{border-radius:50%;}</style>
 <div class="comments">
-  <div class="ds-thread" data-title="demo" data-thread-key="/blog/2015/01/01/demo" data-url="http://5i01314.vipsinaapp.com//blog/2015/01/01/demo.html"></div>
+  <div class="ds-thread" data-title="hello" data-thread-key="/blog/2015/01/01/table" data-url="http://5i01314.vipsinaapp.com//blog/2015/01/01/table.html"></div>
   <script type="text/javascript">var duoshuoQuery = {short_name:""};(function(){var ds = document.createElement('script');ds.type = 'text/javascript';ds.async = true;ds.src = '/res/js/embed.js';ds.charset = 'UTF-8';(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);})();</script>
 </div>
     <footer>Copyright&nbsp;&copy;&nbsp;2015 <a href="http://5i01314.vipsinaapp.com/">z2xy</a><br/><i class="fa fa-cogs" style="color:blueviolet;">&nbsp;</i>Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a></footer>

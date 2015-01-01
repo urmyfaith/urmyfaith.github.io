@@ -106,6 +106,207 @@
 <div class="posts">
   <section class="post">
     <header class="post-header">
+      <h1 class="post-title"><a href="/blog/2015/01/01/table.html">hello</a></h1>
+      <p class="post-meta">
+        <i class="fa fa-calendar"></i>
+        2015年01月01日
+        <i class="space"></i>
+        <i class="fa fa-tags"></i>
+        <a class="post-category" href="/page/category.html#"></a>
+      </p>
+    </header>
+    <div class="post-main">
+      <p>2014-12-31</p>
+
+<h2 id="section">知识复习</h2>
+
+<ul>
+  <li>简单介绍</li>
+  <li>捕获对象</li>
+  <li>简单应用	
+    <ul>
+      <li>排序</li>
+      <li>自定义的button(点击方法在类内部)</li>
+      <li>实现动画(动画的过程在block内部)</li>
+    </ul>
+  </li>
+  <li>反向传值</li>
+  <li>GCD(多任务,多线程,并发任务)</li>
+</ul>
+
+<p>代码块的声明和调用在两个不同类==&gt;block作为另外一个类的参数===&gt;在另一个类中调用====&gt;实现了传值.</p>
+
+<p>通过触发一个界面的控件===&gt;修改另外一个界面的内容.</p>
+
+<h2 id="section-1">音频</h2>
+
+<ul>
+  <li>导入系统库
+    <ul>
+      <li>“#import &lt;AVFoundation/AVFoundation.h&gt;”</li>
+    </ul>
+  </li>
+  <li>导入头文件</li>
+  <li>创建音频播放器对象</li>
+  <li>导入音频文件</li>
+  <li>播放</li>
+  <li>另外,音频也有代理方法(例如在播放完成的时候执行的方法/中断,高优先级的方法)</li>
+</ul>
+
+<p>```Objective-c
+-(void)testAudio{
+    NSString *path = [[NSBundle mainBundle]pathForResource:@”lalala” ofType:@”mp3”];</p>
+
+<pre><code>//取文件的时候需要使用fileURLWithPath,而不是之前的urlwithString之类的.
+NSURL *url = [NSURL fileURLWithPath:path];
+
+self.player = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
+[self.player prepareToPlay];
+[self.player play]; } ```
+</code></pre>
+
+<p>声音调节,进度调节,</p>
+
+<p>滑块===&gt;进度</p>
+
+<p>progress表示进度</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>属性</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>playing</td>
+      <td>是否正在播放</td>
+    </tr>
+    <tr>
+      <td>duration</td>
+      <td>音频的长度</td>
+    </tr>
+    <tr>
+      <td>currentTime</td>
+      <td>当前播放的时间</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>~</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>方法</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>prepareToPlay</td>
+      <td>即将播放</td>
+    </tr>
+    <tr>
+      <td>pause</td>
+      <td>暂停波烦恼歌</td>
+    </tr>
+    <tr>
+      <td>play</td>
+      <td>恢复播放/播放</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="section-2">视频的播放</h2>
+
+<ul>
+  <li>导入系统库
+    <ul>
+      <li>“#import &lt;MediaPlayer/MediaPlayer.h&gt;”</li>
+    </ul>
+  </li>
+  <li>导入头文件</li>
+  <li>找到视频文件</li>
+  <li>创建视频播放器对象</li>
+  <li>播放</li>
+</ul>
+
+<p>```Objective-c
+-(void)testVideo{</p>
+
+<pre><code>NSString *path = [[NSBundle mainBundle]pathForResource:@"dzs" ofType:@"mp4"];
+NSURL *url = [NSURL fileURLWithPath:path];
+
+self.moviePlayer = [[MPMoviePlayerViewController alloc]initWithContentURL:url];
+self.moviePlayer.view.frame  = self.view.bounds;
+[self.view addSubview:self.moviePlayer.view]; } ```
+</code></pre>
+
+<h2 id="section-3">简版微博示例</h2>
+
+<p>分析:</p>
+
+<ul>
+  <li>获取数据
+    <ul>
+      <li>从数据库获取</li>
+      <li>从本地文件获取</li>
+      <li>从网络获取数据</li>
+      <li>假数据</li>
+    </ul>
+  </li>
+  <li>解析数据
+    <ul>
+      <li>json</li>
+      <li>xml</li>
+    </ul>
+  </li>
+  <li>表示数据
+    <ul>
+      <li>将数据放入数据模型,再放入数组</li>
+    </ul>
+  </li>
+  <li>展示数据
+    <ul>
+      <li>通过tableView显示数据</li>
+      <li>自定义cell</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="cell">自定义的cell</h4>
+
+<ul>
+  <li>a)子控件的加载根据具体需要(是否进行加载子控件)(如果数据源中没有===&gt;隐藏子控件)</li>
+  <li>b)子控件的内容根据数据量进行自适应(文本较多===&gt;换行处理)</li>
+  <li>c)cell的高度根据需要进行调整</li>
+  <li>d)表格加载的顺序</li>
+</ul>
+
+<p>```Objective-c
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    ZXTweetCell *cell = [ZXTweetCell cellWithTableView:tableView];</p>
+
+<p>-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+```</p>
+
+<p>是先执行的高度,然后加载的cell的创建.</p>
+
+<ul>
+  <li>e)QQ的聊天界面</li>
+</ul>
+
+
+      <div class="readall"><a href="/blog/2015/01/01/table.html" id="post-readall">阅读全文&nbsp;<i class="fa fa-chevron-right"></i></a></div>
+    </div>
+  </section>
+</div>
+
+<div class="posts">
+  <section class="post">
+    <header class="post-header">
       <h1 class="post-title"><a href="/blog/2015/01/01/demo.html">demo</a></h1>
       <p class="post-meta">
         <i class="fa fa-calendar"></i>
@@ -265,41 +466,6 @@ _sites        预览时产生的文件都放在该文件夹中
 
 
       <div class="readall"><a href="/blog/2014/10/18/support-pygments-in-Jekyll.html" id="post-readall">阅读全文&nbsp;<i class="fa fa-chevron-right"></i></a></div>
-    </div>
-  </section>
-</div>
-
-<div class="posts">
-  <section class="post">
-    <header class="post-header">
-      <h1 class="post-title"><a href="/blog/2014/10/18/hello%20world.html">hello world</a></h1>
-      <p class="post-meta">
-        <i class="fa fa-calendar"></i>
-        2014年10月18日
-        <i class="space"></i>
-        <i class="fa fa-tags"></i>
-        <a class="post-category" href="/page/category.html#jekyll">jekyll</a>
-      </p>
-    </header>
-    <div class="post-main">
-      <h1 id="h1">H1</h1>
-
-<h2 id="h2">H2</h2>
-
-<h3 id="h3">H3</h3>
-
-<h4 id="h4">H4</h4>
-
-<h5 id="h5">H5</h5>
-
-<h6 id="h6">H6</h6>
-
-<p>默认字号字体</p>
-
-<p><strong>加粗</strong></p>
-
-
-      <div class="readall"><a href="/blog/2014/10/18/hello%20world.html" id="post-readall">阅读全文&nbsp;<i class="fa fa-chevron-right"></i></a></div>
     </div>
   </section>
 </div>
