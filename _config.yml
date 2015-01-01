@@ -12,8 +12,8 @@ paginate_path: page/:num
 
 #SyntaxHihglighter config start
 
-SyntaxHihglighter: false
-shTheme: shThemeDefault # shThemeDefault  shThemeDjango  shThemeEclipse  shThemeEmacs  shThemeFadeToGrey  shThemeMidnight  shThemeRDark
+SyntaxHihglighter: true
+shTheme: shThemeRDark # shThemeDefault  shThemeDjango  shThemeEclipse  shThemeEmacs  shThemeFadeToGrey  shThemeMidnight  shThemeRDark
 
 #SyntaxHihglighter config end
 
